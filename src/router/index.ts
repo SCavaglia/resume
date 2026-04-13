@@ -22,6 +22,26 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/contact/ContactView.vue'),
     },
+    {
+      path: '/weather',
+      name: 'weather',
+      component: () => import('../views/weather/WeatherView.vue'),
+    },
+    {
+      path: '/weather/75056',
+      name: 'weather75056',
+      component: () => import('../views/weather/WeatherShowView.vue'),
+    },
+    {
+      path: '/stocks',
+      name: 'stocks',
+      component: () => import('../views/stocks/StocksView.vue'),
+    },
+    {
+      path: '/stocks/aapl',
+      name: 'stocks-aapl',
+      component: () => import('../views/stocks/StocksShowView.vue'),
+    },
   ],
 })
 

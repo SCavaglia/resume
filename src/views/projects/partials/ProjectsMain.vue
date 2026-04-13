@@ -3,6 +3,8 @@ import H1 from '@/components/typography/H1.vue'
 import RepoCard from './RepoCard.vue'
 import ProjectCard from './ProjectCard.vue'
 import { ChartLine } from 'lucide-vue-next'
+import FranceOutlineCities from '@/assets/misc/FranceOutlineCities.vue';
+import ProjectsChart from './ProjectsChart.vue';
 </script>
 
 <template>
@@ -17,18 +19,18 @@ import { ChartLine } from 'lucide-vue-next'
         headerDescription="Monitor your stock portfolio"
       >
         <template #headerIcon> <ChartLine /> </template>
-        <p>stock graph</p>
+        <ProjectsChart /> 
       </ProjectCard>
     </div>
     <div class="w-md">
       <RepoCard link="github.com/SCavaglia" />
       <ProjectCard
-        link="/stocks"
+        link="/weather"
         headerTitle="Weather App"
         headerDescription="Monitor your weather conditions"
       >
         <template #headerIcon> <ChartLine /> </template>
-        <p>weather forecast</p>
+        <FranceOutlineCities class="h-full" />
       </ProjectCard>
     </div>
   </div>

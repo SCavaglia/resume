@@ -23,31 +23,31 @@ import FranceOutlineCities from '@/assets/misc/FranceOutlineCities.vue'
         <LinkInternal href="/weather/75056">
           <div class="flex gap-2">
             <span>Paris :</span>
-            <span> aaa °C</span>
+            <span> 17 °C</span>
           </div>
         </LinkInternal>
         <LinkInternal href="/weather/75056">
           <div class="flex gap-2">
             <span>Marseille :</span>
-            <span> aaa °C</span>
+            <span> 20 °C</span>
           </div>
         </LinkInternal>
         <LinkInternal href="/weather/75056">
           <div class="flex gap-2">
             <span>Lyon :</span>
-            <span> aaa °C</span>
+            <span> 15 °C</span>
           </div>
         </LinkInternal>
         <LinkInternal href="/weather/75056">
           <div class="flex gap-2">
             <span>Toulouse :</span>
-            <span> aaa °C</span>
+            <span> 16 °C</span>
           </div>
         </LinkInternal>
         <LinkInternal href="/weather/75056">
           <div class="flex gap-2">
             <span>Nice :</span>
-            <span> aaa °C</span>
+            <span> 19 °C</span>
           </div>
         </LinkInternal>
       </CardContent>

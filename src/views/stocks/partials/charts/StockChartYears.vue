@@ -10,9 +10,6 @@ import {
   componentToString,
 } from '@/components/ui/chart'
 
-/**
- * Generate fake intraday stock data (09:30 → 14:00, every 10 min)
- */
 type Data = {
   date: Date
   price: number
@@ -21,27 +18,23 @@ type Data = {
 const chartData: Data[] = []
 
 const start = new Date()
-start.setHours(9, 30, 0, 0)
+start.setDate(start.getDate() - 1095)
 
-const end = new Date()
-end.setHours(14, 0, 0, 0)
-
-let current = new Date(start)
-
-// fake starting price (AAPL-like)
 let price = 190
 
-while (current <= end) {
-  const change = (Math.random() - 0.5) * 1.5
+for (let i = 0; i < 156; i++) {
+  const date = new Date(start)
+  date.setDate(start.getDate() + i * 7)
+
+  const change = (Math.random() - 0.5) * 6
   price = Math.max(0, price + change)
 
   chartData.push({
-    date: new Date(current),
+    date,
     price: Number(price.toFixed(2)),
   })
-
-  current = new Date(current.getTime() + 10 * 60 * 1000)
 }
+
 const chartConfig = {
   price: {
     label: 'AAPL',
@@ -49,22 +42,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-
-
-const tickValues = []
-
-const tickStart = new Date()
-tickStart.setHours(9, 30, 0, 0)
-
-const tickEnd = new Date()
-tickEnd.setHours(14, 0, 0, 0)
-
-let t = new Date(tickStart)
-
-while (t <= tickEnd) {
-  tickValues.push(new Date(t))
-  t = new Date(t.getTime() + 60 * 60 * 1000) // +1h
-}
+const tickValues = chartData.filter((_, i) => i % 20 === 0).map(d => d.date)
 
 const prices = chartData.map((d) => d.price)
 
@@ -92,9 +70,9 @@ const padding = (max - min) * 0.8
         :tick-format="
           (d: number) => {
             const date = new Date(d)
-            return date.toLocaleTimeString('en-US', {
-              hour: '2-digit',
-              minute: '2-digit',
+            return date.toLocaleDateString('en-US', {
+              month: 'short',
+              year: '2-digit',
             })
           }
         "

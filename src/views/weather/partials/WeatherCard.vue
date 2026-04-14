@@ -12,12 +12,10 @@ import {
 } from '@/components/ui/chart'
 import SunFull from '@/components/icons/weather/SunFull.vue'
 
-
 type ChartPoint = {
-  date: number   // timestamp
+  date: number // timestamp
   temperature: number
 }
-
 
 const chartData = [
   // Jour 1

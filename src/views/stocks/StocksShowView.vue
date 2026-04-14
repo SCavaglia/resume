@@ -27,9 +27,8 @@ import StockCardCharts from './partials/StockCardCharts.vue'
         <StockCardInformation />
       </TabsContent>
       <TabsContent value="chart">
+        <StockCardCharts />
       </TabsContent>
     </Tabs>
   </div>
-  <p>thgyjgy</p>
-  <StockCardCharts />
 </template>

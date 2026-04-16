@@ -12,7 +12,7 @@ import ProjectsChart from './ProjectsChart.vue';
 
   <div class="flex flex-col items-center gap-6 lg:flex-row mx-auto justify-center ">
     <div class="mx-4 lg:w-md">
-      <RepoCard link="github.com/SCavaglia" />
+      <RepoCard link="github.com/SCavaglia/stocks-app" />
       <ProjectCard
         link="/stocks"
         headerTitle="Stocks App"
@@ -23,7 +23,7 @@ import ProjectsChart from './ProjectsChart.vue';
       </ProjectCard>
     </div>
     <div class="w-md">
-      <RepoCard link="github.com/SCavaglia" />
+      <RepoCard link="github.com/SCavaglia/weather-app" />
       <ProjectCard
         link="/weather"
         headerTitle="Weather App"

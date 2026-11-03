@@ -16,6 +16,7 @@ import { Heart } from "lucide-react";
 
 const footerProps = {
   navigationLinks: [
+    { title: "Accueil", href: "#accueil" },
     { title: "Engagements", href: "#engagements" },
     { title: "Tarifs & Soins", href: "#specialites" },
     { title: "Notre Équipe", href: "#equipe" },
@@ -31,7 +32,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/demos/nova-sante#accueil" className="flex items-center gap-2">
+    <a href="/resume/demos/nova-sante#accueil" className="flex items-center gap-2">
       <Heart className="size-12 rounded-2xl border bg-linear-to-r from-sky-500 to-teal-500 p-2" />
       <span className="font-figtree text-2xl font-extrabold tracking-wide">
         Nova

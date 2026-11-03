@@ -1,6 +1,8 @@
 import { EpContact } from "@/components/demos/eden-paysage/ep-contact";
 import { EpFaqWarranty } from "@/components/demos/eden-paysage/ep-faq-warranty";
+import { EpGallery } from "@/components/demos/eden-paysage/ep-gallery";
 import { EpHeader } from "@/components/demos/eden-paysage/ep-header";
+import { EpHero } from "@/components/demos/eden-paysage/ep-hero";
 import { EpLocation } from "@/components/demos/eden-paysage/ep-location";
 import { EpProcessTimeline } from "@/components/demos/eden-paysage/ep-process-timeline";
 import { EpServices } from "@/components/demos/eden-paysage/ep-services";
@@ -14,12 +16,13 @@ import { TreePine } from "lucide-react";
 const footerProps = {
   navigationLinks: [
     { title: "Accueil", href: "#accueil" },
-    { title: "aaa", href: "#aaa" },
-    { title: "aaa", href: "#aaa" },
-    { title: "aaa", href: "#aaa" },
-    { title: "aaa", href: "#aaa" },
-    { title: "aaa", href: "#aaa" },
-    { title: "aaa", href: "#aaa" },
+    { title: "Nos Services", href: "#services" },
+    { title: "Nos Réalisations", href: "#realisations" },
+    { title: "Notre Méthode", href: "#methode" },
+    { title: "Zone [Ville]", href: "#zone" },
+    { title: "Estimateur projet", href: "#simulateur" },
+    { title: "FAQ", href: "#faq" },
+    { title: "Contact", href: "#contact" },
   ],
   legalLinks: [
     { title: "Mentions légales", href: "#" },
@@ -28,7 +31,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/demos/eden-paysage#accueil" className="mb-8 flex items-center gap-2 text-3xl font-bold">
+    <a href="/resume/demos/eden-paysage#accueil" className="mb-8 flex items-center gap-2 text-3xl font-bold">
       <TreePine className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-black" />
       <span className="text-white">EDEN</span>
       <span className="bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 bg-clip-text text-transparent">PAYSAGE</span>
@@ -63,7 +66,9 @@ export default function EdenPaysage() {
         <DemosTopbar />
         <EpHeader />
         <main>
+          <EpHero />
           <EpServices />
+          <EpGallery />
           <EpProcessTimeline />
           <EpLocation />
           <EpSimulator />

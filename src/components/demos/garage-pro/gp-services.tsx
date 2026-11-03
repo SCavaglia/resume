@@ -54,7 +54,7 @@ type GpServicesProps = {
 export function GpServices({ className }: GpServicesProps) {
     return (
         <section
-            id="services"
+            id="prestations"
             className={`relative overflow-hidden bg-[#f4f5f7] px-6 py-24 transition-colors duration-300 dark:bg-[#0f1115] ${className ?? ''}`}
         >
             {/* Décoration d'arrière-plan */}

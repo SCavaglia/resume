@@ -4,7 +4,7 @@ const team = [
     {
         name: 'Dr. Sophie Laurent',
         role: 'Docteur Vétérinaire',
-        image: '/demos/pattes-coeurs/team-sophie.jpg',
+        image: '/resume/pattes-coeur/team_sophie.webp',
         credential: "Diplômée de l'ENVA · Ordre n° 18274",
         description:
             "Diplômée de l'École Nationale Vétérinaire d'Alfort (ENVA), inscrite à l'Ordre National sous le n° 18274. Spécialiste en chirurgie des tissus mous et imagerie médicale.",
@@ -13,7 +13,7 @@ const team = [
     {
         name: 'Thomas Dubois',
         role: 'Éducateur Comportementaliste',
-        image: '/demos/pattes-coeurs/team-thomas.jpg',
+        image: '/resume/pattes-coeur/team_thomas.webp',
         credential: "Certifié ACACED · 8 ans d'expérience",
         description:
             "Certifié d'État (ACACED n° 44-329) et fort de 8 ans d'accompagnement canin. Expert en rééducation positive et méthodes d'apprentissage douces et amicales.",
@@ -22,7 +22,7 @@ const team = [
     {
         name: 'Julie Moreau',
         role: 'Toiletteuse Comportementale',
-        image: '/demos/pattes-coeurs/team-julie.jpg',
+        image: '/resume/pattes-coeur/team_julie.webp',
         credential: 'Titulaire du CTM Toiletteur',
         description:
             'Titulaire du CTM Toiletteur Canin et Félin. Formée aux soins de peaux sensibles et au toilettage à faible stress (Low-Stress Grooming) pour les animaux craintifs.',
@@ -31,7 +31,7 @@ const team = [
     {
         name: 'Marine Petit',
         role: 'Ostéopathe Animalier',
-        image: '/demos/pattes-coeurs/team-marine.jpg',
+        image: '/resume/pattes-coeur/team_marine.webp',
         credential: 'Registre national · N° OA 419',
         description:
             "Inscrite sur le registre national d'aptitude de l'Ordre sous le n° OA 419. Accompagne le rétablissement moteur et soulage les maux chroniques.",
@@ -43,7 +43,7 @@ export function PcTeam() {
     return (
         <section
             id="equipe"
-            className="relative overflow-hidden bg-[#f5f1eb] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]"
+            className="scroll-mt-6 relative overflow-hidden bg-[#f5f1eb] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]"
         >
             {/* Décoration */}
             <div className="pointer-events-none absolute top-20 -left-40 size-96 rounded-full bg-[#c5a98b]/10 blur-3xl" />

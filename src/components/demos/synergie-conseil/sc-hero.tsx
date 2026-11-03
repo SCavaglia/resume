@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function ScHero() {
   return (
-    <section className="relative isolate flex min-h-[720px] items-center overflow-hidden bg-[linear-gradient(135deg,rgb(9,20,29)_0%,rgb(13,31,45)_50%,rgb(26,42,58)_100%)] px-6 py-32 sm:px-10 lg:min-h-[800px]">
+    <section id="accueil" className="relative isolate flex min-h-[720px] items-center overflow-hidden bg-[linear-gradient(135deg,rgb(9,20,29)_0%,rgb(13,31,45)_50%,rgb(26,42,58)_100%)] px-6 py-32 sm:px-10 lg:min-h-[800px]">
       {/* Dégradés lumineux */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-52 -right-40 size-[650px] rounded-full bg-[#b4966e]/10 blur-[130px]" />
@@ -42,14 +42,14 @@ export function ScHero() {
           {/* Titre */}
           <h1 className="font-cormorant text-5xl leading-[1.2] font-medium tracking-tight text-[#f4f2ed] sm:text-6xl lg:text-7xl xl:text-[84px]">
             L'excellence juridique
-            <span className="mt-2 block bg-gradient-to-r from-[#b4966e] via-[#dfc49f] to-[#b4966e] bg-clip-text text-transparent">
+            <span className="mt-2 block bg-linear-to-r from-[#b4966e] via-[#dfc49f] to-[#b4966e] bg-clip-text text-transparent">
               et stratégique
             </span>
           </h1>
 
           {/* Ligne décorative */}
           <div className="my-9 flex items-center gap-3">
-            <div className="h-px w-16 bg-gradient-to-r from-[#b4966e] to-[#b4966e]/20" />
+            <div className="h-px w-16 bg-linear-to-r from-[#b4966e] to-[#b4966e]/20" />
             <div className="size-1.5 rotate-45 bg-[#b4966e]" />
           </div>
 
@@ -62,7 +62,7 @@ export function ScHero() {
           {/* Actions */}
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button
-              render={<a href="#contact" />}
+              render={<a href="#prendre-rdv" />}
               size="lg"
               className="group h-14 rounded-lg bg-[#b4966e] px-7 text-sm font-semibold text-[#111c24] shadow-lg shadow-[#b4966e]/15 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#c5a77f] hover:shadow-xl hover:shadow-[#b4966e]/25"
             >
@@ -75,7 +75,7 @@ export function ScHero() {
               render={<a href="#honoraires" />}
               size="lg"
               variant="outline"
-              className="h-14 rounded-lg border-white/20 bg-white/[0.04] px-7 text-sm font-semibold text-[#f4f2ed] backdrop-blur-sm transition-all duration-300 hover:border-[#b4966e]/60 hover:bg-[#b4966e]/10 hover:text-white"
+              className="h-14 rounded-lg border-white/20 bg-white/4 px-7 text-sm font-semibold text-[#f4f2ed] backdrop-blur-sm transition-all duration-300 hover:border-[#b4966e]/60 hover:bg-[#b4966e]/10 hover:text-white"
             >
               Estimer nos honoraires
               <ArrowUpRight className="ml-2 size-4" />

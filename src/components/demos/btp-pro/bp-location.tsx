@@ -2,7 +2,7 @@ import { BpLocationChecker } from "./bp-location-checker";
 
 export function BpLocation() {
     return (
-        <section id="zone-intervention" className="py-20">
+        <section id="zone-intervention" className="scroll-mt-24 py-20">
             <div className="mx-auto max-w-7xl px-4">
                 {/* Titre principal */}
                 <div className="mx-auto max-w-3xl text-center">

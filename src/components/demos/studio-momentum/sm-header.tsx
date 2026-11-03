@@ -65,7 +65,7 @@ export function SmHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/studio-momentum#accueil"
+                    href="/resume/demos/studio-momentum#accueil"
                     className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase"
                 >
                     <Aperture className="size-12 rounded-md bg-linear-to-tr from-[#967021] to-[#d6b76d] p-2 text-white" />
@@ -95,7 +95,7 @@ export function SmHeader() {
 
                 {/* Action */}
                 <a
-                    href="#simulateur"
+                    href="#devis"
                     className="ml-auto inline-block rounded border-2 border-[#967021] bg-linear-to-tr from-[#967021] to-[#d6b76d] p-4 text-lg font-medium text-white uppercase transition-all duration-300 hover:-translate-y-1 hover:border-foreground lg:ml-0"
                 >
                     Devis

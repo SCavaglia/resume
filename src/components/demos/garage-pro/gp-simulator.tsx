@@ -167,7 +167,7 @@ export function GpSimulator({ className }: GpSimulatorProps) {
 
   return (
     <section
-      id="simulator"
+      id="calculer-mon-rdv"
       className={`relative overflow-hidden bg-[#f4f5f7] px-6 py-24 transition-colors duration-300 dark:bg-[#0f1115] ${className ?? ""}`}
     >
       <div className="pointer-events-none absolute top-20 -right-40 size-96 rounded-full bg-[#e63946]/5 blur-3xl" />

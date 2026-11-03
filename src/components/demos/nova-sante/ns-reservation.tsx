@@ -132,7 +132,7 @@ export function NsReservation() {
     };
 
     return (
-        <section id="reservation" className="px-6 py-20 sm:py-28">
+        <section id="reservation" className="scroll-mt-6 px-6 py-20 sm:py-28">
             <div className="mx-auto max-w-5xl">
                 <div className="mx-auto mb-12 max-w-3xl text-center">
                     <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-primary uppercase">

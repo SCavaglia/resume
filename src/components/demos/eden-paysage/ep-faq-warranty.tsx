@@ -20,7 +20,7 @@ const faqs = [
 
 export function EpFaqWarranty() {
     return (
-        <section className="px-6 py-20 sm:py-24">
+        <section id="faq" className="scroll-mt-24 px-6 py-20 sm:py-24">
             <div className="mx-auto max-w-7xl">
                 <div className="mb-12 max-w-2xl">
                     <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-primary uppercase">

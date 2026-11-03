@@ -62,7 +62,7 @@ export function PcHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/pattes-coeurs#accueil"
+                    href="/resume/demos/pattes-coeurs#accueil"
                     className="flex shrink-0 items-center gap-2 font-playfair text-3xl font-bold tracking-tight"
                 >
                     <PawPrint className="size-12 rounded-md bg-linear-to-tr from-yellow-950 to-orange-900 p-2 text-white" />
@@ -92,7 +92,7 @@ export function PcHeader() {
 
                 {/* Action */}
                 <a
-                    href="#simulateur"
+                    href="#rendez-vous"
                     className="ml-auto block rounded-full bg-[rgb(192,138,94)] p-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[rgb(177,140,104)] lg:ml-0"
                 >
                     Prendre RDV

@@ -15,7 +15,7 @@ const inputStyles =
 export function SmContact() {
     return (
         <section
-            id="contact"
+            id="devis"
             className="relative isolate overflow-hidden bg-[#f7f5ef] px-6 py-24 sm:px-10 lg:py-32 dark:bg-[#171613]"
         >
             {/* Décorations */}

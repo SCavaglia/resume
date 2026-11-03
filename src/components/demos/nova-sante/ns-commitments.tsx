@@ -23,7 +23,7 @@ const commitments = [
 
 export function NsCommitments() {
     return (
-        <section id="engagements" className="px-6 py-20 sm:py-28">
+        <section id="engagements" className="scroll-mt-24 px-6 py-20 sm:py-28">
             <div className="mx-auto max-w-7xl gap-12">
                 {/* Partie gauche : Introduction */}
                 <div className="flex flex-col items-center gap-5">

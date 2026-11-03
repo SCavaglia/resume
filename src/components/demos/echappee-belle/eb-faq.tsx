@@ -27,17 +27,13 @@ const questions = [
     },
 ];
 
-type Props = {
-    className?: string;
-};
-
-export function EbFaq({ className = '' }: Props) {
+export function EbFaq() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
         <section
             id="faq"
-            className={`bg-[#faf8f5] px-4 py-20 text-[#232720] transition-colors duration-300 sm:px-6 lg:px-8 dark:bg-[#1e211b] dark:text-[#f0ece3] ${className}`}
+            className="scroll-mt-24 bg-[#faf8f5] px-4 py-20 text-[#232720] transition-colors duration-300 sm:px-6 lg:px-8 dark:bg-[#1e211b] dark:text-[#f0ece3]  "
         >
             <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
                 {/* Heading */}
@@ -96,7 +92,7 @@ export function EbFaq({ className = '' }: Props) {
                                         </span>
 
                                         <span
-                                            className={`font-serif text-lg leading-snug transition-colors sm:text-xl ${
+                                            className={`text-balance font-serif text-lg leading-snug transition-colors sm:text-xl ${
                                                 isOpen
                                                     ? 'text-[#606f53] dark:text-[#b7c5a8]'
                                                     : 'text-[#30352c] group-hover:text-[#606f53] dark:text-[#f0ece3] dark:group-hover:text-[#b7c5a8]'

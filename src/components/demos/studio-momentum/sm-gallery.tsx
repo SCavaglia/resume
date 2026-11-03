@@ -25,7 +25,7 @@ const projects: Project[] = [
     subtitle: "Mariage Clara & Sophian - Moment Studio",
     location: "Château de Vaux-le-Vicomte",
     category: "Mariages",
-    image: "/demos/studio-momentum/gallery-wedding.jpg",
+    image: "/resume/studio-momentum/portfolio_vaux.webp",
     type: "Mariage d'Exception",
     client: "Particulier",
     deliverables: "Photo, Film 4K, Coordination & Fleurs",
@@ -38,7 +38,7 @@ const projects: Project[] = [
     subtitle: "L'Oréal Luxe - Moment Studio",
     location: "Palais de Tokyo — Paris",
     category: "Entreprise & Galas",
-    image: "/demos/studio-momentum/gallery-loreal.jpg",
+   image: "/resume/studio-momentum/portfolio_loreal.webp",
     type: "Événement de Marque",
     client: "L'Oréal Luxe",
     deliverables: "Direction artistique, Photo, Vidéo & Scénographie",
@@ -51,7 +51,7 @@ const projects: Project[] = [
     subtitle: "Vogue Editorial - Moment Studio",
     location: "Serres d'Auteuil — Paris",
     category: "Mode & Éditoriaux",
-    image: "/demos/studio-momentum/gallery-vogue.jpg",
+   image: "/resume/studio-momentum/portfolio_vogue.webp",
     type: "Production Éditoriale",
     client: "Vogue",
     deliverables: "Photographie, Direction artistique & Stylisme",
@@ -64,7 +64,7 @@ const projects: Project[] = [
     subtitle: "Gala Chanel - Moment Studio",
     location: "Grand Palais — Paris",
     category: "Entreprise & Galas",
-    image: "/demos/studio-momentum/gallery-chanel.jpg",
+   image: "/resume/studio-momentum/portfolio_chanel.webp",
     type: "Gala Prestige",
     client: "Chanel",
     deliverables: "Photo, Film, Décoration & Coordination",
@@ -77,7 +77,7 @@ const projects: Project[] = [
     subtitle: "Anniversaire Bohème - Moment Studio",
     location: "Rooftop Privé — Le Marais",
     category: "Soirées Privées",
-    image: "/demos/studio-momentum/gallery-boheme.jpg",
+    image: "/resume/studio-momentum/portfolio_boheme.webp",
     type: "Célébration Privée",
     client: "Particulier",
     deliverables: "Décoration florale, Photo, DJ & Coordination",
@@ -90,7 +90,7 @@ const projects: Project[] = [
     subtitle: "Collection Capsule - Moment Studio",
     location: "Jacquemus Campaign",
     category: "Mode & Éditoriaux",
-    image: "/demos/studio-momentum/gallery-jacquemus.jpg",
+  image: "/resume/studio-momentum/portfolio_jacquemus.webp",
     type: "Campagne de Mode",
     client: "Jacquemus",
     deliverables: "Photographie, Vidéo & Direction artistique",
@@ -152,7 +152,7 @@ export function SmGallery() {
 
   return (
     <>
-      <section id="portfolio" className="relative overflow-hidden bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]">
+      <section id="portfolio" className="scroll-mt-6 relative overflow-hidden bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]">
         {/* Décoration */}
         <div className="pointer-events-none absolute top-40 -left-40 h-96 w-96 rounded-full bg-[#c49a45]/10 blur-[120px] dark:bg-[#c49a45]/10" />
         <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-[#e5c982]/20 blur-[120px] dark:bg-[#a98235]/10" />

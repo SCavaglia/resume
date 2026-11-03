@@ -12,7 +12,7 @@ type Props = {
 
 export function GpHero({ className = '' }: Props) {
     return (
-        <section
+        <section id="accueil"
             className={`relative isolate flex min-h-[700px] items-center overflow-hidden bg-[#f4f5f7] text-[#0f1115] transition-colors duration-300 dark:bg-[#0f1115] dark:text-white ${className}`}
         >
             {/* Background image */}
@@ -25,8 +25,8 @@ export function GpHero({ className = '' }: Props) {
 
             {/* Overlays */}
             <div className="absolute inset-0 -z-10 bg-white/65 dark:bg-[#0f1115]/75" />
-            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white via-white/90 to-white/40 dark:from-[#0f1115] dark:via-[#0f1115]/90 dark:to-[#0f1115]/40" />
-            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-white/70 via-transparent to-white/20 dark:from-[#0f1115]/70 dark:via-transparent dark:to-[#0f1115]/20" />
+            <div className="absolute inset-0 -z-10 bg-linear-to-r from-white via-white/90 to-white/40 dark:from-[#0f1115] dark:via-[#0f1115]/90 dark:to-[#0f1115]/40" />
+            <div className="absolute inset-0 -z-10 bg-linear-to-t from-white/70 via-transparent to-white/20 dark:from-[#0f1115]/70 dark:via-transparent dark:to-[#0f1115]/20" />
 
             {/* Content */}
             <div className="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20 lg:px-10">

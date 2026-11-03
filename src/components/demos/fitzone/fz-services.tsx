@@ -48,7 +48,7 @@ export function FzServices() {
     ];
 
     return (
-        <section id="cours" className="mx-auto max-w-7xl px-8 py-16 sm:py-20">
+        <section id="cours" className="scroll-mt-24 mx-auto max-w-7xl px-8 py-16 sm:py-20">
             {/* Heading */}
             <div className="mx-auto max-w-2xl text-center">
                 <p className="font-semibold tracking-wider text-red-500 uppercase">

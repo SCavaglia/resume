@@ -72,7 +72,7 @@ export function EbHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/echappee-belle#accueil"
+                    href="/resume/demos/echappee-belle#accueil"
                     className="flex shrink-0 items-center gap-2 font-cormorant text-3xl font-thin"
                 >
                     <MountainSnow className="size-12 rounded-md bg-linear-to-tr from-[rgb(96,112,85)] to-[rgb(96,112,85)] p-2 text-[rgb(201,157,99)]" />
@@ -102,7 +102,7 @@ export function EbHeader() {
 
                 {/* Action */}
                 <a
-                    href="#simulateur"
+                    href="#reservation"
                     className="ml-auto inline-block rounded border border-foreground bg-transparent p-4 text-xl text-foreground uppercase lg:ml-0"
                 >
                     Réserver

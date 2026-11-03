@@ -11,15 +11,15 @@ export function AtcQuote() {
 
     return (
         <section
-            id="contact"
+            id="me-contacter"
             className="bg-[#F8F5EF] px-6 py-20 text-[#30291F] sm:px-10 lg:py-28 dark:bg-[#201D18] dark:text-[#F4EDE1]"
         >
             <div className="mx-auto max-w-7xl">
                 <div className="mb-14 text-center">
-                    <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-[#A27B45] uppercase">
+                    <p className="mb-3 text-sm font-medium tracking-[0.25em] text-[#A27B45] uppercase">
                         Commandes et Devis
                     </p>
-                    <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
+                    <h2 className="font-serif text-4xl tracking-tight sm:text-5xl">
                         Prendre contact
                     </h2>
                     <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-[#6F665A] sm:text-base dark:text-[#C6BBAA]">

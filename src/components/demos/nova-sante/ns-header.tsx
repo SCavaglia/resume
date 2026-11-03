@@ -67,7 +67,7 @@ export function NsHeader() {
                 </div>
 
                 {/* Logo */}
-                <a href="/demos/nova-sante#accueil" className="flex shrink-0 items-center gap-2">
+                <a href="/resume/demos/nova-sante#accueil" className="flex shrink-0 items-center gap-2">
                     <Heart className="size-12 rounded-2xl border bg-linear-to-r from-sky-500 to-teal-500 p-2" />
                     <span className="font-figtree text-2xl font-extrabold tracking-wide">
                         Nova

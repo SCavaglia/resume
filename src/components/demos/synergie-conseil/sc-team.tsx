@@ -35,7 +35,7 @@ const members = [
 export function ScTeam() {
     return (
         <section
-            id="equipe"
+            id="associes"
             className="relative isolate overflow-hidden bg-[#0d1f2d] px-6 py-24 sm:px-10 lg:py-32"
         >
             {/* Lumières et formes décoratives */}

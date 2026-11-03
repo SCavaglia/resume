@@ -30,7 +30,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/demos/echappee-belle#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl font-thin">
+    <a href="/resume/demos/echappee-belle#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl font-thin">
       <MountainSnow className="size-12 rounded-md bg-linear-to-tr from-[rgb(96,112,85)] to-[rgb(96,112,85)] p-2 text-[rgb(201,157,99)]" />
       <span>L'Échappée</span>
       <span className="bg-linear-to-t from-[rgb(96,112,85)] via-yellow-500 to-yellow-200 bg-clip-text text-transparent">Belle</span>

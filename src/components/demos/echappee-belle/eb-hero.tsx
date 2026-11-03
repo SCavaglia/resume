@@ -2,7 +2,7 @@ import { ArrowRight, ChevronDown } from 'lucide-react';
 
 export function EbHero() {
     return (
-        <section className="relative overflow-hidden bg-[rgb(250,248,245)] text-[rgb(35,39,32)] dark:bg-[#1e211b] dark:text-[#f0ece3]">
+        <section id="accueil" className="scroll-mt-24 relative overflow-hidden bg-[rgb(250,248,245)] text-[rgb(35,39,32)] dark:bg-[#1e211b] dark:text-[#f0ece3]">
             <div className="mx-auto grid min-h-[85vh] max-w-7xl items-center gap-12 px-6 py-16 sm:px-10 lg:grid-cols-2 lg:gap-16 lg:py-20">
                 {/* Contenu */}
                 <div className="relative z-10 flex flex-col items-start">

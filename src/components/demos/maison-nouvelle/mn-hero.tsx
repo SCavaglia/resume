@@ -55,12 +55,12 @@ export function MnHero() {
                 {/* Image */}
                 <div className="relative min-h-[420px] overflow-hidden sm:min-h-[520px] lg:min-h-[560px]">
                     <img
-                        src="/demos/maison-nouvelle/hero-visual.jpg"
+                        src="/resume/maison-nouvelle/hero-visual.png"
                         alt="Collection de vêtements élégants aux matières naturelles"
                         className="absolute inset-0 size-full object-cover object-center"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/15 via-transparent to-transparent" />
 
                     <div className="absolute right-5 bottom-5 border border-white/50 bg-black/20 px-5 py-3 text-xs tracking-[0.2em] text-white backdrop-blur-sm">
                         L'ÉLÉGANCE DURABLE

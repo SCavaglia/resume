@@ -2,7 +2,7 @@ import { ArrowRight, Leaf, Phone } from 'lucide-react';
 
 export function EpHero() {
     return (
-        <section className="relative isolate min-h-[650px] overflow-hidden">
+        <section id="accueil" className="scroll-mt-24 relative isolate min-h-[650px] overflow-hidden">
             {/* Image de fond */}
             <div
                 className="absolute inset-0 -z-20 bg-cover bg-center"

@@ -143,7 +143,7 @@ export function ScAppointment() {
 
     return (
         <section
-            id="contact"
+            id="prendre-rdv"
             className="relative isolate overflow-hidden bg-[#f5f3ee] px-6 py-24 sm:px-10 lg:px-16 dark:bg-[#0d1f2d]"
         >
             {/* Background decorations */}

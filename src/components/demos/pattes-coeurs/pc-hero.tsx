@@ -4,7 +4,7 @@ export function PcHero() {
   return (
     <section
       id="accueil"
-      className="relative isolate overflow-hidden bg-[linear-gradient(160deg,rgb(245,240,235)_0%,rgb(237,229,218)_35%,rgb(225,212,194)_70%,rgb(212,195,171)_100%)] px-4 py-20 text-[#443b34] sm:px-6 lg:px-8 dark:bg-[linear-gradient(160deg,rgb(43,38,33)_0%,rgb(51,44,37)_35%,rgb(61,49,39)_70%,rgb(70,55,42)_100%)] dark:text-[#f0e7dc]"
+      className="scroll-mt-12 relative isolate overflow-hidden bg-[linear-gradient(160deg,rgb(245,240,235)_0%,rgb(237,229,218)_35%,rgb(225,212,194)_70%,rgb(212,195,171)_100%)] px-4 py-20 text-[#443b34] sm:px-6 lg:px-8 dark:bg-[linear-gradient(160deg,rgb(43,38,33)_0%,rgb(51,44,37)_35%,rgb(61,49,39)_70%,rgb(70,55,42)_100%)] dark:text-[#f0e7dc]"
     >
       {/* Cercles décoratifs */}
       <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full border border-[#9c8068]/10 dark:border-[#c2a487]/10" />
@@ -71,7 +71,7 @@ export function PcHero() {
           <div className="relative rounded-[1.75rem] border border-white/70 bg-white/50 p-3 shadow-2xl shadow-[#70563f]/15 dark:border-[#bda487]/20 dark:bg-[#3b3027]/80 dark:shadow-black/30">
             <div className="relative aspect-4/4.5 overflow-hidden rounded-[1.25rem] bg-[#d8c8b5]">
               <img
-                src="/demos/pattes-coeur/hero_vet_care.webp"
+                src="/resume/pattes-coeur/hero_vet_care.webp"
                 alt="Cabinet vétérinaire et pension Pattes & Cœurs à [Ville]"
                 className="h-full w-full object-cover"
               />

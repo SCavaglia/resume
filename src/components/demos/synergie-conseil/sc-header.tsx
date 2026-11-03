@@ -65,7 +65,7 @@ export function ScHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/synergie-conseil#accueil"
+                    href="/resume/demos/synergie-conseil#accueil"
                     className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase"
                 >
                     <Scale className="size-12 rounded-md bg-linear-to-r from-cyan-900 to-sky-900 p-2 text-[#c6a77e]" />

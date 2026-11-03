@@ -57,7 +57,7 @@ export function PcServices() {
     return (
         <section
             id="services"
-            className="relative overflow-hidden bg-[#faf8f5] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]"
+            className="scroll-mt-6 relative overflow-hidden bg-[#faf8f5] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]"
         >
             {/* Décoration */}
             <div className="pointer-events-none absolute top-20 -right-32 size-80 rounded-full bg-[#c5a98b]/10 blur-3xl" />

@@ -11,7 +11,7 @@ const services = [
 
 export function AcQuote() {
     return (
-        <section id="devis" className="px-6 py-20 md:py-28">
+        <section id="contact" className="px-6 py-20 md:py-28">
             <div className="mx-auto max-w-5xl">
                 <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl">
                     Votre Devis Gratuit & Personnalisé

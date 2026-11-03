@@ -95,7 +95,7 @@ export function BgHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/bistrot-gourmand#accueil"
+                    href="/resume/demos/bistrot-gourmand#accueil"
                     className="flex shrink-0 items-center"
                 >
                     <Utensils className="mr-4 size-8 shrink-0" />

@@ -11,7 +11,6 @@ import { DemosFooter } from "@/components/landmarks/demos-footer";
 import { DemosTopbar } from "@/components/landmarks/demos-topbar";
 import { HeartHandshake } from "lucide-react";
 
-
 const footerProps = {
   navigationLinks: [
     { title: "Accueil", href: "#accueil" },
@@ -27,7 +26,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/demos/aide-confort#accueil" className="mb-8 flex items-center gap-2 text-3xl font-bold">
+    <a href="/resume/demos/aide-confort#accueil" className="mb-8 flex items-center gap-2 text-3xl font-bold">
       <HeartHandshake className="size-12 rounded-md bg-linear-to-r from-sky-300 to-teal-400 p-2 text-black" />
       <span className="text-white">Aide &</span>
       <span className="bg-linear-to-r from-sky-300 via-blue-400 to-teal-500 bg-clip-text text-transparent">Confort</span>
@@ -36,7 +35,7 @@ const footerProps = {
   description:
     "Depuis plus de 10 ans, notre agence accompagne les familles, les parents pressés et les aînés dans la métropole nantaise. Nous mettons le bien-être au centre de nos préoccupations.",
 
-  className: "mt-24 py-24 px-6 border-t bg-black/90 dark:bg-black/50 lg:px-8",
+  className: "py-24 px-6 border-t bg-black/90 dark:bg-black/50 lg:px-8",
   containerClassName: "mx-auto max-w-7xl  ",
   gridClassName: "grid gap-10 lg:grid-cols-4",
   brandClassName: "lg:col-span-2 lg:-translate-y-8",

@@ -19,7 +19,7 @@ export function MnContact() {
 
     return (
         <section
-            id="contact"
+            id="boutique"
             className="bg-[#faf8f5] px-6 py-20 text-[#29251f] lg:px-8 lg:py-28 dark:bg-[#191714] dark:text-[#f3eee6]"
         >
             <div className="mx-auto max-w-7xl">

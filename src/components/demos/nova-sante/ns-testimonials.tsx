@@ -41,7 +41,7 @@ export function NsTestimonials({
     };
 
     return (
-        <section id="temoignages" className="px-6 py-20 sm:py-28">
+        <section id="temoignages" className="scroll-mt-6 px-6 py-20 sm:py-28">
             <div className="mx-auto max-w-5xl">
                 {/* Introduction */}
                 <div className="mx-auto mb-12 max-w-3xl text-center">

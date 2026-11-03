@@ -98,7 +98,7 @@ export function FzHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/fitzone#accueil"
+                    href="/resume/demos/fitzone#accueil"
                     className="group flex shrink-0 items-end text-3xl font-black uppercase"
                 >
                     <Dumbbell className="mr-4 size-8 rounded-md transition-all duration-200 group-hover:-translate-y-1" />

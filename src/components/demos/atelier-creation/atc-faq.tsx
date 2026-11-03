@@ -37,10 +37,10 @@ export function AtcFaq() {
         >
             <div className="mx-auto max-w-4xl">
                 <div className="mb-12 text-center">
-                    <p className="mb-3 text-xs font-semibold tracking-[0.25em] text-[#A27B45] uppercase">
+                    <p className="mb-3 text-sm font-medium tracking-[0.25em] text-[#A27B45] uppercase">
                         Conseils d’Artisans
                     </p>
-                    <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
+                    <h2 className="font-serif text-4xl tracking-tight sm:text-5xl">
                         Questions &amp; Entretien
                     </h2>
                     <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-[#6F665A] sm:text-base dark:text-[#C6BBAA]">

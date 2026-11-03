@@ -191,7 +191,7 @@ export function EbDiscover({ className = '' }: Props) {
 
     return (
         <section
-            id="decouverte"
+            id="guide-local"
             className={`bg-[#faf8f5] px-4 py-20 text-[#232720] transition-colors duration-300 sm:px-6 lg:px-8 dark:bg-[#1e211b] dark:text-[#f0ece3] ${className}`}
         >
             <div className="mx-auto max-w-7xl">

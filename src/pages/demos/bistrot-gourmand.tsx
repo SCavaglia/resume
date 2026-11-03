@@ -29,7 +29,7 @@ const footerProps = {
     id: 'footer',
     logo: (
         <a
-            href="/demos/bistrot-gourmand#accueil"
+            href="/resume/demos/bistrot-gourmand#accueil"
             className="flex items-center text-white"
         >
             <Utensils className="mr-4 size-8 shrink-0" />
@@ -64,10 +64,10 @@ const footerProps = {
         </>
     ),
     socialLinksClassName: 'mt-8 flex gap-4',
-    headingClassName: 'text-background dark:text-foreground',
+    headingClassName: 'font-semibold text-background dark:text-foreground',
     linksClassName: 'mt-4 space-y-3',
     linkClassName:
-        'text-sm text-secondary transition-colors hover:text-background dark:text-secondary-foreground dark:hover:text-foreground',
+        'relative inline-block text-sm text-background transition-all duration-300 hover:-translate-y-1 hover:text-white dark:text-foreground dark:hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100',
     bottomClassName:
         'mt-12 flex flex-col gap-4 border-t pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between',
 };

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function SmHero() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#faf8f2] px-4 pt-28 pb-20 sm:px-6 lg:px-8 lg:pt-36 lg:pb-28 dark:bg-[#171613]">
+    <section id="accueil" className="relative isolate overflow-hidden bg-[#faf8f2] px-4 pt-28 pb-20 sm:px-6 lg:px-8 lg:pt-36 lg:pb-28 dark:bg-[#171613]">
       {/* Dégradés décoratifs */}
       <div className="pointer-events-none absolute -top-40 -left-48 h-[500px] w-[500px] rounded-full bg-[#c49a45]/15 blur-[120px] dark:bg-[#c49a45]/10" />
       <div className="pointer-events-none absolute top-1/4 -right-40 h-[450px] w-[450px] rounded-full bg-[#e5c982]/30 blur-[130px] dark:bg-[#a98235]/10" />
@@ -61,19 +61,19 @@ export function SmHero() {
         {/* Visuel droite */}
         <div className="relative mx-auto w-full max-w-[540px] lg:ml-auto">
           {/* Halo décoratif */}
-          <div className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-[#d8b86d]/30 via-transparent to-[#9c742c]/20 blur-2xl dark:from-[#c5a04e]/15 dark:to-[#c5a04e]/10" />
+          <div className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-linear-to-br from-[#d8b86d]/30 via-transparent to-[#9c742c]/20 blur-2xl dark:from-[#c5a04e]/15 dark:to-[#c5a04e]/10" />
 
           {/* Cadre photo */}
           <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] border border-[#c6a65f]/50 bg-[#e9dfcc] p-2 shadow-2xl shadow-[#6b5125]/15 dark:border-[#8c713d]/50 dark:bg-[#29251d] dark:shadow-black/40">
             <div className="relative h-full w-full overflow-hidden rounded-[1.1rem]">
               <img
-                src="/demos/studio-momentum/hero.jpg"
+                src="/resume/studio-momentum/hero_luxury.webp"
                 alt="Moment Studio - Ambiance luxe événementielle"
                 className="h-full w-full object-cover"
               />
 
               {/* Voile photo */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-black/10" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/5 to-black/10" />
 
               {/* Décoration supérieure */}
               <div className="absolute top-5 left-5 flex h-10 w-10 items-center justify-center rounded-full border border-white/50 bg-black/15 text-[#f1d58d] backdrop-blur-sm">

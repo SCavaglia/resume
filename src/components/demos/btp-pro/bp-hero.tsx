@@ -2,7 +2,7 @@ import { Phone, ShieldCheck } from "lucide-react";
 
 export function BpHero() {
     return (
-        <section id="accueil" className="relative overflow-hidden">
+        <section id="accueil" className="scroll-mt-24 relative overflow-hidden">
             {/* Image de fond */}
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-50 blur-[1px]"
@@ -43,15 +43,15 @@ export function BpHero() {
                             </a>
 
                             <a
-                                href="#prestations"
+                                href="#avant-apres"
                                 className="border border-input bg-background p-8 text-xl uppercase transition-all duration-300 ease-in hover:-translate-y-1 hover:gap-3 hover:border-primary hover:bg-primary/5 hover:text-background hover:backdrop-blur-sm dark:hover:text-white"
                             >
                                 Voir nos chantiers
                             </a>
 
                             <a
-                                href="#dépannage"
-                                className="animate-grow-neon bg-red-500/50 px-18 py-8 text-xl text-white uppercase transition-all duration-300 hover:bg-red-500/80 hover:text-white"
+                                href="#contact"
+                                className="animate-grow-neon bg-red-700 px-18 py-8 text-xl text-white uppercase transition-all duration-300 hover:bg-red-500/80 hover:text-white"
                             >
                                 <Phone className="mr-2 inline-block size-5" />
                                 Dépannage 24h/24

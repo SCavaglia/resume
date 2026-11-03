@@ -6,7 +6,7 @@ export function BpSimulator() {
     return (
         <section
             id="simulateur"
-            className="mt-24 bg-black/90 py-24 dark:bg-black/50"
+            className="scroll-mt-24 py-24 bg-black/90 dark:bg-black/50"
         >
             <div className="container mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-start lg:px-8">
                 {/* Informations à gauche */}
@@ -74,7 +74,7 @@ export function BpSimulator() {
                     {/* Contact */}
                     <div className="mx-auto mt-6 flex w-fit items-center gap-3 rounded-sm border bg-card p-4 pl-8 pr-16 lg:mx-0 lg:w-full lg:pr-4">
                         <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary">
-                            <Phone className="size-6 text-white" />
+                            <Phone className="size-6 text-background" />
                         </div>
 
                         <div>

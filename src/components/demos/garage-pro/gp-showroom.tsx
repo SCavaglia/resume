@@ -15,7 +15,7 @@ const vehicles = [
         mileage: '45 000 km',
         fuel: 'Diesel',
         warranty: '12 mois',
-        image: '/demos/garage-pro/peugeot-308.jpg',
+        image: 'https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/peugeot-308-front-tracking.jpg',
     },
     {
         name: 'Renault Captur TCe 130',
@@ -24,7 +24,7 @@ const vehicles = [
         mileage: '22 000 km',
         fuel: 'Essence',
         warranty: '24 mois',
-        image: '/demos/garage-pro/renault-captur.jpg',
+        image: 'https://assets-eu-01.kc-usercontent.com/fb793c58-315a-0196-d3af-7c9c2613d52c/1eefccf7-c97d-4407-9126-5139b89343a9/19678-NewCapturE-TechHybrid2021.jpg',
     },
     {
         name: 'Citroën Berlingo XL',
@@ -33,7 +33,7 @@ const vehicles = [
         mileage: '68 000 km',
         fuel: 'Diesel',
         warranty: '12 mois',
-        image: '/demos/garage-pro/citroen-berlingo.jpg',
+        image: 'https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/berlingo-paning.jpg',
     },
 ];
 

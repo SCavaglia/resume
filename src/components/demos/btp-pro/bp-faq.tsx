@@ -34,7 +34,7 @@ const warrantyDetails = [
 
 export function BpFaq() {
     return (
-        <section id="faq" className="py-20">
+        <section id="faq" className="scroll-mt-24 py-20">
             <div className="container mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mb-12 text-center">
                     <h2 className="text-3xl font-bold uppercase tracking-tight md:text-4xl">
@@ -45,15 +45,15 @@ export function BpFaq() {
 
                 <div className="mt-8 flex flex-col justify-center gap-12 lg:flex-row lg:items-start lg:gap-16">
                     {/* FAQ */}
-                    <div className="min-w-0 flex-1 space-y-4 lg:max-w-xl">
-                        <Accordion type="single" collapsible>
+                    <div className="min-w-0 flex-1 lg:max-w-xl">
+                        <Accordion className="space-y-4">
                             {faqItems.map((item, index) => (
                                 <AccordionItem
                                     key={index}
                                     value={`faq-${index}`}
                                     className="rounded-md border bg-white/3 p-4 shadow-xl last:border-b"
                                 >
-                                    <AccordionTrigger className="text-left text-xl uppercase [&>svg]:size-6 [&>svg]:text-primary">
+                                    <AccordionTrigger className="text-left text-balance text-xl uppercase [&>svg]:size-6 [&>svg]:text-primary">
                                         {item.question}
                                     </AccordionTrigger>
 

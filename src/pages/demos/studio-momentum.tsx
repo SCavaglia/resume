@@ -28,7 +28,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/demos/studio-momentum#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl uppercase">
+    <a href="/resume/demos/studio-momentum#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl uppercase">
       <Aperture className="size-12 rounded-md bg-linear-to-tr from-[#967021] to-[#d6b76d] p-2 text-black" />
       <span className="text-white">Studio</span>
       <span className="bg-linear-to-r from-[#967021] via-[#d6b76d] to-[#967021] bg-clip-text text-transparent">Momentum</span>

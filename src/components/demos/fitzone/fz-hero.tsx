@@ -4,7 +4,7 @@ import { Zap } from "lucide-react";
 
 export function FzHero() {
     return (
-        <section id="accueil" className="relative overflow-hidden py-24 lg:py-20">
+        <section id="accueil" className="scroll-mt-24 relative overflow-hidden py-24 lg:py-20">
             {/* Background */}
             <div className="absolute inset-0 bg-zinc-950/87" />
 
@@ -33,14 +33,14 @@ export function FzHero() {
 
                     <div className="mt-6 flex items-center justify-center gap-4 font-oswald lg:justify-start">
                         <a
-                            href="#contact"
+                            href="#simulateur"
                             className="rounded-md bg-linear-to-br from-red-500 to-orange-500 px-10 py-8 text-lg font-semibold tracking-widest text-white uppercase transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-12px_rgb(239_68_68_/60%),0_16px_30px_-8px_rgb(249_115_22_/70%)]"
                         >
                             Simuler mon pass
                         </a>
 
                         <a
-                            href="#services"
+                            href="#contact"
                             className="rounded-md border-2 bg-transparent px-10 py-8 text-lg font-semibold tracking-widest text-white uppercase transition-all duration-300 hover:-translate-y-1 hover:border-red-500 hover:bg-transparent hover:text-red-500"
                         >
                             Séance d'essai gratuite

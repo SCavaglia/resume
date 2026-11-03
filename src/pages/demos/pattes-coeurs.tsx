@@ -16,7 +16,7 @@ import { PawPrint } from "lucide-react";
 
 const footerProps = {
   logo: (
-    <a href="/demos/pattes-coeurs#accueil" className="mb-8 flex items-center gap-2 font-playfair text-3xl font-bold tracking-tight">
+    <a href="/resume/demos/pattes-coeurs#accueil" className="mb-8 flex items-center gap-2 font-playfair text-3xl font-bold tracking-tight">
       <PawPrint className="size-12 rounded-md bg-linear-to-tr from-yellow-950 to-orange-900 p-2 text-black" />
       <span className="text-white">Les Pattes Aux</span>
       <span className="bg-linear-to-r from-orange-100 via-amber-100 to-yellow-100 bg-clip-text text-transparent">Cœurs</span>
@@ -30,7 +30,7 @@ const footerProps = {
     { title: "L'Équipe", href: "#equipe" },
     { title: "Gallerie", href: "#gallerie" },
     { title: "FAQ", href: "#faq" },
-    { title: "Contact", href: "#contact" },
+    { title: "Prendre RDV", href: "#rendez-vous" },
   ],
   legalLinks: [
     { title: "Mentions légales", href: "#" },

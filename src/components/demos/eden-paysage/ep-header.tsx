@@ -5,10 +5,10 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { cn } from "@/lib/utils";
 
 const navigation = [
-    { title: "Nos Services", href: "#aaa" },
-    { title: "Nos Réalisations", href: "#aaaa" },
-    { title: "Notre Méthode", href: "#aaa" },
-    { title: "Zone [Ville]", href: "#aaa" },
+    { title: "Nos Services", href: "#services" },
+    { title: "Nos Réalisations", href: "#realisations" },
+    { title: "Notre Méthode", href: "#methode" },
+    { title: "Zone [Ville]", href: "#zone" },
 ];
 
 export function EpHeader() {
@@ -68,7 +68,7 @@ export function EpHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/eden-paysage#accueil"
+                    href="/resume/demos/eden-paysage#accueil"
                     className="flex shrink-0 items-center gap-2 text-3xl font-bold"
                 >
                     <TreePine className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />

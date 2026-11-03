@@ -28,7 +28,7 @@ const footerProps = {
   ],
   logo: (
     <a
-      href="/demos/atelier-creation#accueil"
+      href="/resume/demos/atelier-creation#accueil"
       className="mb-8 flex items-center gap-2 font-playfair text-3xl font-thin tracking-wide text-white"
     >
       L'Atelier

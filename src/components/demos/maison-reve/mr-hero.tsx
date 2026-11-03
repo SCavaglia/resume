@@ -10,14 +10,14 @@ export function MrHero() {
             <div
                 className="absolute inset-0 -z-20 bg-cover bg-center"
                 style={{
-                    backgroundImage: "url('/demos/maison-reve/hero_bg.webp')",
+                    backgroundImage: "url('/resume/maison-reve/hero_bg.webp')",
                 }}
             />
 
             {/* Light / dark overlays */}
             <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(246,243,237,0.96)_0%,rgba(239,233,224,0.88)_45%,rgba(233,227,217,0.48)_100%)] dark:bg-[linear-gradient(90deg,rgba(27,25,22,0.96)_0%,rgba(34,30,26,0.85)_45%,rgba(34,30,26,0.45)_100%)]" />
 
-            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#e9e3d9]/50 via-transparent to-transparent dark:from-[#25221e]/60" />
+            <div className="absolute inset-0 -z-10 bg-linear-to-t from-[#e9e3d9]/50 via-transparent to-transparent dark:from-[#25221e]/60" />
 
             {/* Content */}
             <div className="mx-auto w-full max-w-7xl px-6 py-28 lg:px-8 lg:py-36">

@@ -69,7 +69,7 @@ export function AtcHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/atelier-creation#accueil"
+                    href="/resume/demos/atelier-creation#accueil"
                     className="flex shrink-0 items-center gap-2 font-playfair text-3xl font-thin tracking-wide"
                 >
                     L'Atelier
@@ -97,7 +97,7 @@ export function AtcHeader() {
 
                 {/* Action */}
                 <a
-                    href="#simulateur"
+                    href="#me-contacter"
                     className="ml-auto inline-block rounded p-4 lg:ml-0"
                 >
                     Me contacter

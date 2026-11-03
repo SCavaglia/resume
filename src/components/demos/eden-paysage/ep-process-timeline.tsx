@@ -59,7 +59,7 @@ const steps = [
 
 export function EpProcessTimeline() {
     return (
-        <section className="px-6 py-20 sm:py-28">
+        <section id="methode" className="px-6 py-20 sm:py-28">
             <div className="mx-auto max-w-6xl">
                 <div className="mx-auto mb-20 max-w-3xl text-center">
                     <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-primary uppercase">

@@ -2,7 +2,7 @@ import { ArrowRight, BadgeCheck } from 'lucide-react';
 
 export function AcHero() {
     return (
-        <section className="bg-linear-to-br from-sky-100 via-white to-teal-50 dark:from-sky-950 dark:via-background dark:to-teal-950">
+        <section id="accueil" className="scroll-mt-24 bg-linear-to-br from-sky-100 via-white to-teal-50 dark:from-sky-950 dark:via-background dark:to-teal-950">
             <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:py-28 lg:grid-cols-2 lg:gap-16">
                 <div className="flex flex-col items-start gap-6">
                     <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-background px-4 py-2 font-medium text-sky-800 dark:border-sky-800 dark:bg-sky-950/50 dark:text-sky-300">

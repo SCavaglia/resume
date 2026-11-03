@@ -26,7 +26,7 @@ export function BpBeforeAfter() {
     };
 
     return (
-        <section id="avant-apres" className="py-20">
+        <section id="avant-apres" className="scroll-mt-24 py-20">
             <div className="mx-auto max-w-7xl px-4">
                 {/* Titre */}
                 <div className="mx-auto max-w-3xl text-center">

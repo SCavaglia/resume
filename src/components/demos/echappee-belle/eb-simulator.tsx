@@ -96,7 +96,7 @@ export function EbSimulator() {
 
     return (
         <section
-            id="reservation"
+            id="simulateur"
             className="bg-[rgb(250,248,245)] px-6 py-20 text-[rgb(35,39,32)] sm:px-10 lg:py-28 dark:bg-[#1e211b] dark:text-[#f0ece3]"
         >
             <div className="mx-auto max-w-7xl">

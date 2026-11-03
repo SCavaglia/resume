@@ -24,7 +24,7 @@ const footerProps = {
     ],
     logo: (
         <a
-            href="/demos/maison-reve#accueil"
+            href="/resume/demos/maison-reve#accueil"
             className="mb-8 flex items-center gap-2 font-cormorant text-3xl text-white uppercase"
         >
             Maison

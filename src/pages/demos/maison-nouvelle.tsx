@@ -26,7 +26,6 @@ const footerProps = {
         { title: 'Catalogue', href: '#catalogue' },
         { title: 'Disponibilité', href: '#disponibilite' },
         { title: 'La Boutique', href: '#boutique' },
-        { title: 'Contact', href: '#contact' },
     ],
     legalLinks: [
         { title: 'Mentions légales', href: '#' },
@@ -36,7 +35,7 @@ const footerProps = {
     ],
     logo: (
         <a
-            href="/demos/maison-nouvelle#accueil"
+            href="/resume/demos/maison-nouvelle#accueil"
             className="mb-8 flex items-center gap-2 font-cormorant text-3xl font-thin uppercase"
         >
             <span>Maison</span>
@@ -78,7 +77,7 @@ export default function MaisonNouvelle() {
     const headerProps = {
         logo: (
             <a
-                href="/demos/maison-nouvelle#accueil"
+                href="/resume/demos/maison-nouvelle#accueil"
                 className="flex items-center gap-2 font-cormorant text-3xl font-thin uppercase"
             >
                 <span>Maison</span>

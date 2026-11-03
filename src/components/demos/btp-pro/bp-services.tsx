@@ -79,7 +79,7 @@ const services = [
 
 export function BpServices() {
     return (
-        <section id="prestations" className="py-20">
+        <section id="prestations" className="scroll-mt-24 py-20">
             <div className="mx-auto max-w-7xl px-4">
                 {/* En-tête */}
                 <div className="text-center">

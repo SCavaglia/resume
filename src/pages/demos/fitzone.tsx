@@ -5,6 +5,7 @@ import { FzHeader } from "@/components/demos/fitzone/fz-header";
 import { FzHero } from "@/components/demos/fitzone/fz-hero";
 import { FzLocation } from "@/components/demos/fitzone/fz-location";
 import { FzPlanning } from "@/components/demos/fitzone/fz-planning";
+import { FzServices } from "@/components/demos/fitzone/fz-services";
 import { FzSimulator } from "@/components/demos/fitzone/fz-simulator";
 import { FzStatsBar } from "@/components/demos/fitzone/fz-stats-bar";
 import { FzTeam } from "@/components/demos/fitzone/fz-team";
@@ -34,7 +35,7 @@ const footerProps = {
     ],
     logo: (
         <a
-            href="/demos/fitzone#accueil"
+            href="/resume/demos/fitzone#accueil"
             className="group flex items-end text-3xl font-black uppercase"
         >
             <Dumbbell className="mr-4 size-8 text-white transition-all duration-200 group-hover:-translate-y-1" />
@@ -83,6 +84,7 @@ export function Fitzone() {
                 <main>
                 <FzHero />
                 <FzStatsBar />
+                <FzServices />
                 <FzPlanning />
                 <FzSimulator />
                 <FzTeam />

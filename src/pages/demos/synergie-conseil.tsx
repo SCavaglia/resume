@@ -29,7 +29,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/demos/synergie-conseil#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl uppercase">
+    <a href="/resume/demos/synergie-conseil#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl uppercase">
       <Scale className="size-12 rounded-md bg-linear-to-r from-cyan-900 to-sky-900 p-2 text-[#c6a77e]" />
       <span className="text-white">Synergie</span>
       <span className="bg-linear-to-r from-[#c6a77e] via-[#d8c19b] to-[#c6a77e] bg-clip-text text-transparent">Conseil</span>

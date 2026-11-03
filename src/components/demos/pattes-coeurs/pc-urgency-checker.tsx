@@ -106,7 +106,7 @@ export function PcUrgencyChecker() {
   const ResultIcon = result?.icon;
 
   return (
-    <section id="urgence" className="relative overflow-hidden bg-[#faf8f5] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]">
+    <section id="urgences" className="scroll-mt-6 relative overflow-hidden bg-[#faf8f5] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]">
       {/* Décoration */}
       <div className="pointer-events-none absolute top-20 -left-40 size-96 rounded-full bg-[#c5a98b]/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 bottom-0 size-96 rounded-full bg-[#a5a58d]/10 blur-3xl" />

@@ -34,7 +34,7 @@ const guarantees = [
 
 export function AcWarranty() {
     return (
-        <section className="bg-sky-50/70 px-6 py-20 md:py-24 dark:bg-sky-950/20">
+        <section id="garanties" className="scroll-mt-24 bg-sky-50/70 px-6 py-20 md:py-24 dark:bg-sky-950/20">
             <div className="mx-auto max-w-7xl">
                 <div className="mx-auto mb-12 max-w-2xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">

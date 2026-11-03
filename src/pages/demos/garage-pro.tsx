@@ -16,10 +16,10 @@ const footerProps = {
   navigationLinks: [
     { title: "Accueil", href: "#accueil" },
     { title: "Prestations", href: "#prestations" },
-    { title: "Occasions", href: "#occasions" },
+    { title: "Occasions", href: "#showroom" },
     { title: "Dépannage 24/7", href: "#depannage" },
     { title: "Calculer mon RDV", href: "#calculer-mon-rdv" },
-    { title: "Garanties et FAQ", href: "#garanties-faq" },
+    { title: "Garanties et FAQ", href: "#garanties" },
     { title: "Contact", href: "#contact" },
   ],
   legalLinks: [
@@ -29,7 +29,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/demos/garage-pro#accueil" className="mb-8 flex items-center gap-2 font-oswald text-3xl font-bold uppercase">
+    <a href="/resume/demos/garage-pro#accueil" className="mb-8 flex items-center gap-2 font-oswald text-3xl font-bold uppercase">
       <CarFront className="size-12 rounded-md bg-[#e63946] p-2 text-black" />
       <span className="text-white">Garage</span>
       <span className="bg-[#e63946] bg-clip-text text-transparent">Pro</span>

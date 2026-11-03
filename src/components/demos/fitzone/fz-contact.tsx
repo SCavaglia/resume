@@ -17,7 +17,7 @@ export function FzContact() {
     }
 
     return (
-        <section id="contact" className="mx-auto max-w-7xl px-8 py-16 sm:py-20">
+        <section id="contact" className="scroll-mt-6 mx-auto max-w-7xl px-8 py-16 sm:py-20">
             {/* Heading */}
             <div className="mb-10 mx-auto max-w-2xl text-center">
                 <p className="font-semibold tracking-wider text-red-500 uppercase">

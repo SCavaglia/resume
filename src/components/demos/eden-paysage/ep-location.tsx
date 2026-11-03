@@ -40,7 +40,7 @@ export function EpLocation() {
     }
 
     return (
-        <section id="localisation" className="px-6 py-20 sm:py-28">
+        <section id="zone" className="px-6 py-20 sm:py-28">
             <div className="mx-auto max-w-7xl">
                 <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
                     {/* Gauche : informations et recherche */}

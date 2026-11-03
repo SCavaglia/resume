@@ -64,7 +64,7 @@ export function SmServices() {
     return (
         <section
             id="services"
-            className="relative isolate overflow-hidden bg-[#f5f1e8] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]"
+            className="scroll-mt-6 relative isolate overflow-hidden bg-[#f5f1e8] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]"
         >
             {/* Ambiance dorée */}
             <div className="pointer-events-none absolute top-20 -left-40 h-96 w-96 rounded-full bg-[#c49a45]/10 blur-[120px] dark:bg-[#c49a45]/10" />

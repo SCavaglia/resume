@@ -39,7 +39,7 @@ export function GpFaq({ className }: GpFaqProps) {
 
     return (
         <section
-            id="faq"
+            id="garanties"
             className={`relative overflow-hidden bg-white px-6 py-24 transition-colors duration-300 dark:bg-[#15171c] ${className ?? ''}`}
         >
             <div className="pointer-events-none absolute top-20 -right-40 size-96 rounded-full bg-[#e63946]/5 blur-3xl" />

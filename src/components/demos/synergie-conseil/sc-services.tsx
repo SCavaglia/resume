@@ -64,7 +64,7 @@ const services = [
 export function ScServices() {
     return (
         <section
-            id="services"
+            id="expertises"
             className="relative isolate overflow-hidden bg-[#f5f3ee] px-6 py-24 sm:px-10 lg:py-32 dark:bg-[#0d1f2d]"
         >
             {/* Lumières d'ambiance */}

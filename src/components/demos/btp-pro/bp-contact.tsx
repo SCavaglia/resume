@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export function BpContact() {
     return (
-        <section id="contact" className="py-20">
+        <section id="contact" className="scroll-mt-24 py-20">
             <div className="container mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold uppercase tracking-tight md:text-4xl">

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const navigation = [
     { title: "Prestations", href: "#prestations" },
-    { title: "Occasions", href: "#occasions" },
+    { title: "Occasions", href: "#showroom" },
     { title: "Dépannage 24/7", href: "#depannage" },
     { title: "Garanties", href: "#garanties" },
 ];
@@ -68,7 +68,7 @@ export function GpHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/garage-pro#accueil"
+                    href="/resume/demos/garage-pro#accueil"
                     className="flex shrink-0 items-center gap-2 font-oswald text-3xl font-bold uppercase"
                 >
                     <CarFront className="size-12 rounded-md bg-[#e63946] p-2 text-white" />

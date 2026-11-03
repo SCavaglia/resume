@@ -70,7 +70,7 @@ export function AcHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/aide-confort#accueil"
+                    href="/resume/demos/aide-confort#accueil"
                     className="flex shrink-0 items-center gap-2 font-playfair text-3xl font-bold"
                 >
                     <HeartHandshake className="size-12 rounded-md bg-linear-to-r from-sky-300 to-teal-400 p-2 text-white" />

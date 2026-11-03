@@ -39,8 +39,8 @@ const accommodations = [
 export function EbAccommodations() {
     return (
         <section
-            id="chambres"
-            className="bg-[rgb(250,248,245)] px-6 py-20 text-[rgb(35,39,32)] sm:px-10 lg:py-28 dark:bg-[#1e211b] dark:text-[#f0ece3]"
+            id="hebergements"
+            className="scroll-mt-24 bg-[rgb(250,248,245)] px-6 py-20 text-[rgb(35,39,32)] sm:px-10 lg:py-28 dark:bg-[#1e211b] dark:text-[#f0ece3]"
         >
             <div className="mx-auto max-w-7xl">
                 <div className="mx-auto mb-14 max-w-2xl text-center">

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const navigation = [
     { title: "Showroom", href: "#showroom" },
-    { title: "Estimation Mandat", href: "estimation-mandat" },
+    { title: "Estimation Mandat", href: "#estimation" },
     { title: "L'Agence", href: "#agence" },
 ];
 
@@ -66,7 +66,7 @@ export function MrHeader() {
 
                 {/* Logo */}
                 <a
-                    href="/demos/maison-reve#accueil"
+                    href="/resume/demos/maison-reve#accueil"
                     className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase"
                 >
                     Maison
@@ -94,7 +94,7 @@ export function MrHeader() {
 
                 {/* Action */}
                 <a
-                    href="#simulateur"
+                    href="#agence"
                     className="ml-auto rounded border-2 p-4 text-sm font-medium uppercase transition-all duration-300 hover:border-foreground lg:ml-0"
                 >
                     Prendre Contact

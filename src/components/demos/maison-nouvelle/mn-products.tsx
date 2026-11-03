@@ -25,12 +25,12 @@ type MnProductsProps = {
 const products: Product[] = [
     {
         id: 1,
-        name: "Robe d'été fleurie",
+        name: 'Robe d’été fleurie',
         price: 49.9,
         description:
             "Coupe fluide aérienne, manches courtes délicates. Tissage 100% lin bio éco-certifié, imprimé à base d'encres végétales.",
         category: 'Prêt-à-porter',
-        image: '/demos/maison-nouvelle/robe.jpg',
+        image: 'https://icdn.tradew.com/file/202408/1576279/jpg/8306910.jpg?x-oss-process=image%2Fresize%2Cm_pad%2Cl_600%2Fquality%2CQ_90',
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ const products: Product[] = [
         description:
             "Cuir de raisin végétal d'une souplesse absolue. Semelle cousue main en caoutchouc recyclé, semelle intérieure ergonomique.",
         category: 'Chaussures',
-        image: '/demos/maison-nouvelle/baskets.jpg',
+        image: 'https://fromjak.com/cdn/shop/products/royal-vegan-white-site-2.jpg?v=1659014656&width=2000',
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ const products: Product[] = [
         description:
             'Cuir tannage végétal pleine fleur double face. Compartiment zippé amovible, conçu artisanalement dans notre atelier parisien.',
         category: 'Accessoires & Bijoux',
-        image: '/demos/maison-nouvelle/sac.jpg',
+        image: 'https://img.animeootd.com/pic/202508/Mj8xqMD171VV.jpg',
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ const products: Product[] = [
         description:
             "Boîtier ultra-plat en acier inoxydable brossé or. Mouvement suisse d'une grande précision, bracelet en cuir véritable interchangeable.",
         category: 'Accessoires & Bijoux',
-        image: '/demos/maison-nouvelle/montre.jpg',
+        image: 'https://www.ditur.com/media/catalog/product/cache/072e8016279ede615a367e5d730a8c07/d/a/daniel_wellington_classic_petite_28_dw00100350_1.jpg',
     },
 ];
 
@@ -206,7 +206,7 @@ export function MnProducts({ onAddToCart }: MnProductsProps) {
                 {/* Disponibilité en boutique */}
                 <div
                     id="disponibilite"
-                    className="mt-24 border border-[#ded7cc] bg-[#faf8f5] p-7 sm:p-10 dark:border-white/10 dark:bg-[#211e1a]"
+                    className="scroll-m-36 mt-24 border border-[#ded7cc] bg-[#faf8f5] p-7 sm:p-10 dark:border-white/10 dark:bg-[#211e1a]"
                 >
                     <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                         <div className="flex size-12 shrink-0 items-center justify-center bg-[#bfa888]/15 text-[#a58b68]">

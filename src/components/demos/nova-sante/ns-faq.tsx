@@ -46,7 +46,7 @@ export function NsFaq() {
                 </div>
 
                 {/* Questions */}
-                <Accordion type="single" collapsible className="w-full">
+                <Accordion>
                     {faqs.map((faq, index) => (
                         <AccordionItem
                             key={faq.question}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ChevronLeft, ChevronRight, X, Maximize2 } from 'lucide-react';
 
 const categories = [
@@ -56,52 +56,58 @@ export function EpGallery() {
     const [activeCategory, setActiveCategory] = useState('Tous nos projets');
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-    const filteredProjects = projects.filter(
-        (project) =>
-            activeCategory === 'Tous nos projets' ||
-            project.category === activeCategory,
+    const filteredProjects = useMemo(
+    () =>
+        projects.filter(
+            (project) =>
+                activeCategory === 'Tous nos projets' ||
+                project.category === activeCategory,
+        ),
+    [activeCategory],
+);
+
+const selectedProject =
+    selectedIndex !== null ? filteredProjects[selectedIndex] : null;
+
+const closeLightbox = useCallback(() => {
+    setSelectedIndex(null);
+}, []);
+
+const showPrevious = useCallback(() => {
+    if (selectedIndex === null) return;
+
+    setSelectedIndex(
+        (selectedIndex - 1 + filteredProjects.length) %
+            filteredProjects.length,
     );
+}, [selectedIndex, filteredProjects]);
 
-    const selectedProject =
-        selectedIndex !== null ? filteredProjects[selectedIndex] : null;
+const showNext = useCallback(() => {
+    if (selectedIndex === null) return;
 
-    const closeLightbox = () => setSelectedIndex(null);
+    setSelectedIndex((selectedIndex + 1) % filteredProjects.length);
+}, [selectedIndex, filteredProjects]);
 
-    const showPrevious = () => {
-        if (selectedIndex === null) return;
+// Fermer avec Échap et naviguer avec les flèches.
+useEffect(() => {
+    if (!selectedProject) return;
 
-        setSelectedIndex(
-            (selectedIndex - 1 + filteredProjects.length) %
-                filteredProjects.length,
-        );
+    const handleKeyDown = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') closeLightbox();
+        if (event.key === 'ArrowLeft') showPrevious();
+        if (event.key === 'ArrowRight') showNext();
     };
 
-    const showNext = () => {
-        if (selectedIndex === null) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
 
-        setSelectedIndex((selectedIndex + 1) % filteredProjects.length);
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+        document.body.style.overflow = previousOverflow;
     };
-
-    // Fermer avec Échap et naviguer avec les flèches.
-    useEffect(() => {
-        if (!selectedProject) return;
-
-        const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === 'Escape') closeLightbox();
-            if (event.key === 'ArrowLeft') showPrevious();
-            if (event.key === 'ArrowRight') showNext();
-        };
-
-        const previousOverflow = document.body.style.overflow;
-        document.body.style.overflow = 'hidden';
-
-        window.addEventListener('keydown', handleKeyDown);
-
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-            document.body.style.overflow = previousOverflow;
-        };
-    }, [selectedProject, selectedIndex, filteredProjects]);
+}, [selectedProject, closeLightbox, showPrevious, showNext]);
 
     const changeCategory = (category: string) => {
         setActiveCategory(category);

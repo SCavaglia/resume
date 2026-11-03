@@ -60,7 +60,7 @@ export function SlFaq() {
 
                 {/* Partie 2 : FAQ */}
                 <div className="min-w-0 lg:w-4/7">
-                    <Accordion type="single" collapsible className="w-full">
+                    <Accordion>
                         {faqs.map((faq, index) => (
                             <AccordionItem
                                 key={faq.question}

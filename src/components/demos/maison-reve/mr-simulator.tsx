@@ -332,7 +332,7 @@ export function MrSimulator() {
 
                                     <Slider
                                         value={surface}
-                                        onValueChange={setSurface}
+                                        onValueChange={(value) => setSurface(typeof value === "number" ? [value] : [...value])}
                                         min={10}
                                         max={350}
                                         step={5}

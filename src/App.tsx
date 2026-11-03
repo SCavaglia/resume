@@ -17,30 +17,34 @@ import PattesCoeurs from "./pages/demos/pattes-coeurs";
 import { SalonLumieres } from "./pages/demos/salon-lumieres";
 import StudioMomentum from "./pages/demos/studio-momentum";
 import SynergieConseil from "./pages/demos/synergie-conseil";
+import { Toaster } from "./components/ui/toast";
 
 function App() {
-    return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
 
-            <Route path="/demos/aide-confort" element={<AideConfort />} />
-            <Route path="/demos/atelier-creation" element={<AtelierCreation />} />
-            <Route path="/demos/bistrot-gourmand" element={<BistrotGourmand />} />
-            <Route path="/demos/btp-pro" element={<BtpPro />} />
-            <Route path="/demos/echappee-belle" element={<EchappeeBelle />} />
-            <Route path="/demos/eden-paysage" element={<EdenPaysage />} />
-            <Route path="/demos/fitzone" element={<Fitzone />} />
-            <Route path="/demos/garage-pro" element={<GaragePro />} />
-            <Route path="/demos/maison-nouvelle" element={<MaisonNouvelle />} />
-            <Route path="/demos/maison-reve" element={<MaisonReve />} />
-            <Route path="/demos/nova-sante" element={<NovaSante />} />
-            <Route path="/demos/pattes-coeurs" element={<PattesCoeurs />} />
-            <Route path="/demos/salon-lumieres" element={<SalonLumieres />} />
-            <Route path="/demos/studio-momentum" element={<StudioMomentum />} />
-            <Route path="/demos/synergie-conseil" element={<SynergieConseil />} />
-        </Routes>
-    );
+        <Route path="/demos/aide-confort" element={<AideConfort />} />
+        <Route path="/demos/atelier-creation" element={<AtelierCreation />} />
+        <Route path="/demos/bistrot-gourmand" element={<BistrotGourmand />} />
+        <Route path="/demos/btp-pro" element={<BtpPro />} />
+        <Route path="/demos/echappee-belle" element={<EchappeeBelle />} />
+        <Route path="/demos/eden-paysage" element={<EdenPaysage />} />
+        <Route path="/demos/fitzone" element={<Fitzone />} />
+        <Route path="/demos/garage-pro" element={<GaragePro />} />
+        <Route path="/demos/maison-nouvelle" element={<MaisonNouvelle />} />
+        <Route path="/demos/maison-reve" element={<MaisonReve />} />
+        <Route path="/demos/nova-sante" element={<NovaSante />} />
+        <Route path="/demos/pattes-coeurs" element={<PattesCoeurs />} />
+        <Route path="/demos/salon-lumieres" element={<SalonLumieres />} />
+        <Route path="/demos/studio-momentum" element={<StudioMomentum />} />
+        <Route path="/demos/synergie-conseil" element={<SynergieConseil />} />
+      </Routes>
+      <Toaster />
+    </>
+  );
 }
 
 export default App;

@@ -46,6 +46,8 @@ const steps = [
 
 const initialDate = '2026-10-28';
 
+ const today = new Date().toLocaleDateString("en-CA");
+
 type FormData = {
     practitioner: number | null;
     date: string;
@@ -469,9 +471,7 @@ export function NsReservation() {
                                             <input
                                                 id="appointment-date"
                                                 type="date"
-                                                min={new Date().toLocaleDateString(
-                                                    'en-CA',
-                                                )}
+                                                min={today}
                                                 value={formData.date}
                                                 onChange={(event) =>
                                                     updateField(

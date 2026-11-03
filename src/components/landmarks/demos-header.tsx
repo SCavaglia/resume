@@ -1,6 +1,5 @@
 import { Menu } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
-import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";

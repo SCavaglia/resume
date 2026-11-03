@@ -13,7 +13,6 @@ type Props = {
     socialLinks?: ReactNode;
     navigationLinks: FooterLink[];
     legalLinks: FooterLink[];
-    copyright?: string;
     poweredBy?: string;
 
     className?: string;
@@ -34,6 +33,8 @@ type Props = {
     poweredByClassName?: string;
 };
 
+const currentYear = new Date().getFullYear();
+
 export function DemosFooter({
     logo,
     tagline,
@@ -41,7 +42,6 @@ export function DemosFooter({
     socialLinks,
     navigationLinks,
     legalLinks,
-    copyright,
     poweredBy,
 
     className,
@@ -116,8 +116,7 @@ export function DemosFooter({
 
                 <div className={bottomClassName}>
                     <p className={copyrightClassName}>
-                        © {new Date().getFullYear()}.{' '}
-                        {copyright ?? 'Tous droits réservés.'}
+                        © {currentYear} — Tous droits réservés.
                     </p>
                     <p className={poweredByClassName}>{poweredBy}</p>
                 </div>

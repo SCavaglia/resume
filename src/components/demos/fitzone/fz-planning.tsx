@@ -313,12 +313,12 @@ export function FzPlanning() {
   return (
     <section id="planning" className="flex flex-col px-8 pt-46">
       <div className="text-center">
-        <p className="text-base font-bold uppercase tracking-widest bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
+        <p className="text-base font-bold uppercase tracking-widest bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
           Planning Hebdomadaire
         </p>
 
         <h2 className="mt-4 text-6xl text-center font-oswald font-black uppercase tracking-wide">
-          Planifie <span className="bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">tes séances</span>
+          Planifie <span className="bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">tes séances</span>
         </h2>
 
         <p className="mt-4 mx-auto max-w-xl text-center text-lg font-light text-muted-foreground">

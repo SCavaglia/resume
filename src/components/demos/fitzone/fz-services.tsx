@@ -57,7 +57,7 @@ export function FzServices() {
 
                 <h2 className="mt-4 font-oswald text-5xl font-bold tracking-wide uppercase sm:text-6xl">
                     Trouve{" "}
-                    <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                         ton cours
                     </span>
                 </h2>
@@ -75,7 +75,7 @@ export function FzServices() {
                         key={service.title}
                         className="group relative rounded-xl p-4 py-12 shadow-xl transition-all duration-300 hover:-translate-y-1 dark:bg-white/3"
                     >
-                        <div className="absolute inset-y-0 left-0 w-1 rounded-tl-md rounded-bl-md bg-gradient-to-b from-red-500 to-orange-500 transition-all duration-300 group-hover:w-2" />
+                        <div className="absolute inset-y-0 left-0 w-1 rounded-tl-md rounded-bl-md bg-linear-to-b from-red-500 to-orange-500 transition-all duration-300 group-hover:w-2" />
 
                         <div className="ml-4 text-5xl">{service.icon}</div>
 

@@ -350,7 +350,7 @@ export function BgReservation() {
                     </div>
                     <div className="sm:col-span-2">
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="mt-1 font-medium break-words">{email}</p>
+                      <p className="mt-1 font-medium wrap-break-word">{email}</p>
                     </div>
                     <div className="sm:col-span-2">
                       <p className="text-sm text-muted-foreground">Ambiance souhaitée</p>

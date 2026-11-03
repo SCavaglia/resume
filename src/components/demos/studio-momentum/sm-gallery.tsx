@@ -218,7 +218,7 @@ export function SmGallery() {
                 aria-label={`Découvrir le projet ${project.title}`}
               >
                 <div
-                  className={`relative overflow-hidden bg-[#e9dfcc] dark:bg-[#29251d] ${index === 0 ? "aspect-[16/9]" : "aspect-[4/5]"}`}
+                  className={`relative overflow-hidden bg-[#e9dfcc] dark:bg-[#29251d] ${index === 0 ? "aspect-video" : "aspect-4/5"}`}
                 >
                   <img
                     src={project.image}
@@ -227,7 +227,7 @@ export function SmGallery() {
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/5 opacity-80 transition-opacity duration-500 group-hover:opacity-95" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/10 to-black/5 opacity-80 transition-opacity duration-500 group-hover:opacity-95" />
 
                   {/* Catégorie */}
                   <span className="absolute top-5 left-5 rounded-full border border-white/30 bg-black/25 px-3 py-1.5 text-[10px] font-semibold tracking-[0.16em] text-white uppercase backdrop-blur-md">
@@ -269,7 +269,7 @@ export function SmGallery() {
       {/* Lightbox */}
       {selectedProject && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 p-3 backdrop-blur-md sm:p-6 lg:p-8"
+          className="fixed inset-0 z-100 flex items-center justify-center bg-black/85 p-3 backdrop-blur-md sm:p-6 lg:p-8"
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) closeLightbox();
           }}
@@ -297,7 +297,7 @@ export function SmGallery() {
                 className="absolute inset-0 h-full w-full object-cover"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/10" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-black/10" />
 
               <div className="absolute right-6 bottom-6 left-6 text-white sm:bottom-9 sm:left-9">
                 <p className="text-xs font-semibold tracking-[0.25em] text-[#e6c779] uppercase">Moment Studio · Portfolio</p>
@@ -348,7 +348,7 @@ export function SmGallery() {
                   {selectedProject.title} — {selectedProject.location}
                 </p>
 
-                <div className="my-7 h-px bg-gradient-to-r from-[#b58a35]/60 via-[#b58a35]/20 to-transparent" />
+                <div className="my-7 h-px bg-linear-to-r from-[#b58a35]/60 via-[#b58a35]/20 to-transparent" />
 
                 {/* Détails */}
                 <div className="grid gap-5 sm:grid-cols-2">

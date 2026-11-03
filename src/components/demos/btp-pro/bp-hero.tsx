@@ -13,7 +13,7 @@ export function BpHero() {
             <div className="absolute inset-0 bg-zinc-950/87" />
 
             {/* Dégradé inférieur */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent from-0% via-transparent via-90% to-background to-100%" />
+            <div className="absolute inset-0 bg-linear-to-b from-transparent from-0% via-transparent via-90% to-background to-100%" />
 
             <div className="relative container mx-auto px-4 py-24 lg:py-32">
                 <div className="relative flex flex-col items-center justify-center gap-12 lg:flex-row">

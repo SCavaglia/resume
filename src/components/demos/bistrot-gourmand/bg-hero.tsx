@@ -2,7 +2,7 @@ import { Beef, Wine } from "lucide-react";
 
 export function BgHero() {
   return (
-    <section id="accueil" className="relative -mt-[120px] overflow-hidden bg-neutral-950">
+    <section id="accueil" className="relative -mt-30 overflow-hidden bg-neutral-950">
       {/* Image de fond */}
       <div
         className="absolute inset-0 bg-cover bg-center blur-[1px] opacity-50"
@@ -15,7 +15,7 @@ export function BgHero() {
       <div className="absolute inset-0 bg-orange-950/15" />
 
       {/* Dégradé inférieur */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent from-0% via-transparent via-90% to-background to-100%" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent from-0% via-transparent via-90% to-background to-100%" />
 
       {/* Contenu */}
       <div className="relative mx-auto max-w-2xl px-4 pt-34 pb-36">
@@ -27,7 +27,7 @@ export function BgHero() {
         </div>
 
         {/* Titre */}
-        <h1 className="mt-8 text-center font-playfair text-7xl font-thin tracking-wide text-white [font-variant-caps:small-caps] !leading-24 lg:text-8xl">
+        <h1 className="mt-8 text-center font-playfair text-7xl font-thin tracking-wide text-white [font-variant-caps:small-caps] leading-24! lg:text-8xl">
           Le Bistrot Gourmand
         </h1>
 

@@ -64,7 +64,7 @@ export function PcHero() {
         {/* Partie droite : Photo */}
         <div className="relative mx-auto w-full max-w-xl lg:ml-auto">
           {/* Décoration derrière la photo */}
-          <div className="absolute -top-5 -right-5 h-full w-full rounded-[2rem] border border-[#9c8068]/25 dark:border-[#c2a487]/20" />
+          <div className="absolute -top-5 -right-5 h-full w-full rounded-4xl border border-[#9c8068]/25 dark:border-[#c2a487]/20" />
           <div className="absolute -bottom-5 -left-5 h-32 w-32 rounded-full bg-[#b99b7d]/20 blur-2xl dark:bg-[#b18c68]/15" />
 
           {/* Cadre photo */}
@@ -77,7 +77,7 @@ export function PcHero() {
               />
 
               {/* Dégradé sur la photo */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#211b16]/75 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#211b16]/75 via-transparent to-transparent" />
 
               {/* Informations sur la photo */}
               <div className="absolute right-0 bottom-0 left-0 p-6 text-white sm:p-8">

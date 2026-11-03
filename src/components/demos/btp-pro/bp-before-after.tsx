@@ -46,7 +46,7 @@ export function BpBeforeAfter() {
                 {/* Comparateur avant / après */}
                 <div
                     ref={comparisonRef}
-                    className="relative mx-auto mt-12 aspect-[16/9] w-full max-w-4xl touch-pan-y overflow-hidden rounded-2xl select-none"
+                    className="relative mx-auto mt-12 aspect-video w-full max-w-4xl touch-pan-y overflow-hidden rounded-2xl select-none"
                     onPointerDown={handlePointerDown}
                     onPointerMove={handlePointerMove}
                 >

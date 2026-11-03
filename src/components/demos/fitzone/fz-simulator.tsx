@@ -90,12 +90,12 @@ export function FzSimulator() {
   return (
     <section id="simulateur" className="mx-auto max-w-7xl px-8 pt-46">
       <div className="text-center">
-        <p className="text-base font-bold uppercase tracking-widest bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
+        <p className="text-base font-bold uppercase tracking-widest bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
           Calculateur de Formules
         </p>
 
         <h2 className="mt-4 text-6xl text-center font-oswald font-black uppercase tracking-wide">
-          Configure <span className="bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">ton abonnement</span>
+          Configure <span className="bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">ton abonnement</span>
         </h2>
 
         <p className="mt-4 mx-auto max-w-xl text-center text-lg font-light text-muted-foreground">

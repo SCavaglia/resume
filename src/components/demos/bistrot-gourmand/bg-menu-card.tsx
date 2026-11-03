@@ -213,7 +213,7 @@ export function BgMenuCard() {
         </div>
 
         {/* Conseil du sommelier */}
-        <aside className="md:sticky md:top-32 md:w-[340px] md:shrink-0">
+        <aside className="md:sticky md:top-32 md:w-85 md:shrink-0">
           <Card className="rounded bg-card">
             <CardContent className="p-6">
               <p className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">L'accord parfait</p>

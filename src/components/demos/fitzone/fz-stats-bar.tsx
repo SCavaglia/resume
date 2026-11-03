@@ -12,9 +12,9 @@ export function FzStatsBar() {
             {items.map((item) => (
                 <div
                     key={item.label}
-                    className="flex flex-col items-center border-r border-b px-16 py-8 text-center transition-all duration-300 hover:-translate-y-1.5 hover:bg-gradient-to-t hover:from-white/1 hover:to-red-500/10 [&:nth-child(2n)]:border-r-0 [&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0"
+                    className="flex flex-col items-center border-r border-b px-16 py-8 text-center transition-all duration-300 hover:-translate-y-1.5 hover:bg-linear-to-t hover:from-white/1 hover:to-red-500/10 nth-[2n]:border-r-0 nth-last-[-n+2]:border-b-0 lg:border-b-0 lg:nth-[2n]:border-r lg:nth-[4n]:border-r-0"
                 >
-                    <span className="bg-gradient-to-r from-red-500 to-orange-400 bg-clip-text font-oswald text-5xl font-bold tracking-tight text-transparent">
+                    <span className="bg-linear-to-r from-red-500 to-orange-400 bg-clip-text font-oswald text-5xl font-bold tracking-tight text-transparent">
                         {item.value}
                     </span>
 

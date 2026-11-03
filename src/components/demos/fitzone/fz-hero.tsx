@@ -8,7 +8,7 @@ export function FzHero() {
             {/* Background */}
             <div className="absolute inset-0 bg-zinc-950/87" />
 
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent from-0% via-transparent via-90% to-background to-100%" />
+            <div className="absolute inset-0 bg-linear-to-b from-transparent from-0% via-transparent via-90% to-background to-100%" />
 
             {/* Content */}
             <div className="relative mx-auto flex flex-col items-center justify-center gap-4 px-4 lg:max-w-7xl lg:flex-row lg:gap-0">
@@ -20,7 +20,7 @@ export function FzHero() {
 
                     <h1 className="mt-6 text-center font-oswald text-[clamp(4rem,7vw,5.8rem)] leading-18 font-bold tracking-wide text-white uppercase lg:text-left lg:leading-21">
                         Dépasse
-                        <span className="block bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
+                        <span className="block bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
                             Tes limites
                         </span>
                     </h1>

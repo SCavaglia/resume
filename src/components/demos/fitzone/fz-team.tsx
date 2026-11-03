@@ -49,7 +49,7 @@ export function FzTeam() {
 
                 <h2 className="mt-4 font-oswald text-5xl font-bold tracking-wide uppercase sm:text-6xl">
                     Des coachs{" "}
-                    <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                         diplômés d'État
                     </span>
                 </h2>
@@ -66,9 +66,9 @@ export function FzTeam() {
                         key={coach.id}
                         className="flex flex-col items-center justify-center overflow-hidden rounded-2xl border px-6 py-8"
                     >
-                        <div className="flex aspect-[4/3] w-full items-center justify-center overflow-hidden">
+                        <div className="flex aspect-4/3 w-full items-center justify-center overflow-hidden">
                             <div
-                                className={`mx-auto flex size-30 items-center justify-center rounded-full bg-gradient-to-br ${coach.gradient} text-6xl`}
+                                className={`mx-auto flex size-30 items-center justify-center rounded-full bg-linear-to-br ${coach.gradient} text-6xl`}
                             >
                                 {coach.visual}
                             </div>

@@ -43,7 +43,7 @@ export function FzLocation() {
 
                 <h2 className="mt-4 font-oswald text-5xl font-bold tracking-wide uppercase sm:text-6xl">
                     Salle de sport{" "}
-                    <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                         proche de chez toi
                     </span>
                 </h2>
@@ -87,13 +87,13 @@ export function FzLocation() {
                                 }}
                                 placeholder="Ex. Montpellier ou 34000"
                                 aria-label="Code postal ou commune"
-                                className="h-20 w-full rounded-md border bg-background pr-4 pl-12 !text-xl font-semibold placeholder:text-xl focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+                                className="h-20 w-full rounded-md border bg-background pr-4 pl-12 text-xl! font-semibold placeholder:text-xl focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
                             />
                         </div>
 
                         <button
                             type="submit"
-                            className="h-20 cursor-pointer rounded-md bg-gradient-to-br from-red-500 to-orange-500 px-6 font-oswald text-xl font-bold tracking-wider text-white uppercase transition-all duration-300 hover:-translate-y-1 hover:opacity-90 hover:shadow-lg"
+                            className="h-20 cursor-pointer rounded-md bg-linear-to-br from-red-500 to-orange-500 px-6 font-oswald text-xl font-bold tracking-wider text-white uppercase transition-all duration-300 hover:-translate-y-1 hover:opacity-90 hover:shadow-lg"
                         >
                             Vérifier la zone
                         </button>

@@ -274,7 +274,7 @@ export function NsReservation() {
                     {/* Formulaire */}
                     <div className="min-w-0 p-6 sm:p-8 lg:p-10">
                         {confirmed ? (
-                            <div className="flex min-h-[480px] flex-col items-center justify-center py-10 text-center">
+                            <div className="flex min-h-120 flex-col items-center justify-center py-10 text-center">
                                 <div className="mb-6 flex size-20 items-center justify-center rounded-full bg-primary/10 text-primary">
                                     <CheckCircle2
                                         className="size-11"
@@ -689,7 +689,7 @@ export function NsReservation() {
                                                     <dt className="text-sm text-muted-foreground">
                                                         Patient
                                                     </dt>
-                                                    <dd className="text-sm font-medium break-words">
+                                                    <dd className="text-sm font-medium wrap-break-word">
                                                         {formData.name}
                                                     </dd>
                                                 </div>
@@ -697,7 +697,7 @@ export function NsReservation() {
                                                     <dt className="text-sm text-muted-foreground">
                                                         Email
                                                     </dt>
-                                                    <dd className="text-sm font-medium break-words">
+                                                    <dd className="text-sm font-medium wrap-break-word">
                                                         {formData.email}
                                                     </dd>
                                                 </div>

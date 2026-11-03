@@ -638,7 +638,7 @@ export function EpSimulator() {
                                         )}
 
                                         {/* Récapitulatif du budget */}
-                                        <div className="mt-8 rounded-2xl border border-primary/20 bg-primary/[0.04] p-5 sm:p-6">
+                                        <div className="mt-8 rounded-2xl border border-primary/20 bg-primary/4 p-5 sm:p-6">
                                             <p className="text-xs font-semibold tracking-[0.15em] text-primary uppercase">
                                                 Votre estimation budgétaire
                                                 indicative
@@ -759,7 +759,7 @@ export function EpSimulator() {
                                         est de :
                                     </p>
 
-                                    <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-primary/20 bg-primary/[0.04] p-6">
+                                    <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-primary/20 bg-primary/4 p-6">
                                         <p className="text-3xl font-semibold tracking-tight">
                                             {formatPrice(lowEstimate)} –{' '}
                                             {formatPrice(highEstimate)} €

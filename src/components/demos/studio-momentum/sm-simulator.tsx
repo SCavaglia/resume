@@ -183,7 +183,7 @@ export function SmSimulator() {
                       </div>
 
                       {/* Reflet doré au hover */}
-                      <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-[#e6ca82]/0 via-transparent to-[#c49a45]/0 opacity-0 transition-opacity duration-500 group-hover:from-[#e6ca82]/10 group-hover:to-[#c49a45]/5 group-hover:opacity-100" />
+                      <div className="pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-br from-[#e6ca82]/0 via-transparent to-[#c49a45]/0 opacity-0 transition-opacity duration-500 group-hover:from-[#e6ca82]/10 group-hover:to-[#c49a45]/5 group-hover:opacity-100" />
                     </button>
                   );
                 })}
@@ -330,14 +330,14 @@ export function SmSimulator() {
                     )}
                   </div>
 
-                  <div className="h-px bg-gradient-to-r from-[#b58a35]/50 via-[#b58a35]/15 to-transparent" />
+                  <div className="h-px bg-linear-to-r from-[#b58a35]/50 via-[#b58a35]/15 to-transparent" />
 
                   <div className="flex items-start justify-between gap-3 text-sm">
                     <span className="text-[#655c50] dark:text-[#c0b8a8]">Logistique invité ({guests} pers.)</span>
                     <span className="shrink-0 font-medium text-[#393329] dark:text-[#eee5d5]">+{formatPrice(guestTotal)}</span>
                   </div>
 
-                  <div className="h-px bg-gradient-to-r from-[#b58a35]/50 via-[#b58a35]/15 to-transparent" />
+                  <div className="h-px bg-linear-to-r from-[#b58a35]/50 via-[#b58a35]/15 to-transparent" />
 
                   <div>
                     <p className="mb-3 text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">Options</p>
@@ -357,7 +357,7 @@ export function SmSimulator() {
                   </div>
                 </div>
 
-                <div className="my-8 h-px bg-gradient-to-r from-transparent via-[#b58a35]/60 to-transparent" />
+                <div className="my-8 h-px bg-linear-to-r from-transparent via-[#b58a35]/60 to-transparent" />
 
                 <div className="text-center">
                   <p className="text-[10px] font-semibold tracking-[0.2em] text-[#9a8253] uppercase dark:text-[#bba36e]">

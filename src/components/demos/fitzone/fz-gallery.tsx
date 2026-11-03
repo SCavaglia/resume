@@ -54,7 +54,7 @@ export function FzGallery() {
 
                 <h2 className="mt-4 font-oswald text-5xl font-bold tracking-wide uppercase sm:text-6xl">
                     Nos espaces{" "}
-                    <span className="bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
                         en images
                     </span>
                 </h2>
@@ -71,7 +71,7 @@ export function FzGallery() {
                         key={item.id}
                         className="group relative overflow-hidden rounded-xl border bg-card transition-all duration-300 hover:scale-105 hover:border-red-500"
                     >
-                        <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-muted">
+                        <div className="relative flex aspect-4/3 items-center justify-center overflow-hidden bg-muted">
                             <span
                                 role="img"
                                 aria-label={item.alt}

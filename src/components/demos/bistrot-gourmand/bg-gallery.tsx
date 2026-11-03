@@ -97,7 +97,7 @@ export function BgGallery() {
                             />
 
                             {/* Overlay */}
-                            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
+                            <div className="absolute inset-0 flex items-end bg-linear-to-t from-black/75 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
                                 <div className="flex w-full items-center justify-between p-5 text-white">
                                     <span className="font-playfair text-xl">
                                         {item.alt}

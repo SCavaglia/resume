@@ -12,37 +12,37 @@ const images: GalleryImage[] = [
     {
         title: 'La Bastide',
         subtitle: 'Pierre sèche du XVIIIème siècle',
-        image: '/demos/echappee-belle/gallery-bastide.jpg',
+        image: '/resume/echappee-belle/galerie-bastide.webp',
         alt: 'La bastide provençale en pierre du Domaine des Sources',
     },
     {
         title: 'Le Jardin',
         subtitle: 'Oliviers centenaires & lavande',
-        image: '/demos/echappee-belle/gallery-jardin.jpg',
+        image: '/resume/echappee-belle/discover-fontaine.jpg',
         alt: 'Jardin provençal avec oliviers et lavande',
     },
     {
         title: 'La Piscine',
         subtitle: 'Bassin chauffé à 28°C',
-        image: '/demos/echappee-belle/gallery-piscine.jpg',
+        image: '/resume/echappee-belle/galerie-piscine.webp',
         alt: 'Piscine extérieure du Domaine des Sources',
     },
     {
         title: 'La Table d’Hôtes',
         subtitle: 'Cuisine de saison du terroir',
-        image: '/demos/echappee-belle/gallery-table.jpg',
+        image: '/resume/echappee-belle/galerie-table.webp',
         alt: 'Table dressée pour un dîner provençal',
     },
     {
         title: 'Espace Massage',
         subtitle: 'Soin relaxant en plein air',
-        image: '/demos/echappee-belle/gallery-massage.jpg',
+        image: '/resume/echappee-belle/galerie-massage.webp',
         alt: 'Espace de massage extérieur au cœur du jardin',
     },
     {
         title: 'La Cave',
         subtitle: 'Sélection de crus du Luberon',
-        image: '/demos/echappee-belle/gallery-cave.jpg',
+        image: '/resume/echappee-belle/galerie-cave.webp',
         alt: 'Cave à vin et sélection de crus du Luberon',
     },
 ];

@@ -10,32 +10,32 @@ import {
 const galleryItems = [
     {
         id: "a",
-        src: "/demos/bistrot-gourmand/gallery-01.jpg",
+        src: "/resume/bistrot-gourmand/gallery-01.jpg",
         alt: "Salade niçoise",
     },
     {
         id: "b",
-        src: "/demos/bistrot-gourmand/gallery-02.jpg",
+        src: "/resume/bistrot-gourmand/gallery-02.jpg",
         alt: "Tartare de saumon",
     },
     {
         id: "c",
-        src: "/demos/bistrot-gourmand/gallery-03.jpg",
+        src: "/resume/bistrot-gourmand/gallery-03.jpg",
         alt: "Risotto aux champignons",
     },
     {
         id: "d",
-        src: "/demos/bistrot-gourmand/gallery-04.jpg",
+        src: "/resume/bistrot-gourmand/gallery-04.jpg",
         alt: "Spaghetti à la carbonara",
     },
     {
         id: "e",
-        src: "/demos/bistrot-gourmand/gallery-05.jpg",
+        src: "/resume/bistrot-gourmand/gallery-05.jpg",
         alt: "Saumon grillé",
     },
     {
         id: "f",
-        src: "/demos/bistrot-gourmand/gallery-06.webp",
+        src: "/resume/bistrot-gourmand/gallery-06.webp",
         alt: "Verre de vin rouge",
     },
 ];

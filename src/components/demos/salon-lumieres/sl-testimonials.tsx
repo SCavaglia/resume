@@ -18,7 +18,7 @@ const testimonials = [
     },
 ];
 
-export function DemosTestimonialsCarousel() {
+export function SlTestimonials() {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
@@ -53,7 +53,7 @@ export function DemosTestimonialsCarousel() {
                     </p>
                 </div>
 
-                <div className="mt-6 flex justify-center gap-3">
+                <div className="mt-6 flex justify-center gap-4">
                     {testimonials.map((testimonial, index) => (
                         <button
                             key={testimonial.name}
@@ -61,10 +61,10 @@ export function DemosTestimonialsCarousel() {
                             onClick={() => setActiveIndex(index)}
                             aria-label={`Afficher le témoignage ${index + 1}`}
                             aria-pressed={activeIndex === index}
-                            className={`h-2.5 rounded-full transition-all ${
+                            className={`h-3.5 rounded-full transition-all ${
                                 activeIndex === index
                                     ? 'w-8 bg-primary'
-                                    : 'w-2.5 bg-muted-foreground/30 hover:bg-primary/60'
+                                    : 'w-3.5 bg-muted-foreground/30 hover:bg-primary/60'
                             }`}
                         />
                     ))}

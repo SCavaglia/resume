@@ -65,7 +65,7 @@ const footerProps = {
   bottomClassName: "mt-12 pt-6 flex flex-col gap-4 border-t text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
 };
 
-export function BtpPro() {
+export default function BtpPro() {
   return (
     <div className="font-oswald">
       <DemosTopbar />

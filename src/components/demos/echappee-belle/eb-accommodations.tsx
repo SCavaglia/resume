@@ -8,7 +8,7 @@ const accommodations = [
         description:
             'Idéale pour un couple. Lit King Size, salle d’eau en travertin et terrasse privative ombragée par une tonnelle de jasmin odorant.',
         price: 120,
-        image: '/demos/echappee-belle/chambre-lavande.webp',
+        image: '/resume/echappee-belle/chambre-lavande.webp',
         alt: 'La Chambre Lavande, chambre de charme au Domaine des Sources à Gordes',
         guests: '2 personnes',
     },
@@ -19,7 +19,7 @@ const accommodations = [
         description:
             'Spacieuse et lumineuse. Salon de lecture avec cheminée d’époque, baignoire îlot en travertin et vue panoramique sur les monts du Luberon.',
         price: 180,
-        image: '/demos/echappee-belle/suite-vignes.webp',
+        image: '/resume/echappee-belle/suite-vignes.webp',
         alt: 'La Suite des Vignes, suite de prestige au Domaine des Sources à Gordes',
         guests: '2 personnes',
     },
@@ -30,7 +30,7 @@ const accommodations = [
         description:
             'Maison en pierre indépendante pour 4 personnes. Cuisine provençale équipée, grand salon voûté, terrasse avec pergola et bassin de fraîcheur exclusif.',
         price: 350,
-        image: '/demos/echappee-belle/mas-provencal.webp',
+        image: '/resume/echappee-belle/mas-provencal.webp',
         alt: 'Le Mas Provençal, gîte indépendant au Domaine des Sources à Gordes',
         guests: '4 personnes',
     },

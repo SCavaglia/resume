@@ -45,7 +45,7 @@ export function AcHero() {
                 <div className="mx-auto max-w-xl">
                     <div className="relative">
                         <img
-                            src="/demos/aide-confort/hero-visual.jpg"
+                            src="/resume/aide-confort/hero-visual.jpg"
                             alt="Une aide à domicile accompagnant une personne âgée"
                             className="aspect-[16/9] rounded-2xl object-cover shadow-xl lg:aspect-[4/3] lg:h-auto"
                         />

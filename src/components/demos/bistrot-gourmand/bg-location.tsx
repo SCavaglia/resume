@@ -6,7 +6,7 @@ export function BgLocation() {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
   return (
-    <section id="acces" className="mx-auto max-w-7xl px-8 pt-46">
+    <section id="acces" className="mx-auto max-w-7xl px-8 pt-46 pb-36">
       <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-center lg:gap-12">
         {/* Partie 1 : Informations pratiques */}
         <div className="flex flex-col gap-8 pl-16">
@@ -84,11 +84,11 @@ export function BgLocation() {
               <h3 className="mb-3 font-playfair text-xl font-semibold">Contact direct</h3>
 
               <a
-                href="tel:+33142567890"
+                href="tel:+33000000000"
                 className="mb-2 flex flex-wrap items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
                 <Phone className="size-4 shrink-0" aria-hidden="true" />
-                Par téléphone : 01 42 56 78 90
+                Par téléphone : 00 00 00 00 00
               </a>
 
               <a

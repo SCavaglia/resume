@@ -241,7 +241,7 @@ export function SlMultistepForm() {
     }
 
     return (
-        <section id="reservation" className="px-6 py-20 sm:py-28">
+        <section id="reservation" className="scroll-mt-6 px-6 py-20 sm:py-28">
             <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:gap-16">
                 {/* Partie 1 : Présentation */}
                 <div className="flex flex-col items-start">

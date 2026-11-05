@@ -1,10 +1,10 @@
-export function DemosExperience() {
+export function SlExperience() {
     return (
         <section
-            className="relative isolate overflow-hidden bg-cover bg-center px-6 py-8 pl-16 sm:py-8"
+            className="relative isolate overflow-hidden mb-24 bg-cover bg-center px-6 pb-8 pl-16 sm:py-8"
             style={{
                 backgroundImage:
-                    "url('/demos/salon-lumieres/experience_bg.webp')",
+                    "url('/resume/salon-lumieres/experience_bg.webp')",
             }}
         >
             {/* Overlay sombre */}

@@ -8,7 +8,7 @@ export function FzStatsBar() {
     ];
 
     return (
-        <div className="mx-auto mt-8 grid w-fit max-w-7xl grid-cols-2 items-center justify-center rounded-xl border px-8 shadow-[0_0_3px_1px_rgba(239,68,68,0.6),0_0_10px_2px_rgba(239,68,68,0.4)] transition-shadow duration-300 hover:shadow-[0_0_4px_1px_rgba(239,68,68,0.8),0_0_12px_4px_rgba(239,68,68,0.6)] lg:grid-cols-4">
+        <div className="mx-auto mt-2 grid w-fit max-w-7xl grid-cols-2 items-center justify-center rounded-xl border px-8 shadow-[0_0_3px_1px_rgba(239,68,68,0.6),0_0_10px_2px_rgba(239,68,68,0.4)] transition-shadow duration-300 hover:shadow-[0_0_4px_1px_rgba(239,68,68,0.8),0_0_12px_4px_rgba(239,68,68,0.6)] lg:grid-cols-4">
             {items.map((item) => (
                 <div
                     key={item.label}

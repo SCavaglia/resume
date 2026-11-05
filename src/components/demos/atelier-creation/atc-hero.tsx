@@ -59,7 +59,7 @@ export function AtcHero() {
 
                     <div className="relative overflow-hidden">
                         <img
-                            src="/demos/atelier-creation/hero-visual.jpg"
+                            src="/resume/atelier-creation/hero-visual.jpg"
                             alt="Pièce artisanale façonnée à la main dans un atelier"
                             className="aspect-4/5 w-full object-cover object-[right_center]"
                         />

@@ -95,25 +95,25 @@ export function SlLocation() {
                             </h3>
 
                             <a
-                                href="tel:+33142567890"
+                                href="tel:+33000000000"
                                 className="mb-2 flex flex-wrap items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                             >
                                 <Phone
                                     className="size-4 shrink-0"
                                     aria-hidden="true"
                                 />
-                                Par téléphone : 01 42 56 78 90
+                                Par téléphone : 00 00 00 00 00
                             </a>
 
                             <a
-                                href="mailto:contact@lebistrotgourmand.fr"
+                                href="mailto:contact@exemple.fr"
                                 className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                             >
                                 <Mail
                                     className="size-4 shrink-0"
                                     aria-hidden="true"
                                 />
-                                Par email : contact@lebistrotgourmand.fr
+                                Par email : contact@exemple.fr
                             </a>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ export function SlLocation() {
                 {/* Partie 2 : Google Maps */}
                 <div className="mx-32 h-96 overflow-hidden rounded border bg-muted opacity-50 shadow-sm lg:mr-24 lg:ml-0 lg:h-116 lg:w-full">
                     <iframe
-                        title="Localisation du Bistrot Gourmand sur Google Maps"
+                        title="Localisation du Salon Lumières sur Google Maps"
                         src={`https://maps.google.com/maps?q=${encodeURIComponent(address)}&output=embed`}
                         className="size-full border-0"
                         loading="lazy"

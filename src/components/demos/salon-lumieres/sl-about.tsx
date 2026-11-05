@@ -1,7 +1,7 @@
 import { Reveal } from '@/components/animations/reveal';
 import { Check } from 'lucide-react';
 
-export default function DemosAbout() {
+export default function SlAbout() {
     return (
         <>
             <section id="notre-maison" className="pt-24">
@@ -12,7 +12,7 @@ export default function DemosAbout() {
                         className="relative flex w-full items-center justify-center px-8"
                     >
                         <img
-                            src="/demos/salon-lumieres/about_img.webp"
+                            src="/resume/salon-lumieres/about_img.webp"
                             className="aspect-video w-full min-w-md rounded-md object-cover lg:aspect-3/4 lg:max-w-xl dark:opacity-50"
                         />
 

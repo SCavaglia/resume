@@ -24,7 +24,7 @@ const properties = [
         rooms: 5,
         bedrooms: 3,
         description: 'Jardin clos 500 m² · Garage indépendant.',
-        image: '/demos/maison-reve/maison-contemporaine.jpg',
+        image: '/resume/maison-reve/maison_lyon.webp',
     },
     {
         id: 2,
@@ -38,7 +38,7 @@ const properties = [
         rooms: 3,
         bedrooms: 2,
         description: 'Balcon filant · Parquet & moulures · Ascenseur.',
-        image: '/demos/maison-reve/appartement-haussmannien.jpg',
+        image: '/resume/maison-reve/app_paris.webp',
     },
     {
         id: 3,
@@ -53,7 +53,7 @@ const properties = [
         bedrooms: 0,
         description:
             'Rénové · Décoration contemporaine · Calme · Libre de suite.',
-        image: '/demos/maison-reve/studio-meuble.jpg',
+        image: '/resume/maison-reve/studio_lyon.webp',
     },
 ];
 

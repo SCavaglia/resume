@@ -67,7 +67,7 @@ export function EbHero() {
 
                     <div className="relative aspect-4/5 max-h-170 overflow-hidden">
                         <img
-                            src="/demos/echappee-belle/hero-visual.webp"
+                            src="/resume/echappee-belle/hero-visual.webp"
                             alt="Le Domaine des Sources, bastide provençale de prestige à Gordes"
                             className="size-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                         />

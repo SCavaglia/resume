@@ -45,9 +45,9 @@ const packages = [
     },
 ];
 
-export function DemosPricing() {
+export function SlPricing() {
     return (
-        <section id="forfaits" className="px-6 py-20 sm:py-28">
+        <section id="forfaits" className="scroll-mt-6 px-6 py-20 sm:py-28">
             <div className="mx-auto max-w-7xl">
                 {/* En-tête */}
                 <div className="mx-auto mb-14 max-w-2xl text-center sm:mb-16">

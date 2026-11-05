@@ -27,7 +27,7 @@ const faqs = [
 
 export function SlFaq() {
     return (
-        <section id="faq" className="px-8 py-20 sm:py-28">
+        <section id="faq" className="scroll-mt-6 px-8 py-20 sm:py-28">
             <div className="mx-auto flex max-w-7xl flex-col justify-center gap-12 lg:flex-row lg:gap-20">
                 {/* Partie 1 : Présentation */}
                 <div className="flex flex-col items-start lg:w-3/7">
@@ -50,11 +50,11 @@ export function SlFaq() {
                     </p>
 
                     <a
-                        href="tel:0123456789"
+                        href="tel:0000000000"
                         className="inline-flex min-h-12 items-center justify-center gap-3 rounded-md bg-[#C5A059] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#B18D48]"
                     >
                         <Phone className="size-4" aria-hidden="true" />
-                        <span>Nous appeler : 01 23 45 67 89</span>
+                        <span>Nous appeler : 00 00 00 00 00</span>
                     </a>
                 </div>
 

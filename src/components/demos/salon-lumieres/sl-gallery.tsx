@@ -1,66 +1,69 @@
 import { useState } from 'react';
 
 const filters = [
-    { label: 'Tous', value: 'tous' },
-    { label: 'Visage', value: 'visage' },
-    { label: 'Massages', value: 'massages' },
+    { label: 'Tout', value: 'tout' },
+    { label: 'Soins Visage', value: 'visage' },
     { label: 'Coiffure', value: 'coiffure' },
     { label: 'Onglerie', value: 'onglerie' },
+    { label: 'Massages', value: 'massages' },
 ];
 
-const services = [
+const photos = [
     {
-        id: 'soins-visage',
-        title: 'Soins du visage',
-        description:
-            'Des soins personnalisés pour révéler l’éclat naturel de votre peau.',
+        id: 1,
+        src: '/resume/salon-lumieres/photo-gal-visage-01.jpg',
+        alt: 'Soin du visage en institut',
         category: 'visage',
     },
     {
-        id: 'massages-monde',
-        title: 'Massages du monde',
-        description:
-            'Un moment de détente profonde inspiré des traditions du monde.',
-        category: 'massages',
-    },
-    {
-        id: 'coiffure-couleur',
-        title: 'Coiffure & couleur',
-        description: 'Des coupes et des colorations adaptées à votre style.',
+        id: 2,
+        src: '/resume/salon-lumieres/photo-gal-coiffure-01.jpg',
+        alt: 'Coiffure réalisée au salon',
         category: 'coiffure',
     },
     {
-        id: 'manucure',
-        title: 'Manucure & beauté des ongles',
-        description:
-            'Prenez soin de vos mains avec des prestations délicates et soignées.',
+        id: 3,
+        src: '/resume/salon-lumieres/photo-gal-onglerie-01.jpg',
+        alt: 'Manucure et soin des ongles',
         category: 'onglerie',
+    },
+    {
+        id: 4,
+        src: '/resume/salon-lumieres/photo-gal-massages-01.jpg',
+        alt: 'Massage relaxant en cabine',
+        category: 'massages',
+    },
+    {
+        id: 5,
+        src: '/resume/salon-lumieres/photo-gal-coiffure-02.jpg',
+        alt: 'Soin et mise en beauté des cheveux',
+        category: 'coiffure',
     },
 ];
 
-export function DemosServicesFilter() {
-    const [activeFilter, setActiveFilter] = useState('tous');
+export function SlGallery() {
+    const [activeFilter, setActiveFilter] = useState('tout');
 
-    const filteredServices =
-        activeFilter === 'tous'
-            ? services
-            : services.filter((service) => service.category === activeFilter);
+    const filteredPhotos =
+        activeFilter === 'tout'
+            ? photos
+            : photos.filter((photo) => photo.category === activeFilter);
 
     return (
-        <section id="prestations" className="px-6 py-20 sm:px-8 lg:py-28">
+        <section id="galerie" className="px-6 py-20 sm:px-8 lg:py-28">
             <div className="mx-auto max-w-7xl">
                 <div className="w-fit translate-y-8">
                     <div className="flex items-center gap-2 text-[#C5A059]">
                         <div className="h-0.5 w-12 rounded-full bg-[#C5A059]" />
                         <div className="text-sm font-semibold tracking-widest uppercase">
-                            Prestations d'exception
+                            Inspirations
                         </div>
                     </div>
 
                     <h2 className="mt-8 font-playfair text-5xl leading-none">
-                        Nos Rituels de Soins
+                        Un aperçu de notre
                         <span className="block text-[#6E6E73] italic dark:text-muted-foreground">
-                            sur-mesure
+                            maison de soins
                         </span>
                     </h2>
                 </div>
@@ -87,20 +90,19 @@ export function DemosServicesFilter() {
                     })}
                 </div>
 
-                <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {filteredServices.map((service) => (
-                        <article
-                            key={service.id}
-                            className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-md"
+                <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {filteredPhotos.map((photo) => (
+                        <figure
+                            key={photo.id}
+                            className="group overflow-hidden rounded-xl bg-muted"
                         >
-                            <h3 className="mb-3 font-serif text-xl font-medium">
-                                {service.title}
-                            </h3>
-
-                            <p className="text-sm leading-relaxed text-muted-foreground">
-                                {service.description}
-                            </p>
-                        </article>
+                            <img
+                                src={photo.src}
+                                alt={photo.alt}
+                                loading="lazy"
+                                className="aspect-[4/3] h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                        </figure>
                     ))}
                 </div>
             </div>

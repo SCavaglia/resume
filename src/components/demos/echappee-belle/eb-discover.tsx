@@ -38,7 +38,7 @@ const destinations: Destination[] = [
         description:
             "Suspendu sur son rocher de calcaire, dominé par son château Renaissance, c'est l'un des plus célèbres villages de France.",
         category: 'villages',
-        image: '/demos/echappee-belle/gordes.jpg',
+        image: '/resume/echappee-belle/discover-gordes.webp',
         distance: 0,
         minutes: 0,
     },
@@ -48,7 +48,7 @@ const destinations: Destination[] = [
         description:
             "Célèbre pour ses falaises d'ocre flamboyantes et son harmonie de façades aux teintes rouges, orangées et jaunes.",
         category: 'villages',
-        image: '/demos/echappee-belle/roussillon.jpg',
+        image: '/resume/echappee-belle/discover-roussillon.jpg',
         distance: 10,
         minutes: 12,
     },
@@ -58,7 +58,7 @@ const destinations: Destination[] = [
         description:
             'Bâti sur une crête rocheuse offrant un panorama grandiose, ce village a séduit de nombreux artistes dont Dora Maar et Picasso.',
         category: 'villages',
-        image: '/demos/echappee-belle/menerbes.jpg',
+        image: '/resume/echappee-belle/discover-menerbes.jpg',
         distance: 13,
         minutes: 15,
     },
@@ -68,7 +68,7 @@ const destinations: Destination[] = [
         description:
             'Ancien hameau de cabanes de bergers entièrement construites en pierre sèche sans aucun mortier, chef-d’œuvre architectural.',
         category: 'nature',
-        image: '/demos/echappee-belle/village-bories.jpg',
+        image: '/resume/echappee-belle/discover-bories.jpg',
         distance: 3,
         minutes: 5,
     },
@@ -78,7 +78,7 @@ const destinations: Destination[] = [
         description:
             "Une randonnée inoubliable au cœur d'un canyon ocreux aux couleurs surnaturelles, sculpté par l'érosion et la main de l'homme.",
         category: 'nature',
-        image: '/demos/echappee-belle/sentier-ocres.jpg',
+        image: '/resume/echappee-belle/discover-sentier-des-ocres.jpg',
         distance: 10,
         minutes: 12,
     },
@@ -88,7 +88,7 @@ const destinations: Destination[] = [
         description:
             'Découvrez la source mystérieuse de la Sorgue, jaillissant au pied d’une falaise impressionnante dans un écrin de verdure.',
         category: 'nature',
-        image: '/demos/echappee-belle/fontaine-vaucluse.jpg',
+        image: '/resume/echappee-belle/discover-fontaine.jpg',
         distance: 17,
         minutes: 20,
     },
@@ -98,7 +98,7 @@ const destinations: Destination[] = [
         description:
             'Parcourez les vignes du Luberon, découvrez les secrets de la vinification et dégustez des cuvées aux accents provençaux.',
         category: 'vignobles',
-        image: '/demos/echappee-belle/domaine-citadelle.jpg',
+        image: '/resume/echappee-belle/discover-domaine-citadelle.jpg',
         distance: 15,
         minutes: 18,
     },
@@ -108,7 +108,7 @@ const destinations: Destination[] = [
         description:
             'Un domaine viticole de caractère niché dans un paysage préservé, réputé pour ses vins biologiques et son cadre authentique.',
         category: 'vignobles',
-        image: '/demos/echappee-belle/chateau-canorgue.jpg',
+        image: '/resume/echappee-belle/discover-chateau-canorgue.jpg',
         distance: 19,
         minutes: 22,
     },
@@ -118,7 +118,7 @@ const destinations: Destination[] = [
         description:
             'Profitez d’une parenthèse au milieu des vignes, entre paysages vallonnés, architecture provençale et art de vivre méridional.',
         category: 'vignobles',
-        image: '/demos/echappee-belle/domaine-marie.jpg',
+        image: '/resume/echappee-belle/discover-domaine-marie.jpg',
         distance: 17,
         minutes: 20,
     },
@@ -128,7 +128,7 @@ const destinations: Destination[] = [
         description:
             'Une abbaye cistercienne du XIIe siècle lovée dans un vallon paisible, entourée de champs de lavande en saison.',
         category: 'culture',
-        image: '/demos/echappee-belle/abbaye-senanque.jpg',
+        image: '/resume/echappee-belle/discover-abbaye-senanque.jpg',
         distance: 7,
         minutes: 10,
     },
@@ -138,7 +138,7 @@ const destinations: Destination[] = [
         description:
             'Explorez un élégant château Renaissance, ses collections et ses jardins au cœur de l’un des plus beaux villages du Luberon.',
         category: 'culture',
-        image: '/demos/echappee-belle/chateau-lourmarin.jpg',
+        image: '/resume/echappee-belle/discover-chateau-lourmarin.jpg',
         distance: 32,
         minutes: 35,
     },
@@ -148,7 +148,7 @@ const destinations: Destination[] = [
         description:
             'Plongez dans l’histoire de la lavande provençale et découvrez les savoir-faire, les outils et les traditions de sa culture.',
         category: 'culture',
-        image: '/demos/echappee-belle/musee-lavande.jpg',
+        image: '/resume/echappee-belle/discover-musee-lavande.jpg',
         distance: 12,
         minutes: 15,
     },
@@ -317,12 +317,12 @@ export function EbDiscover({ className = '' }: Props) {
                 >
                     <div className="relative min-h-64 bg-[#ded9ca] lg:min-h-full dark:bg-[#34372e]">
                         <img
-                            src="/demos/echappee-belle/luberon-panorama.jpg"
+                            src="/resume/echappee-belle/discover-luberon-panorama.jpg"
                             alt="Panorama sur les collines et les paysages du Luberon"
                             loading="lazy"
-                            className="absolute inset-0 size-full object-cover"
+                            className="absolute inset-0 size-full object-cover -scale-x-100"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/25 to-transparent" />
                         <div className="absolute bottom-5 left-5 text-white">
                             <p className="text-xs font-medium tracking-[0.2em] uppercase">
                                 Au départ du Domaine

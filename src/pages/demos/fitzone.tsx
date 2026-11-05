@@ -76,7 +76,7 @@ const footerProps = {
     poweredByClassName: '',
 };
 
-export function Fitzone() {
+export default function Fitzone() {
   return (
     <div className="font-inter">
                 <DemosTopbar />

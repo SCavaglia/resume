@@ -1,7 +1,6 @@
-import { Aperture, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Link } from "react-router";
 
 const mainNavItems = [
   {
@@ -18,7 +17,7 @@ export function Header() {
   return (
     <>
       <div className="border-b border-sidebar-border/80">
-        <div className="mx-auto flex h-16 items-center px-4 md:max-w-7xl">
+        <div className="relative mx-auto flex h-16 items-center px-4 md:max-w-7xl">
           {/* Mobile Menu */}
           <div className="lg:hidden">
             <Sheet>
@@ -45,13 +44,7 @@ export function Header() {
             </Sheet>
           </div>
 
-          <Link
-            to="/"
-            // prefetch
-            className="flex items-center space-x-2"
-          >
-            <Aperture />
-          </Link>
+          <div className="absolute left-12 top-4 select-none font-semibold text-muted-foreground">Sébastien Cavaglia</div>
 
           {/* Desktop Navigation */}
           <div className="mx-auto hidden h-full items-center space-x-6 lg:flex">

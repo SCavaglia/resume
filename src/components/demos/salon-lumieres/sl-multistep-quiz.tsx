@@ -51,7 +51,7 @@ const recommendations: Record<string, string> = {
     relaxation: 'Choisissez un rituel bien-être pour un moment de détente.',
 };
 
-export function DemosMultiStepQuiz() {
+export function SlMultistepQuiz() {
     const [step, setStep] = useState(0);
     const [answers, setAnswers] = useState<string[]>([]);
     const [isComplete, setIsComplete] = useState(false);
@@ -98,7 +98,7 @@ export function DemosMultiStepQuiz() {
     return (
         <section
             id="diagnostic"
-            className="mx-auto mt-32 w-full max-w-3xl rounded-2xl border bg-card p-6 shadow-sm sm:p-10"
+            className="scroll-mt-32 mx-auto mt-32 mb-24 w-full max-w-3xl rounded-2xl border bg-card p-6 shadow-sm sm:p-10"
         >
             <div className="mb-8">
                 <p className="mb-2 text-center text-sm font-medium tracking-widest text-[#C5A059] uppercase">

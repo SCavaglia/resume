@@ -1,8 +1,8 @@
 import { AppLayout } from "@/components/layouts/app-layout";
-import Demos from "@/components/sections/demos";
+import { Demos } from "@/components/sections/demos";
 import { Hero } from "@/components/sections/hero";
 
-function Home() {
+export default function Home() {
   return (
     <>
       <AppLayout>
@@ -12,5 +12,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

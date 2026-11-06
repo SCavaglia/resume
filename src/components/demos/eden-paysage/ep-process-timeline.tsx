@@ -78,7 +78,7 @@ export function EpProcessTimeline() {
                     {/* Ligne centrale */}
                     <div className="absolute top-0 bottom-0 left-5 w-px bg-border sm:left-1/2 sm:-translate-x-1/2" />
 
-                    <div className="space-y-12 sm:space-y-16">
+                    <div className="">
                         {steps.map((step, index) => {
                             const Icon = step.icon;
                             const isLeft = index % 2 === 0;

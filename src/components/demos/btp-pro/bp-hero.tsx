@@ -3,14 +3,14 @@ import { Phone, ShieldCheck } from "lucide-react";
 export function BpHero() {
     return (
         <section id="accueil" className="scroll-mt-24 relative overflow-hidden">
-            {/* Image de fond */}
-            <div
-                className="absolute inset-0 bg-cover bg-center opacity-50 blur-[1px]"
-                style={{ backgroundImage: "url('/resume/batitop/hero_bg.jpg')" }}
-            />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-zinc-950/87" />
+            <div className="absolute inset-0 bg-slate-950" />
+            {/* Image de fond */}
+            <div
+                className="absolute inset-0 bg-cover bg-center opacity-20 blur-[1px]"
+                style={{ backgroundImage: "url('/resume/batitop/hero_bg.jpg')" }}
+            />
 
             {/* Dégradé inférieur */}
             <div className="absolute inset-0 bg-linear-to-b from-transparent from-0% via-transparent via-90% to-background to-100%" />
@@ -37,21 +37,21 @@ export function BpHero() {
                         <div className="flex flex-wrap justify-center gap-10 pt-8 lg:justify-start">
                             <a
                                 href="#simulateur"
-                                className="bg-primary-without-white p-8 text-xl text-white uppercase transition-all duration-300 ease-in hover:-translate-y-1 hover:bg-primary-without-white hover:shadow-lg"
+                                className="bg-primary-without-white p-6 rounded-xl text-xl font-semibold text-white uppercase transition-all duration-300 ease-in hover:-translate-y-1 hover:text-black hover:bg-white hover:shadow-lg"
                             >
                                 Calculer mon devis
                             </a>
 
                             <a
                                 href="#avant-apres"
-                                className="border border-input bg-background p-8 text-xl uppercase transition-all duration-300 ease-in hover:-translate-y-1 hover:gap-3 hover:border-primary hover:bg-primary/5 hover:text-background hover:backdrop-blur-sm dark:hover:text-white"
+                                className="border border-input bg-background p-6 rounded-xl text-xl uppercase font-semibold transition-all duration-300 ease-in hover:-translate-y-1 hover:gap-3 hover:border-white hover:bg-primary/5 hover:text-background hover:backdrop-blur-sm dark:hover:text-white"
                             >
                                 Voir nos chantiers
                             </a>
 
                             <a
                                 href="#contact"
-                                className="animate-grow-neon bg-red-700 px-18 py-8 text-xl text-white uppercase transition-all duration-300 hover:bg-red-500/80 hover:text-white"
+                                className="animate-grow-neon bg-red-700 px-14 py-6 rounded-xl text-xl font-semibold text-white uppercase transition-all duration-300 hover:bg-red-500/80 hover:text-white"
                             >
                                 <Phone className="mr-2 inline-block size-5" />
                                 Dépannage 24h/24
@@ -60,7 +60,7 @@ export function BpHero() {
                     </div>
 
                     {/* Statistiques */}
-                    <div className="mt-12 self-start border-muted-foreground/30 bg-white/1 pl-6 shadow-xl backdrop-blur-md lg:mt-12">
+                    <div className="mt-12 p-8 self-start rounded-2xl border-muted-foreground/30 bg-white/1 pl-6 shadow-xl backdrop-blur-md lg:mt-12">
                         <div className="flex flex-row gap-6 lg:flex-col">
                             <div className="border-l-4 border-primary-without-black pr-12 pl-4 text-left text-primary-without-black">
                                 <p className="text-2xl font-bold tracking-tight sm:text-3xl">15+</p>

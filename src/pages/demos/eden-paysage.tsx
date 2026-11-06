@@ -11,7 +11,7 @@ import { FacebookIcon } from "@/components/icons/facebook-icon";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { DemosFooter } from "@/components/landmarks/demos-footer";
 import { DemosTopbar } from "@/components/landmarks/demos-topbar";
-import { TreePine } from "lucide-react";
+import { Leaf, Trees } from "lucide-react";
 
 const footerProps = {
   navigationLinks: [
@@ -31,10 +31,13 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/resume/demos/eden-paysage#accueil" className="mb-8 flex items-center gap-2 text-3xl font-bold">
-      <TreePine className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-black" />
-      <span className="text-white">EDEN</span>
-      <span className="bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 bg-clip-text text-transparent">PAYSAGE</span>
+    <a href="/resume/demos/eden-paysage#accueil" className="w-fit relative flex shrink-0 items-center gap-2 text-3xl font-bold">
+      <Trees className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />
+      <span>EDEN</span>
+      <Leaf className="absolute -top-2 left-1/2 size-6 -translate-x-1/2 text-lime-500" />
+      <span className="pl-2 translate-y-0.5 bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 bg-clip-text text-transparent">
+        PAYSAGE
+      </span>
     </a>
   ),
   description:

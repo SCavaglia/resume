@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router";
 import { Heading } from "@/components/typography/heading";
 import { CardExpandable } from "../animations/card-expandable";
@@ -17,7 +16,7 @@ const demos = [
     category: "Sport",
     image: "/resume/z-screenshots/fitzone.png",
     color: "border-red-500/10 bg-gradient-to-br from-red-500/15 via-red-500/5 via-20% to-transparent hover:bg-red-500/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Planning", "Estimateur de prix", "Vérificateur de zone"],
     to: "/demos/fitzone",
   },
   {
@@ -25,7 +24,7 @@ const demos = [
     category: "Restaurant",
     image: "/resume/z-screenshots/bistrot-gourmand.png",
     color: "border-rose-500/10 bg-gradient-to-br from-rose-500/15 via-rose-500/5 via-20% to-transparent hover:bg-rose-500/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Carte du restaurant", "Commande avec retrait sur place", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/bistrot-gourmand",
   },
   {
@@ -33,7 +32,7 @@ const demos = [
     category: "Beauté & Bien-être",
     image: "/resume/z-screenshots/salon-lumieres.png",
     color: "border-[#C5A059]/20 bg-gradient-to-br from-[#C5A059]/15 via-[#C5A059]/5 via-20% to-transparent hover:bg-[#C5A059]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Quiz de diagnostic", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/salon-lumieres",
   },
   {
@@ -41,7 +40,7 @@ const demos = [
     category: "Santé & Paramédical",
     image: "/resume/z-screenshots/nova-sante.png",
     color: "border-sky-500/10 bg-gradient-to-br from-sky-500/15 via-sky-500/5 via-20% to-transparent hover:bg-sky-500/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Prise de RDV", "Localisation Google Maps"],
     to: "/demos/nova-sante",
   },
   {
@@ -49,7 +48,7 @@ const demos = [
     category: "Jardin & Aménagement",
     image: "/resume/z-screenshots/eden-paysage.png",
     color: "border-lime-500/10 bg-gradient-to-br from-lime-500/15 via-lime-500/5 via-20% to-transparent hover:bg-lime-500/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Estimateur de prix", "Localisation Google Maps"],
     to: "/demos/eden-paysage",
   },
   {
@@ -57,7 +56,7 @@ const demos = [
     category: "Automobile & Mobilité",
     image: "/resume/z-screenshots/garage-pro.png",
     color: "border-[#e63946]/10 bg-gradient-to-br from-[#e63946]/15 via-[#e63946]/5 via-20% to-transparent hover:bg-[#e63946]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Catalogue de véhicules", "Estimateur de prix", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/garage-pro",
   },
   {
@@ -65,7 +64,7 @@ const demos = [
     category: "Commerce & Boutiques",
     image: "/resume/z-screenshots/maison-nouvelle.png",
     color: "border-[#bfa888]/10 bg-gradient-to-br from-[#bfa888]/15 via-[#bfa888]/5 via-20% to-transparent hover:bg-[#bfa888]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Catalogue", "Commande avec retrait sur place"],
     to: "/demos/maison-nouvelle",
   },
   {
@@ -73,7 +72,7 @@ const demos = [
     category: "Services à la personne",
     image: "/resume/z-screenshots/aide-confort.png",
     color: "border-blue-500/10 bg-gradient-to-br from-blue-500/15 via-blue-500/5 via-20% to-transparent hover:bg-blue-500/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Estimateur de prix", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/aide-confort",
   },
   {
@@ -81,7 +80,7 @@ const demos = [
     category: "Professions libérales & B2B",
     image: "/resume/z-screenshots/synergie-conseil.png",
     color: "border-[#c6a77e]/10 bg-gradient-to-br from-[#c6a77e]/15 via-[#c6a77e]/5 via-20% to-transparent hover:bg-[#c6a77e]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Informations sur la garde", "Prise de RDV", "Localisation Google Maps"],
     to: "/demos/synergie-conseil",
   },
   {
@@ -89,7 +88,7 @@ const demos = [
     category: "Immobilier",
     image: "/resume/z-screenshots/maison-reve.png",
     color: "border-[#c4a470]/10 bg-gradient-to-br from-[#c4a470]/15 via-[#c4a470]/5 via-20% to-transparent hover:bg-[#c4a470]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Catalogue immobilier", "Estimateur de prix", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/maison-reve",
   },
   {
@@ -97,7 +96,7 @@ const demos = [
     category: "Tourisme & Hébergement",
     image: "/resume/z-screenshots/echappee-belle.png",
     color: "border-[#7f916f]/10 bg-gradient-to-br from-[#7f916f]/15 via-[#7f916f]/5 via-20% to-transparent hover:bg-[#7f916f]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Informations sur la garde", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/echappee-belle",
   },
   {
@@ -105,7 +104,7 @@ const demos = [
     category: "Événementiel & Créatifs",
     image: "/resume/z-screenshots/studio-momentum.png",
     color: "border-[#d6b76d]/10 bg-gradient-to-br from-[#d6b76d]/15 via-[#d6b76d]/5 via-20% to-transparent hover:bg-[#d6b76d]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Informations sur la garde", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/studio-momentum",
   },
   {
@@ -113,31 +112,25 @@ const demos = [
     category: "Métiers d'art & Créateurs",
     image: "/resume/z-screenshots/atelier-creation.png",
     color: "border-[#A27B45]/10 bg-gradient-to-br from-[#A27B45]/15 via-[#A27B45]/5 via-20% to-transparent hover:bg-[#A27B45]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Informations sur la garde", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/atelier-creation",
   },
 
   {
     name: "Les Pattes Aux Cœurs",
     category: "Animaux",
-    image: "/resume/z-screenshots/pattes-coeurs.png",
+    image: "/resume/z-screenshots/patte-coeur.png",
     color: "border-[#c08a5e]/10 bg-gradient-to-br from-[#c08a5e]/15 via-[#c08a5e]/5 via-20% to-transparent hover:bg-[#c08a5e]/5",
-    features: ["Informations sur la garde", "Éducation canine", "Conseils comportementaux", "Réservation en ligne"],
+    features: ["Estimateur de prix", "Questionnaire d'urgences vétérinaires", "Conseils comportementaux", "Réservation en ligne", "Localisation Google Maps"],
     to: "/demos/pattes-coeurs",
   },
 ];
 
-export default function Demos() {
-  useEffect(() => {
-    document.title = "Sites web démos";
-  }, []);
-
+export function Demos() {
   return (
     <section id="demos" className="mx-auto max-w-7xl px-8 pb-46">
-      <header className="mb-12">
-        <p className="mb-3 text-sm text-muted-foreground">Portfolio / Expérimentations</p>
-
-        <Heading className="text-3xl font-semibold tracking-tight sm:text-5xl">Sites web démos</Heading>
+      <header className="mb-16">
+        <Heading className="text-3xl font-semibold tracking-tight sm:text-2xl">Quelques démos de sites vitrines :</Heading>
       </header>
 
       <div className="w-4/5 grid grid-cols-1 justify-items-start gap-x-4 gap-y-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">

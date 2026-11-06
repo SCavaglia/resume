@@ -12,14 +12,25 @@ import { FacebookIcon } from "@/components/icons/facebook-icon";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { DemosFooter } from "@/components/landmarks/demos-footer";
 import { DemosTopbar } from "@/components/landmarks/demos-topbar";
-import { PawPrint } from "lucide-react";
+import { Heart, PawPrint } from "lucide-react";
 
 const footerProps = {
   logo: (
     <a href="/resume/demos/pattes-coeurs#accueil" className="mb-8 flex items-center gap-2 font-playfair text-3xl font-bold tracking-tight">
-      <PawPrint className="size-12 rounded-md bg-linear-to-tr from-yellow-950 to-orange-900 p-2 text-black" />
-      <span className="text-white">Les Pattes Aux</span>
-      <span className="bg-linear-to-r from-orange-100 via-amber-100 to-yellow-100 bg-clip-text text-transparent">Cœurs</span>
+      <div className="relative size-16">
+        <svg className="size-full" viewBox="0 0 24 24">
+          <defs>
+            <linearGradient id="heart-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#ec4899" />
+              <stop offset="100%" stopColor="#ef4444" />
+            </linearGradient>
+          </defs>
+          <Heart className="size-full" fill="url(#heart-gradient)" stroke="url(#heart-gradient)" />
+        </svg>
+        <PawPrint className="absolute inset-0 m-auto size-8 text-white" />
+      </div>
+      <span className="text-white">La Patte Au</span>
+      <span className="bg-linear-to-r from-orange-100 via-amber-100 to-yellow-100 bg-clip-text text-transparent">Cœur</span>
     </a>
   ),
   navigationLinks: [
@@ -39,7 +50,7 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   description:
-    "Cabinet de conception d'espaces paysagers et intérieurs sur-mesure de standing à [Ville]. Nous réunissons paysagistes, architectes d'intérieur et menuisiers qualifiés pour sublimer votre cadre de vie.",
+    "Clinique vétérinaire dédiée à la santé et au bien-être de vos animaux à [Ville]. Notre équipe de vétérinaires et d'auxiliaires spécialisés vous accompagne avec expertise et bienveillance à chaque étape de leur vie.",
 
   className: "py-24 px-6 border-t bg-black/90 dark:bg-black/50 lg:px-8",
   containerClassName: "mx-auto max-w-7xl  ",

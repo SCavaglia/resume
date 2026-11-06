@@ -1,4 +1,4 @@
-import { Menu, PawPrint } from "lucide-react";
+import { Heart, Menu, PawPrint } from "lucide-react";
 import { useEffect, useState } from "react";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -44,7 +44,7 @@ export function PcHeader() {
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
-                <div className="font-playfair text-xl font-bold">Les Pattes Aux Cœurs</div>
+                <div className="font-playfair text-xl font-bold">La Patte Au Cœur</div>
               </SheetHeader>
 
               <nav className="flex h-full flex-1 flex-col p-4">
@@ -65,11 +65,21 @@ export function PcHeader() {
           href="/resume/demos/pattes-coeurs#accueil"
           className="flex shrink-0 items-center gap-2 font-playfair text-3xl font-bold tracking-tight"
         >
-          <PawPrint className="-rotate-12 p-2 size-12 rounded-[65%_35%_55%_45%/35%_30%_50%_65%] bg-linear-to-tr from-yellow-950 to-orange-900  text-white" />
-
-          <span>Les Pattes Aux</span>
+          <div className="relative size-16">
+            <svg className="size-full" viewBox="0 0 24 24">
+              <defs>
+                <linearGradient id="heart-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#ec4899" />
+                  <stop offset="100%" stopColor="#ef4444" />
+                </linearGradient>
+              </defs>
+              <Heart className="size-full" fill="url(#heart-gradient)" stroke="url(#heart-gradient)" />
+            </svg>
+            <PawPrint className="absolute inset-0 m-auto size-8 text-white" />
+          </div>
+          <span>La Patte Au</span>
           <span className="bg-linear-to-r from-orange-900 via-amber-900 to-yellow-900 bg-clip-text text-transparent dark:from-orange-100 dark:via-amber-100 dark:to-yellow-100">
-            Cœurs
+            Cœur
           </span>
         </a>
 

@@ -8,14 +8,14 @@ export function EpHero() {
                 className="absolute inset-0 -z-20 bg-cover bg-center"
                 style={{
                     backgroundImage:
-                        "url('/images/demos/eden-paysage/hero.jpg')",
+                        "url('/resume/eden-paysage/hero_bg.webp')",
                 }}
                 aria-hidden="true"
             />
 
             {/* Overlay */}
             <div
-                className="absolute inset-0 -z-10 bg-black/45"
+                className="absolute inset-0 -z-10 bg-black/75"
                 aria-hidden="true"
             />
 
@@ -58,7 +58,7 @@ export function EpHero() {
                 </div>
 
                 {/* Carte droite */}
-                <div className="rounded-2xl border border-white/20 bg-white/95 p-7 text-neutral-900 shadow-2xl backdrop-blur-md sm:p-8">
+                <div className="rounded-2xl border border-white/20 bg-white/50 p-7 text-neutral-900 shadow-2xl backdrop-blur-md sm:p-8">
                     <div className="mb-6 flex size-12 items-center justify-center rounded-xl bg-lime-100 text-lime-800">
                         <Leaf className="size-6" aria-hidden="true" />
                     </div>
@@ -100,7 +100,7 @@ export function EpHero() {
                     </div>
 
                     <a
-                        href="tel:+33123456789"
+                        href="#contact"
                         className="mt-7 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-lime-700 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-lime-800"
                     >
                         <Phone className="size-4" aria-hidden="true" />

@@ -9,8 +9,7 @@ import { FacebookIcon } from "@/components/icons/facebook-icon";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { DemosFooter } from "@/components/landmarks/demos-footer";
 import { DemosTopbar } from "@/components/landmarks/demos-topbar";
-import { Aperture } from "lucide-react";
-
+import { Sparkles } from "lucide-react";
 
 const footerProps = {
   navigationLinks: [
@@ -29,11 +28,21 @@ const footerProps = {
   ],
   logo: (
     <a href="/resume/demos/studio-momentum#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl uppercase">
-      <Aperture className="size-12 rounded-md bg-linear-to-tr from-[#967021] to-[#d6b76d] p-2 text-black" />
+      <svg width="0" height="0">
+        <defs>
+          <linearGradient id="gold-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#967021" />
+            <stop offset="100%" stopColor="#d6b76d" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <Sparkles style={{ stroke: "url(#gold-gradient)" }} />
       <span className="text-white">Studio</span>
       <span className="bg-linear-to-r from-[#967021] via-[#d6b76d] to-[#967021] bg-clip-text text-transparent">Momentum</span>
     </a>
   ),
+  description:
+    "Studio Momentum est un studio de création et d'événementiel spécialisé dans la production de contenus visuels et audiovisuels. Nous offrons des services de photographie, de vidéographie, de design graphique et d'organisation d'événements pour aider nos clients à atteindre leurs objectifs créatifs et commerciaux.",
 
   className: "py-24 px-6 border-t bg-black/90 dark:bg-black/50 lg:px-8",
   containerClassName: "mx-auto max-w-7xl  ",
@@ -58,7 +67,7 @@ export default function StudioMomentum() {
     <>
       <div className="font-inter">
         <DemosTopbar />
-          <SmHeader />
+        <SmHeader />
         <main>
           <SmHero />
           <SmGallery />

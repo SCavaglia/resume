@@ -1,4 +1,4 @@
-import { Menu, TreePine } from "lucide-react";
+import { Leaf, Menu, TreePine, Trees } from "lucide-react";
 import { useEffect, useState } from "react";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -69,11 +69,12 @@ export function EpHeader() {
                 {/* Logo */}
                 <a
                     href="/resume/demos/eden-paysage#accueil"
-                    className="flex shrink-0 items-center gap-2 text-3xl font-bold"
+                    className="relative flex shrink-0 items-center gap-2 text-3xl font-bold"
                 >
-                    <TreePine className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />
+                    <Trees className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />
                     <span>EDEN</span>
-                    <span className="bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 bg-clip-text text-transparent">
+                    <Leaf className="absolute -top-2 left-1/2 size-6 -translate-x-1/2 text-lime-500" />
+                    <span className="pl-2 translate-y-0.5 bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 bg-clip-text text-transparent">
                         PAYSAGE
                     </span>
                 </a>
@@ -86,7 +87,7 @@ export function EpHeader() {
                                 <NavigationMenuItem key={item.title} className="relative flex h-full items-center">
                                     <a
                                         href={item.href}
-                                        className="group inline-flex cursor-pointer items-center justify-center rounded-md px-3 py-2 text-sm uppercase tracking-wide transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-4 focus-visible:outline-1"
+                                        className="group inline-flex cursor-pointer items-center justify-center rounded-md px-3 py-2 text-center text-sm uppercase font-semibold tracking-wide transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:ring-4 focus-visible:outline-1"
                                     >
                                         {item.title}
                                     </a>
@@ -99,7 +100,7 @@ export function EpHeader() {
                 {/* Action */}
                 <a
                     href="#simulateur"
-                    className="ml-auto inline-block rounded-full bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 p-4 text-xl text-white lg:ml-0"
+                    className="ml-auto inline-block py-3 px-4 border-2 rounded-full text-xl font-semibold bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 text-white transition-all duration-300 lg:ml-0 hover:border-foreground hover:-translate-y-1"
                 >
                     Estimateur Projet
                 </a>

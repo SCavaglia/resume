@@ -12,6 +12,7 @@ export function BgHero() {
       />
 
       {/* Overlay */}
+      <div className="absolute inset-0 bg-black/20" />
       <div className="absolute inset-0 bg-orange-950/15" />
 
       {/* Dégradé inférieur */}

@@ -137,13 +137,13 @@ export function ScFeeSimulator() {
                                         onChange={(event) =>
                                             setStructure(event.target.value)
                                         }
-                                        className="h-14 w-full appearance-none rounded-lg border border-[#b4966e]/25 bg-[#f8f6f1] px-4 pr-12 text-sm font-medium text-[#172b3a] transition-colors outline-none focus:border-[#b4966e] dark:bg-white/[0.04] dark:text-[#f5f3ee]"
+                                        className="h-14 w-full appearance-none rounded-lg border border-[#b4966e]/25 bg-[#f8f6f1] px-4 pr-12 text-sm font-medium text-[#172b3a] transition-colors outline-none focus:border-[#b4966e] dark:bg-white/4 dark:text-[#f5f3ee]"
                                     >
                                         {legalStructures.map((item) => (
                                             <option
                                                 key={item.value}
                                                 value={item.value}
-                                                className="text-[#172b3a]"
+                                                className="text-[#172b3a] dark:text-[#f5f3ee]"
                                             >
                                                 {item.label}
                                             </option>
@@ -179,7 +179,7 @@ export function ScFeeSimulator() {
                                             <option
                                                 key={item.value}
                                                 value={item.value}
-                                                className="text-[#172b3a]"
+                                                className="text-[#172b3a] dark:text-[#f5f3ee]"
                                             >
                                                 {item.label}
                                             </option>

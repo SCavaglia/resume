@@ -8,7 +8,7 @@ const demos = [
     category: "Bâtiment",
     image: "/resume/z-screenshots/btp-pro.png",
     color: "border-orange-500/10 bg-gradient-to-br from-orange-500/15 via-orange-500/5 via-20% to-transparent",
-    features: ["Comparaison Avant/Après", "Estimateur de prix", "Vérificateur de zone"],
+    features: ["Comparaison Avant/Après", "Estimateur de prix", "Vérificateur de zone", "Localisation Google Maps"],
     to: "/demos/btp-pro",
   },
   {
@@ -64,7 +64,7 @@ const demos = [
     category: "Commerce & Boutiques",
     image: "/resume/z-screenshots/maison-nouvelle.png",
     color: "border-[#bfa888]/10 bg-gradient-to-br from-[#bfa888]/15 via-[#bfa888]/5 via-20% to-transparent hover:bg-[#bfa888]/5",
-    features: ["Catalogue", "Commande avec retrait sur place"],
+    features: ["Catalogue de produits", "Commande avec retrait sur place"],
     to: "/demos/maison-nouvelle",
   },
   {
@@ -72,7 +72,7 @@ const demos = [
     category: "Services à la personne",
     image: "/resume/z-screenshots/aide-confort.png",
     color: "border-blue-500/10 bg-gradient-to-br from-blue-500/15 via-blue-500/5 via-20% to-transparent hover:bg-blue-500/5",
-    features: ["Estimateur de prix", "Réservation en ligne", "Localisation Google Maps"],
+    features: ["Estimateur de prix", "Réservation en ligne"],
     to: "/demos/aide-confort",
   },
   {
@@ -80,7 +80,7 @@ const demos = [
     category: "Professions libérales & B2B",
     image: "/resume/z-screenshots/synergie-conseil.png",
     color: "border-[#c6a77e]/10 bg-gradient-to-br from-[#c6a77e]/15 via-[#c6a77e]/5 via-20% to-transparent hover:bg-[#c6a77e]/5",
-    features: ["Informations sur la garde", "Prise de RDV", "Localisation Google Maps"],
+    features: ["Estimateur de prix", "Prise de RDV"],
     to: "/demos/synergie-conseil",
   },
   {
@@ -88,7 +88,7 @@ const demos = [
     category: "Immobilier",
     image: "/resume/z-screenshots/maison-reve.png",
     color: "border-[#c4a470]/10 bg-gradient-to-br from-[#c4a470]/15 via-[#c4a470]/5 via-20% to-transparent hover:bg-[#c4a470]/5",
-    features: ["Catalogue immobilier", "Estimateur de prix", "Réservation en ligne", "Localisation Google Maps"],
+    features: ["Catalogue immobilier", "Estimateur de prix"],
     to: "/demos/maison-reve",
   },
   {
@@ -96,7 +96,7 @@ const demos = [
     category: "Tourisme & Hébergement",
     image: "/resume/z-screenshots/echappee-belle.png",
     color: "border-[#7f916f]/10 bg-gradient-to-br from-[#7f916f]/15 via-[#7f916f]/5 via-20% to-transparent hover:bg-[#7f916f]/5",
-    features: ["Informations sur la garde", "Réservation en ligne", "Localisation Google Maps"],
+    features: ["Catalogue de chambres", "Réservation en ligne", "Guide local"],
     to: "/demos/echappee-belle",
   },
   {
@@ -104,7 +104,7 @@ const demos = [
     category: "Événementiel & Créatifs",
     image: "/resume/z-screenshots/studio-momentum.png",
     color: "border-[#d6b76d]/10 bg-gradient-to-br from-[#d6b76d]/15 via-[#d6b76d]/5 via-20% to-transparent hover:bg-[#d6b76d]/5",
-    features: ["Informations sur la garde", "Réservation en ligne", "Localisation Google Maps"],
+    features: ["Portfolio de réalisations", "Estimateur de prix"],
     to: "/demos/studio-momentum",
   },
   {
@@ -112,23 +112,23 @@ const demos = [
     category: "Métiers d'art & Créateurs",
     image: "/resume/z-screenshots/atelier-creation.png",
     color: "border-[#A27B45]/10 bg-gradient-to-br from-[#A27B45]/15 via-[#A27B45]/5 via-20% to-transparent hover:bg-[#A27B45]/5",
-    features: ["Informations sur la garde", "Réservation en ligne", "Localisation Google Maps"],
+    features: ["Catalogue de produits", "Estimateur de prix"],
     to: "/demos/atelier-creation",
   },
 
   {
-    name: "Les Pattes Aux Cœurs",
+    name: "La Patte Au Cœur",
     category: "Animaux",
     image: "/resume/z-screenshots/patte-coeur.png",
     color: "border-[#c08a5e]/10 bg-gradient-to-br from-[#c08a5e]/15 via-[#c08a5e]/5 via-20% to-transparent hover:bg-[#c08a5e]/5",
-    features: ["Estimateur de prix", "Questionnaire d'urgences vétérinaires", "Conseils comportementaux", "Réservation en ligne", "Localisation Google Maps"],
+    features: ["Estimateur de prix", "Questionnaire d'urgences vétérinaires"],
     to: "/demos/pattes-coeurs",
   },
 ];
 
 export function Demos() {
   return (
-    <section id="demos" className="mx-auto max-w-7xl px-8 pb-46">
+    <section id="demos" className="scroll-mt-6 mx-auto max-w-7xl px-8 pb-46">
       <header className="mb-16">
         <Heading className="text-3xl font-semibold tracking-tight sm:text-2xl">Quelques démos de sites vitrines :</Heading>
       </header>

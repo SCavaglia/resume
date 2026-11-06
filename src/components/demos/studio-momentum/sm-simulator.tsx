@@ -92,7 +92,7 @@ export function SmSimulator() {
   const total = serviceTotal + optionTotal + guestTotal;
 
   return (
-    <section id="simulateur" className="scroll-mt-6 relative isolate bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]">
+    <section id="simulateur" className="scroll-mt-6 relative isolate overflow-hidden bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]">
       {/* Décoration */}
       <div className="pointer-events-none absolute top-20 -left-40 h-96 w-96 rounded-full bg-[#c49a45]/10 blur-[120px] dark:bg-[#c49a45]/10" />
       <div className="pointer-events-none absolute -right-40 bottom-10 h-96 w-96 rounded-full bg-[#e5c982]/20 blur-[120px] dark:bg-[#a98235]/10" />

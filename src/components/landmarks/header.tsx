@@ -52,7 +52,16 @@ export function Header() {
               <NavigationMenuList className="flex h-full items-stretch space-x-2">
                 {mainNavItems.map((item, index) => (
                   <NavigationMenuItem key={index} className="relative flex h-full items-center">
-                    <a href={item.href} className="h-9 cursor-pointer px-3">
+                    <a
+                      href={item.href}
+                      className="
+        relative flex h-9 cursor-pointer items-center px-3
+        after:absolute after:bottom-0 after:left-3
+        after:h-0.5 after:w-0 after:bg-white
+        after:transition-all after:duration-300
+        hover:after:w-[calc(100%-24px)]
+    "
+                    >
                       {item.title}
                     </a>
                   </NavigationMenuItem>

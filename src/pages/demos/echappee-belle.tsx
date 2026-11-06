@@ -12,7 +12,6 @@ import { DemosFooter } from "@/components/landmarks/demos-footer";
 import { DemosTopbar } from "@/components/landmarks/demos-topbar";
 import { MountainSnow } from "lucide-react";
 
-
 const footerProps = {
   navigationLinks: [
     { title: "Accueil", href: "#accueil" },
@@ -30,12 +29,16 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/resume/demos/echappee-belle#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl font-thin">
+    <a href="/resume/demos/echappee-belle#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl font-thin text-white">
       <MountainSnow className="size-12 rounded-md bg-linear-to-tr from-[rgb(96,112,85)] to-[rgb(96,112,85)] p-2 text-[rgb(201,157,99)]" />
       <span>L'Échappée</span>
-      <span className="bg-linear-to-t from-[rgb(96,112,85)] via-yellow-500 to-yellow-200 bg-clip-text text-transparent">Belle</span>
+      <span className="bg-linear-to-t from-[#46563f] via-[#8e805d] to-[#c5a477] bg-clip-text text-transparent dark:from-[#607055] dark:via-[#b5a477] dark:to-[#e8d5a9]">
+        Belle
+      </span>
     </a>
   ),
+  description:
+    "L'Échappée Belle, bastide provençale de prestige à Gordes, nichée au cœur du Luberon. Un havre de paix où l'élégance et le confort se marient à la beauté naturelle de la Provence.",
 
   className: "py-24 px-6 border-t bg-black/90 dark:bg-black/50 lg:px-8",
   containerClassName: "mx-auto max-w-7xl  ",

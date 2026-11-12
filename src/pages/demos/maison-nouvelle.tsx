@@ -34,7 +34,10 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/resume/demos/maison-nouvelle#accueil" className="mb-8 flex items-center gap-2 font-cormorant text-3xl font-thin uppercase">
+    <a
+      href="/resume/demos/maison-nouvelle#accueil"
+      className="mb-8 flex items-center gap-2 font-cormorant text-3xl font-thin uppercase"
+    >
       <span>Maison</span>
       <span className="text-[rgb(191,168,136)]">Nouvelle</span>
     </a>
@@ -46,7 +49,8 @@ const footerProps = {
   containerClassName: "mx-auto max-w-7xl  ",
   gridClassName: "grid gap-10 lg:grid-cols-4",
   brandClassName: "lg:col-span-2 lg:-translate-y-8",
-  descriptionClassName: "mt-3 max-w-md text-balance text-sm leading-loose text-background dark:text-foreground",
+  descriptionClassName:
+    "mt-3 max-w-md text-balance text-sm leading-loose text-background dark:text-foreground",
   socialLinks: (
     <>
       <FacebookIcon className="size-6" aria-hidden="true" />
@@ -58,7 +62,8 @@ const footerProps = {
   linksClassName: "mt-4 space-y-3",
   linkClassName:
     "relative inline-block text-sm text-background transition-all duration-300 hover:-translate-y-1 hover:text-white dark:text-foreground dark:hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100",
-  bottomClassName: "mt-12 pt-6 flex flex-col gap-4 border-t text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
+  bottomClassName:
+    "mt-12 pt-6 flex flex-col gap-4 border-t text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
 };
 export default function MaisonNouvelle() {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
@@ -68,7 +73,10 @@ export default function MaisonNouvelle() {
 
   const headerProps = {
     logo: (
-      <a href="/resume/demos/maison-nouvelle#accueil" className="flex items-center gap-2 font-cormorant text-3xl font-thin uppercase">
+      <a
+        href="/resume/demos/maison-nouvelle#accueil"
+        className="flex items-center gap-2 font-cormorant text-3xl font-thin uppercase"
+      >
         <span className="hidden sm:inline">Maison</span>
         <span className="sm:hidden">M</span>
         <span className="pl-1 text-[rgb(191,168,136)]">
@@ -90,7 +98,9 @@ export default function MaisonNouvelle() {
       >
         <ShoppingBasket className="size-5" />
         PANIER
-        <span className="rounded-full bg-[rgb(191,168,136)] px-2.5 py-1 text-xs text-black">{cartCount}</span>
+        <span className="rounded-full bg-[rgb(191,168,136)] px-2.5 py-1 text-xs text-black">
+          {cartCount}
+        </span>
       </button>
     ),
     navigationItemClassName:
@@ -103,7 +113,9 @@ export default function MaisonNouvelle() {
       const existingItem = currentItems.find((item) => item.id === product.id);
 
       if (existingItem) {
-        return currentItems.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item));
+        return currentItems.map((item) =>
+          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item,
+        );
       }
 
       return [...currentItems, { ...product, quantity: 1 }];
@@ -122,7 +134,12 @@ export default function MaisonNouvelle() {
           <MnContact />
         </main>
         <DemosFooter {...footerProps} />
-        <MnCartSheet open={cartOpen} onOpenChange={setCartOpen} items={cartItems} onItemsChange={setCartItems} />
+        <MnCartSheet
+          open={cartOpen}
+          onOpenChange={setCartOpen}
+          items={cartItems}
+          onItemsChange={setCartItems}
+        />
       </div>
     </>
   );

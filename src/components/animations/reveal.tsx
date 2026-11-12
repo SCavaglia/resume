@@ -12,7 +12,14 @@ type RevealProps = {
   animateOnLoad?: boolean;
 };
 
-export function Reveal({ children, className, delay = 0, direction = "up", as: Tag = "div", animateOnLoad = false }: RevealProps) {
+export function Reveal({
+  children,
+  className,
+  delay = 0,
+  direction = "up",
+  as: Tag = "div",
+  animateOnLoad = false,
+}: RevealProps) {
   const elementRef = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(animateOnLoad);
 

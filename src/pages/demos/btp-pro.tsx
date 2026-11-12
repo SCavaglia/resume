@@ -31,7 +31,10 @@ const footerProps = {
   ],
   id: "footer",
   logo: (
-    <a href="/resume/demos/btp-pro#accueil" className="w-fit flex items-center gap-2 text-3xl font-bold text-white uppercase">
+    <a
+      href="/resume/demos/btp-pro#accueil"
+      className="w-fit flex items-center gap-2 text-3xl font-bold text-white uppercase"
+    >
       <House className="size-10" />
       <span>BTP</span>
       <span className="text-primary-without-black">PRO</span>
@@ -48,7 +51,8 @@ const footerProps = {
   brandClassName: "lg:col-span-2",
   logoClassName: "flex w-fit items-center gap-3 text-4xl font-semibold tracking-tight uppercase",
   nameClassName: "text-primary-without-black",
-  taglineClassName: "mt-3 max-w-md text-sm leading-relaxed text-secondary dark:text-secondary-foreground",
+  taglineClassName:
+    "mt-3 max-w-md text-sm leading-relaxed text-secondary dark:text-secondary-foreground",
   descriptionClassName:
     "mt-3 max-w-md font-cabin text-balance text-sm leading-loose text-background dark:text-foreground",
   socialLinks: (
@@ -62,7 +66,8 @@ const footerProps = {
   linksClassName: "mt-4 space-y-3",
   linkClassName:
     "relative inline-block text-sm text-background transition-all duration-300 hover:-translate-y-1 hover:text-white dark:text-foreground dark:hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100",
-  bottomClassName: "mt-12 pt-6 flex flex-col gap-4 border-t text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
+  bottomClassName:
+    "mt-12 pt-6 flex flex-col gap-4 border-t text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
 };
 
 export default function BtpPro() {

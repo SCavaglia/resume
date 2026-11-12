@@ -2,7 +2,13 @@ import { useState } from "react";
 import { Minus, Plus, ShoppingBasket, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { toast } from "@/components/ui/toast";
 
@@ -19,7 +25,8 @@ const menuItems: MenuItem[] = [
     id: "carpaccio",
     name: "Carpaccio de bœuf",
     price: 14,
-    description: "Fines tranches de filet de bœuf, roquette croquante, copeaux de parmesan de 24 mois, filet d'huile d'olive citronnée.",
+    description:
+      "Fines tranches de filet de bœuf, roquette croquante, copeaux de parmesan de 24 mois, filet d'huile d'olive citronnée.",
     sommelierAdvice:
       "Un Pinot Noir de Bourgogne léger et fruité accompagnera parfaitement la finesse du bœuf et la fraîcheur de la roquette. Ses notes de cerise souligneront délicatement le parmesan.",
   },
@@ -27,7 +34,8 @@ const menuItems: MenuItem[] = [
     id: "foie-gras",
     name: "Foie gras maison",
     price: 18,
-    description: "Foie gras de canard mi-cuit au torchon, chutney acidulé de figues noires du Var, pain d'épices artisanal toasté.",
+    description:
+      "Foie gras de canard mi-cuit au torchon, chutney acidulé de figues noires du Var, pain d'épices artisanal toasté.",
     sommelierAdvice:
       "Un Sauternes aux notes de miel et d'abricot confit créera un bel équilibre avec l'onctuosité du foie gras et l'acidité des figues.",
   },
@@ -89,7 +97,8 @@ const menuItems: MenuItem[] = [
     id: "bourgogne",
     name: "Bourgogne Pinot Noir",
     price: 38,
-    description: "Domaine de la Velle, millésime 2022. Nez de cerise noire et notes de sous-bois. Un flacon d'équilibre parfait.",
+    description:
+      "Domaine de la Velle, millésime 2022. Nez de cerise noire et notes de sous-bois. Un flacon d'équilibre parfait.",
     sommelierAdvice:
       "Un Pinot Noir élégant et équilibré, idéal avec les viandes rouges et les plats mijotés. Servez-le légèrement rafraîchi pour révéler ses arômes de cerise et de sous-bois.",
   },
@@ -97,7 +106,8 @@ const menuItems: MenuItem[] = [
     id: "sancerre",
     name: "Sancerre blanc",
     price: 42,
-    description: "Domaine des Vieux Murs, millésime 2023. Un Sauvignon minéral, droit, avec des touches subtiles d'agrumes frais.",
+    description:
+      "Domaine des Vieux Murs, millésime 2023. Un Sauvignon minéral, droit, avec des touches subtiles d'agrumes frais.",
     sommelierAdvice:
       "Un Sauvignon vif et minéral, parfait avec les poissons, les fruits de mer et les fromages de chèvre. Ses notes d'agrumes apporteront une finale fraîche et élégante.",
   },
@@ -147,13 +157,15 @@ export function BgMenuCard() {
   return (
     <section id="carte" className="relative mx-auto max-w-7xl px-4 py-16 pt-46">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-center font-playfair text-5xl tracking-wide [font-variant-caps:small-caps] sm:text-6xl">La Carte du Bistrot</h2>
+        <h2 className="text-center font-playfair text-5xl tracking-wide [font-variant-caps:small-caps] sm:text-6xl">
+          La Carte du Bistrot
+        </h2>
 
         <div className="mt-2 text-xl text-yellow-500">✦</div>
 
         <p className="mx-auto mt-4 max-w-xl text-center text-lg font-light text-muted-foreground">
-          Notre menu évolue chaque semaine selon les arrivages du marché. Cliquez sur un plat pour découvrir son accord vin conseillé par
-          notre sommelier.
+          Notre menu évolue chaque semaine selon les arrivages du marché. Cliquez sur un plat pour
+          découvrir son accord vin conseillé par notre sommelier.
         </p>
       </div>
       <div className="mt-12 flex flex-col gap-8 md:flex-row md:items-start">
@@ -180,10 +192,14 @@ export function BgMenuCard() {
                   >
                     <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                       <h3 className="font-semibold">{item.name}</h3>
-                      <span className="shrink-0 font-semibold tabular-nums">{formatPrice(item.price)}</span>
+                      <span className="shrink-0 font-semibold tabular-nums">
+                        {formatPrice(item.price)}
+                      </span>
                     </div>
 
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
                   </button>
 
                   <div className="flex shrink-0 flex-col items-center gap-1">
@@ -204,7 +220,11 @@ export function BgMenuCard() {
                       <Plus className="size-4" />
                     </Button>
 
-                    {quantity > 0 && <span className="text-xs font-medium text-muted-foreground tabular-nums">× {quantity}</span>}
+                    {quantity > 0 && (
+                      <span className="text-xs font-medium text-muted-foreground tabular-nums">
+                        × {quantity}
+                      </span>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -216,7 +236,9 @@ export function BgMenuCard() {
         <aside className="md:sticky md:top-32 md:w-85 md:shrink-0">
           <Card className="rounded bg-card">
             <CardContent className="p-6">
-              <p className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">L'accord parfait</p>
+              <p className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
+                L'accord parfait
+              </p>
 
               <h2 className="mt-3 font-serif text-2xl">Le conseil du sommelier</h2>
 
@@ -224,9 +246,13 @@ export function BgMenuCard() {
 
               <p className="text-sm font-semibold">Avec {selectedItem.name.toLowerCase()}</p>
 
-              <p className="mt-3 text-sm leading-7 text-muted-foreground">{selectedItem.sommelierAdvice}</p>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                {selectedItem.sommelierAdvice}
+              </p>
 
-              <p className="mt-6 text-xs text-muted-foreground italic">Une sélection pensée pour sublimer chaque assiette.</p>
+              <p className="mt-6 text-xs text-muted-foreground italic">
+                Une sélection pensée pour sublimer chaque assiette.
+              </p>
             </CardContent>
           </Card>
         </aside>
@@ -264,7 +290,9 @@ export function BgMenuCard() {
             <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
               <ShoppingBasket className="size-12 text-muted-foreground/50" />
               <p className="font-medium">Votre panier est vide</p>
-              <p className="text-sm text-muted-foreground">Ajoutez un plat ou une bouteille depuis notre carte.</p>
+              <p className="text-sm text-muted-foreground">
+                Ajoutez un plat ou une bouteille depuis notre carte.
+              </p>
             </div>
           ) : (
             <>
@@ -277,7 +305,9 @@ export function BgMenuCard() {
                       <div className="min-w-0 flex-1">
                         <p className="font-medium">{item.name}</p>
 
-                        <p className="mt-1 text-sm text-muted-foreground">{formatPrice(item.price)} l'unité</p>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {formatPrice(item.price)} l'unité
+                        </p>
 
                         <div className="mt-3 flex items-center gap-2">
                           <Button
@@ -291,7 +321,9 @@ export function BgMenuCard() {
                             <Minus className="size-3" />
                           </Button>
 
-                          <span className="min-w-5 text-center text-sm tabular-nums">{quantity}</span>
+                          <span className="min-w-5 text-center text-sm tabular-nums">
+                            {quantity}
+                          </span>
 
                           <Button
                             type="button"
@@ -325,7 +357,9 @@ export function BgMenuCard() {
                         </div>
                       </div>
 
-                      <p className="shrink-0 font-semibold tabular-nums">{formatPrice(item.price * quantity)}</p>
+                      <p className="shrink-0 font-semibold tabular-nums">
+                        {formatPrice(item.price * quantity)}
+                      </p>
                     </div>
                   );
                 })}
@@ -338,10 +372,16 @@ export function BgMenuCard() {
                 </div>
 
                 <p className="text-xs leading-relaxed text-muted-foreground">
-                  Ceci est une démonstration de panier. Aucun paiement ni réservation n'est effectué.
+                  Ceci est une démonstration de panier. Aucun paiement ni réservation n'est
+                  effectué.
                 </p>
 
-                <Button type="button" variant="outline" className="w-full" onClick={() => setIsCartOpen(false)}>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => setIsCartOpen(false)}
+                >
                   Continuer la découverte
                 </Button>
               </div>

@@ -3,7 +3,10 @@ import { Button } from "@/components/ui/button";
 
 export function ScHero() {
   return (
-    <section id="accueil" className="relative isolate flex min-h-[720px] items-center overflow-hidden bg-[linear-gradient(135deg,rgb(9,20,29)_0%,rgb(13,31,45)_50%,rgb(26,42,58)_100%)] px-6 py-32 sm:px-10 lg:min-h-[800px]">
+    <section
+      id="accueil"
+      className="relative isolate flex min-h-[720px] items-center overflow-hidden bg-[linear-gradient(135deg,rgb(9,20,29)_0%,rgb(13,31,45)_50%,rgb(26,42,58)_100%)] px-6 py-32 sm:px-10 lg:min-h-[800px]"
+    >
       {/* Dégradés lumineux */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-52 -right-40 size-[650px] rounded-full bg-[#b4966e]/10 blur-[130px]" />
@@ -55,8 +58,9 @@ export function ScHero() {
 
           {/* Description */}
           <p className="max-w-2xl text-base leading-8 text-[#c1cbd1] sm:text-lg sm:leading-9">
-            Avocats d'affaires, experts-comptables, notaires et consultants d'élite unis pour accompagner la croissance, structurer la
-            conformité et sécuriser le patrimoine de votre entreprise.
+            Avocats d'affaires, experts-comptables, notaires et consultants d'élite unis pour
+            accompagner la croissance, structurer la conformité et sécuriser le patrimoine de votre
+            entreprise.
           </p>
 
           {/* Actions */}

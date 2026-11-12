@@ -40,7 +40,8 @@ export function BgHero() {
 
         {/* Description */}
         <p className="mt-2 text-center text-lg leading-8 tracking-wide text-neutral-200">
-          Des produits frais rigoureusement sélectionnés au marché, une atmosphère conviviale et le respect des recettes de tradition.
+          Des produits frais rigoureusement sélectionnés au marché, une atmosphère conviviale et le
+          respect des recettes de tradition.
         </p>
 
         {/* Actions */}

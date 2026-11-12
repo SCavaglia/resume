@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-const categories = ["Tous les cours", "Force & Renfo", "Cardio & HIIT", "Combat & Boxe", "Zen & Souplesse"] as const;
+const categories = [
+  "Tous les cours",
+  "Force & Renfo",
+  "Cardio & HIIT",
+  "Combat & Boxe",
+  "Zen & Souplesse",
+] as const;
 
 const categoryStyles: Record<Category, { active: string; badge: string }> = {
   "Tous les cours": {
@@ -307,7 +313,9 @@ export function FzPlanning() {
   const [selectedDay, setSelectedDay] = useState<Day>("Lundi");
 
   const filteredCourses = courses.filter(
-    (course) => course.day === selectedDay && (selectedCategory === "Tous les cours" || course.category === selectedCategory),
+    (course) =>
+      course.day === selectedDay &&
+      (selectedCategory === "Tous les cours" || course.category === selectedCategory),
   );
 
   return (
@@ -318,11 +326,15 @@ export function FzPlanning() {
         </p>
 
         <h2 className="mt-4 text-6xl text-center font-oswald font-black uppercase tracking-wide">
-          Planifie <span className="bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">tes séances</span>
+          Planifie{" "}
+          <span className="bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
+            tes séances
+          </span>
         </h2>
 
         <p className="mt-4 mx-auto max-w-xl text-center text-lg font-light text-muted-foreground">
-          Consultez notre planning interactif, filtrez par type d'activité et réservez instantanément votre créneau d'essai.
+          Consultez notre planning interactif, filtrez par type d'activité et réservez
+          instantanément votre créneau d'essai.
         </p>
       </div>
 
@@ -376,7 +388,12 @@ export function FzPlanning() {
                 className="flex flex-col rounded-xl border bg-background p-5 transition-colors hover:border-primary/40"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <span className={cn("rounded-full px-3 py-1 text-xs font-semibold", categoryStyles[course.category].badge)}>
+                  <span
+                    className={cn(
+                      "rounded-full px-3 py-1 text-xs font-semibold",
+                      categoryStyles[course.category].badge,
+                    )}
+                  >
                     {course.category}
                   </span>
 
@@ -406,7 +423,9 @@ export function FzPlanning() {
 
                 <div className="mt-5 flex items-center justify-between border-t pt-4">
                   <div className="flex items-center gap-3">
-                    <div className="flex size-10 items-center justify-center rounded-full bg-muted font-semibold">{course.initials}</div>
+                    <div className="flex size-10 items-center justify-center rounded-full bg-muted font-semibold">
+                      {course.initials}
+                    </div>
 
                     <div>
                       <p className="text-xs text-muted-foreground">Coach</p>
@@ -432,7 +451,9 @@ export function FzPlanning() {
           ) : (
             <div className="rounded-xl border border-dashed p-10 text-center md:col-span-2">
               <p className="font-medium">Aucun cours pour cette sélection.</p>
-              <p className="mt-2 text-sm text-muted-foreground">Essayez une autre catégorie ou un autre jour.</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Essayez une autre catégorie ou un autre jour.
+              </p>
             </div>
           )}
         </div>

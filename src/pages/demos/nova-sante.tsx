@@ -36,7 +36,9 @@ const footerProps = {
       <Heart className="size-12 rounded-2xl border bg-linear-to-r from-sky-500 to-teal-500 p-2" />
       <span className="font-figtree text-2xl font-extrabold tracking-wide">
         Nova
-        <span className="bg-linear-to-r from-sky-500 to-teal-500 bg-clip-text pl-2 text-transparent">Santé</span>
+        <span className="bg-linear-to-r from-sky-500 to-teal-500 bg-clip-text pl-2 text-transparent">
+          Santé
+        </span>
       </span>
     </a>
   ),
@@ -49,7 +51,8 @@ const footerProps = {
   brandClassName: "lg:col-span-2",
   logoClassName: "flex w-fit items-center gap-3 text-4xl font-semibold tracking-tight uppercase",
   nameClassName: "text-primary-without-black",
-  taglineClassName: "mt-3 max-w-md text-sm leading-relaxed text-secondary dark:text-secondary-foreground",
+  taglineClassName:
+    "mt-3 max-w-md text-sm leading-relaxed text-secondary dark:text-secondary-foreground",
   descriptionClassName:
     "mt-3 max-w-md text-sm leading-relaxed text-muted-foreground font-cabin text-secondary dark:text-secondary-foreground",
   socialLinks: (
@@ -63,7 +66,8 @@ const footerProps = {
   linksClassName: "mt-4 space-y-3",
   linkClassName:
     "relative inline-block text-sm text-background transition-all duration-300 hover:-translate-y-1 hover:text-white dark:text-foreground dark:hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100",
-  bottomClassName: "mt-12 flex flex-col gap-4 border-t pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
+  bottomClassName:
+    "mt-12 flex flex-col gap-4 border-t pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
 };
 export default function NovaSante() {
   return (

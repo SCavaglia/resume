@@ -1,6 +1,10 @@
 import { Heart, Menu, PawPrint } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -41,7 +45,10 @@ export function PcHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="font-playfair text-xl font-bold">La Patte Au Cœur</div>
@@ -50,7 +57,11 @@ export function PcHeader() {
               <nav className="flex h-full flex-1 flex-col p-4">
                 <div className="flex flex-col space-y-4">
                   {navigation.map((item) => (
-                    <a key={item.title} href={item.href} className="flex items-center space-x-2 font-medium">
+                    <a
+                      key={item.title}
+                      href={item.href}
+                      className="flex items-center space-x-2 font-medium"
+                    >
                       {item.title}
                     </a>
                   ))}
@@ -73,7 +84,11 @@ export function PcHeader() {
                   <stop offset="100%" stopColor="#ef4444" />
                 </linearGradient>
               </defs>
-              <Heart className="size-full" fill="url(#heart-gradient)" stroke="url(#heart-gradient)" />
+              <Heart
+                className="size-full"
+                fill="url(#heart-gradient)"
+                stroke="url(#heart-gradient)"
+              />
             </svg>
             <PawPrint className="absolute inset-0 m-auto size-8 text-white" />
           </div>

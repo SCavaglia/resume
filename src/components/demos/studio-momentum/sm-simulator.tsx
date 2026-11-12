@@ -1,5 +1,16 @@
 import { useState } from "react";
-import { Camera, Clapperboard, Music2, Flower2, CalendarCheck, Users, Check, Plus, ArrowRight, Calculator } from "lucide-react";
+import {
+  Camera,
+  Clapperboard,
+  Music2,
+  Flower2,
+  CalendarCheck,
+  Users,
+  Check,
+  Plus,
+  ArrowRight,
+  Calculator,
+} from "lucide-react";
 
 const services = [
   {
@@ -73,16 +84,24 @@ export function SmSimulator() {
   const [guests, setGuests] = useState(150);
 
   const toggleService = (id: string) => {
-    setSelectedServices((current) => (current.includes(id) ? current.filter((item) => item !== id) : [...current, id]));
+    setSelectedServices((current) =>
+      current.includes(id) ? current.filter((item) => item !== id) : [...current, id],
+    );
   };
 
   const toggleOption = (id: string) => {
-    setSelectedOptions((current) => (current.includes(id) ? current.filter((item) => item !== id) : [...current, id]));
+    setSelectedOptions((current) =>
+      current.includes(id) ? current.filter((item) => item !== id) : [...current, id],
+    );
   };
 
-  const selectedServiceDetails = services.filter((service) => selectedServices.includes(service.id));
+  const selectedServiceDetails = services.filter((service) =>
+    selectedServices.includes(service.id),
+  );
 
-  const selectedOptionDetails = extraOptions.filter((option) => selectedOptions.includes(option.id));
+  const selectedOptionDetails = extraOptions.filter((option) =>
+    selectedOptions.includes(option.id),
+  );
 
   const serviceTotal = selectedServiceDetails.reduce((total, service) => total + service.price, 0);
 
@@ -92,7 +111,10 @@ export function SmSimulator() {
   const total = serviceTotal + optionTotal + guestTotal;
 
   return (
-    <section id="simulateur" className="scroll-mt-6 relative isolate overflow-hidden bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]">
+    <section
+      id="simulateur"
+      className="scroll-mt-6 relative isolate overflow-hidden bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]"
+    >
       {/* Décoration */}
       <div className="pointer-events-none absolute top-20 -left-40 h-96 w-96 rounded-full bg-[#c49a45]/10 blur-[120px] dark:bg-[#c49a45]/10" />
       <div className="pointer-events-none absolute -right-40 bottom-10 h-96 w-96 rounded-full bg-[#e5c982]/20 blur-[120px] dark:bg-[#a98235]/10" />
@@ -116,7 +138,8 @@ export function SmSimulator() {
           </div>
 
           <p className="mt-5 text-base leading-relaxed text-[#6e675b] sm:text-lg dark:text-[#c0b8a8]">
-            Sélectionnez vos besoins artistiques, ajustez la taille de votre événement et obtenez une estimation budgétaire en temps réel.
+            Sélectionnez vos besoins artistiques, ajustez la taille de votre événement et obtenez
+            une estimation budgétaire en temps réel.
           </p>
         </div>
 
@@ -174,8 +197,12 @@ export function SmSimulator() {
                       </div>
 
                       <div className="mt-5">
-                        <h4 className="font-cormorant text-2xl font-semibold text-[#302a20] dark:text-[#f0e8d8]">{service.title}</h4>
-                        <p className="mt-2 text-xs leading-6 text-[#746b5d] dark:text-[#bcb09e]">{service.description}</p>
+                        <h4 className="font-cormorant text-2xl font-semibold text-[#302a20] dark:text-[#f0e8d8]">
+                          {service.title}
+                        </h4>
+                        <p className="mt-2 text-xs leading-6 text-[#746b5d] dark:text-[#bcb09e]">
+                          {service.description}
+                        </p>
                       </div>
 
                       <div className="mt-auto pt-5 text-lg font-semibold text-[#92702d] dark:text-[#dfbd70]">
@@ -198,7 +225,9 @@ export function SmSimulator() {
                     <Users className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-cormorant text-2xl font-semibold text-[#302a20] dark:text-[#f0e8d8]">Nombre d'invités estimé</h3>
+                    <h3 className="font-cormorant text-2xl font-semibold text-[#302a20] dark:text-[#f0e8d8]">
+                      Nombre d'invités estimé
+                    </h3>
                     <p className="mt-1 text-xs text-[#746b5d] dark:text-[#bcb09e]">
                       Impacte la sonorisation et les besoins de staff (+5€/convive)
                     </p>
@@ -206,8 +235,12 @@ export function SmSimulator() {
                 </div>
 
                 <div className="rounded-xl border border-[#d9c69d] bg-[#f7efd9] px-5 py-3 text-center dark:border-[#67542f] dark:bg-[#393020]">
-                  <p className="font-cormorant text-3xl font-semibold text-[#92702d] dark:text-[#dfbd70]">{guests}</p>
-                  <p className="text-[10px] font-semibold tracking-widest text-[#806c48] uppercase dark:text-[#bba36e]">Personnes</p>
+                  <p className="font-cormorant text-3xl font-semibold text-[#92702d] dark:text-[#dfbd70]">
+                    {guests}
+                  </p>
+                  <p className="text-[10px] font-semibold tracking-widest text-[#806c48] uppercase dark:text-[#bba36e]">
+                    Personnes
+                  </p>
                 </div>
               </div>
 
@@ -233,8 +266,12 @@ export function SmSimulator() {
               </div>
 
               <div className="mt-6 flex items-center justify-between border-t border-[#e8dfd3] pt-5 dark:border-[#49402f]">
-                <span className="text-sm text-[#746b5d] dark:text-[#bcb09e]">Logistique invités</span>
-                <span className="font-semibold text-[#92702d] dark:text-[#dfbd70]">{formatPrice(guestTotal)}</span>
+                <span className="text-sm text-[#746b5d] dark:text-[#bcb09e]">
+                  Logistique invités
+                </span>
+                <span className="font-semibold text-[#92702d] dark:text-[#dfbd70]">
+                  {formatPrice(guestTotal)}
+                </span>
               </div>
             </div>
 
@@ -273,12 +310,20 @@ export function SmSimulator() {
                               : "bg-[#f3ead6] text-[#92702d] dark:bg-[#393020] dark:text-[#dfbd70]"
                           }`}
                         >
-                          {isSelected ? <Check className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+                          {isSelected ? (
+                            <Check className="h-4 w-4" />
+                          ) : (
+                            <Plus className="h-4 w-4" />
+                          )}
                         </span>
 
                         <span className="min-w-0">
-                          <span className="block text-sm font-semibold text-[#393329] dark:text-[#eee5d5]">{option.title}</span>
-                          <span className="mt-1 block text-xs text-[#817667] dark:text-[#bcb09e]">{option.description}</span>
+                          <span className="block text-sm font-semibold text-[#393329] dark:text-[#eee5d5]">
+                            {option.title}
+                          </span>
+                          <span className="mt-1 block text-xs text-[#817667] dark:text-[#bcb09e]">
+                            {option.description}
+                          </span>
                         </span>
                       </div>
 
@@ -306,7 +351,9 @@ export function SmSimulator() {
                     <p className="text-[10px] font-semibold tracking-[0.2em] text-[#9a8253] uppercase dark:text-[#bba36e]">
                       Votre sélection
                     </p>
-                    <h3 className="font-cormorant text-3xl font-semibold text-[#302a20] dark:text-[#f0e8d8]">Détails du Devis</h3>
+                    <h3 className="font-cormorant text-3xl font-semibold text-[#302a20] dark:text-[#f0e8d8]">
+                      Détails du Devis
+                    </h3>
                   </div>
                 </div>
 
@@ -319,40 +366,64 @@ export function SmSimulator() {
                     {selectedServiceDetails.length > 0 ? (
                       <div className="flex flex-col gap-3">
                         {selectedServiceDetails.map((service) => (
-                          <div key={service.id} className="flex items-start justify-between gap-3 text-sm">
-                            <span className="text-[#655c50] dark:text-[#c0b8a8]">{service.title}</span>
-                            <span className="shrink-0 font-medium text-[#393329] dark:text-[#eee5d5]">{formatPrice(service.price)}</span>
+                          <div
+                            key={service.id}
+                            className="flex items-start justify-between gap-3 text-sm"
+                          >
+                            <span className="text-[#655c50] dark:text-[#c0b8a8]">
+                              {service.title}
+                            </span>
+                            <span className="shrink-0 font-medium text-[#393329] dark:text-[#eee5d5]">
+                              {formatPrice(service.price)}
+                            </span>
                           </div>
                         ))}
                       </div>
                     ) : (
-                      <p className="text-sm text-[#a69a8c] italic dark:text-[#82766a]">Aucune prestation sélectionnée</p>
+                      <p className="text-sm text-[#a69a8c] italic dark:text-[#82766a]">
+                        Aucune prestation sélectionnée
+                      </p>
                     )}
                   </div>
 
                   <div className="h-px bg-linear-to-r from-[#b58a35]/50 via-[#b58a35]/15 to-transparent" />
 
                   <div className="flex items-start justify-between gap-3 text-sm">
-                    <span className="text-[#655c50] dark:text-[#c0b8a8]">Logistique invité ({guests} pers.)</span>
-                    <span className="shrink-0 font-medium text-[#393329] dark:text-[#eee5d5]">+{formatPrice(guestTotal)}</span>
+                    <span className="text-[#655c50] dark:text-[#c0b8a8]">
+                      Logistique invité ({guests} pers.)
+                    </span>
+                    <span className="shrink-0 font-medium text-[#393329] dark:text-[#eee5d5]">
+                      +{formatPrice(guestTotal)}
+                    </span>
                   </div>
 
                   <div className="h-px bg-linear-to-r from-[#b58a35]/50 via-[#b58a35]/15 to-transparent" />
 
                   <div>
-                    <p className="mb-3 text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">Options</p>
+                    <p className="mb-3 text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">
+                      Options
+                    </p>
 
                     {selectedOptionDetails.length > 0 ? (
                       <div className="flex flex-col gap-3">
                         {selectedOptionDetails.map((option) => (
-                          <div key={option.id} className="flex items-start justify-between gap-3 text-sm">
-                            <span className="text-[#655c50] dark:text-[#c0b8a8]">{option.title}</span>
-                            <span className="shrink-0 font-medium text-[#393329] dark:text-[#eee5d5]">+{formatPrice(option.price)}</span>
+                          <div
+                            key={option.id}
+                            className="flex items-start justify-between gap-3 text-sm"
+                          >
+                            <span className="text-[#655c50] dark:text-[#c0b8a8]">
+                              {option.title}
+                            </span>
+                            <span className="shrink-0 font-medium text-[#393329] dark:text-[#eee5d5]">
+                              +{formatPrice(option.price)}
+                            </span>
                           </div>
                         ))}
                       </div>
                     ) : (
-                      <p className="text-sm text-[#a69a8c] italic dark:text-[#82766a]">Aucune option sélectionnée</p>
+                      <p className="text-sm text-[#a69a8c] italic dark:text-[#82766a]">
+                        Aucune option sélectionnée
+                      </p>
                     )}
                   </div>
                 </div>
@@ -366,7 +437,9 @@ export function SmSimulator() {
                   <p className="mt-3 font-cormorant text-5xl font-semibold tracking-tight text-[#92702d] sm:text-6xl dark:text-[#dfbd70]">
                     {formatPrice(total)}
                   </p>
-                  <p className="mt-2 text-xs text-[#968a7d] dark:text-[#9d9184]">Estimation indicative, hors frais éventuels</p>
+                  <p className="mt-2 text-xs text-[#968a7d] dark:text-[#9d9184]">
+                    Estimation indicative, hors frais éventuels
+                  </p>
                 </div>
 
                 <a
@@ -378,7 +451,8 @@ export function SmSimulator() {
                 </a>
 
                 <p className="mt-4 text-center text-[10px] leading-relaxed text-[#968a7d] dark:text-[#9d9184]">
-                  Cette estimation ne constitue pas un devis contractuel. Chaque projet fait l'objet d'une étude personnalisée.
+                  Cette estimation ne constitue pas un devis contractuel. Chaque projet fait l'objet
+                  d'une étude personnalisée.
                 </p>
               </div>
             </div>

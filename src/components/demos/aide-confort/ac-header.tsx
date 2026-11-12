@@ -1,6 +1,10 @@
 import { HeartHandshake, Menu } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -39,13 +43,18 @@ export function AcHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="flex items-center gap-2 font-playfair text-xl font-bold">
                   <HeartHandshake className="size-9 rounded-md bg-linear-to-r from-sky-300 to-teal-400 p-2 text-white" />
                   <span>Aide &</span>
-                  <span className="bg-linear-to-r from-sky-500 via-blue-500 to-teal-500 bg-clip-text text-transparent">Confort</span>
+                  <span className="bg-linear-to-r from-sky-500 via-blue-500 to-teal-500 bg-clip-text text-transparent">
+                    Confort
+                  </span>
                 </div>
               </SheetHeader>
 
@@ -67,11 +76,16 @@ export function AcHeader() {
         </div>
 
         {/* Logo */}
-        <a href="/resume/demos/aide-confort#accueil" className="flex shrink-0 items-center gap-3 font-playfair text-3xl font-bold">
+        <a
+          href="/resume/demos/aide-confort#accueil"
+          className="flex shrink-0 items-center gap-3 font-playfair text-3xl font-bold"
+        >
           <HeartHandshake className="size-12 rounded-md bg-linear-to-r from-sky-300 to-teal-400 p-2 text-white" />
           <span className="hidden sm:inline">
             <span>Aide &</span>
-            <span className="pl-1 bg-linear-to-r from-sky-500 via-blue-500 to-teal-500 bg-clip-text text-transparent">Confort</span>
+            <span className="pl-1 bg-linear-to-r from-sky-500 via-blue-500 to-teal-500 bg-clip-text text-transparent">
+              Confort
+            </span>
           </span>
         </a>
 

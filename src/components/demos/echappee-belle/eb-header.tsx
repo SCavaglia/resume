@@ -1,6 +1,10 @@
 import { Menu, MountainSnow } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -41,7 +45,10 @@ export function EbHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="flex items-center gap-2 font-cormorant text-xl font-thin">
@@ -56,7 +63,11 @@ export function EbHeader() {
               <nav className="flex h-full flex-1 flex-col p-4">
                 <div className="flex flex-col space-y-4">
                   {navigation.map((item) => (
-                    <a key={item.title} href={item.href} className="flex items-center space-x-2 text-sm uppercase tracking-wide">
+                    <a
+                      key={item.title}
+                      href={item.href}
+                      className="flex items-center space-x-2 text-sm uppercase tracking-wide"
+                    >
                       {item.title}
                     </a>
                   ))}
@@ -67,7 +78,10 @@ export function EbHeader() {
         </div>
 
         {/* Logo */}
-        <a href="/resume/demos/echappee-belle#accueil" className="flex shrink-0 items-center gap-2 font-cormorant text-3xl font-thin">
+        <a
+          href="/resume/demos/echappee-belle#accueil"
+          className="flex shrink-0 items-center gap-2 font-cormorant text-3xl font-thin"
+        >
           <MountainSnow className="size-12 rounded-md bg-linear-to-tr from-[rgb(96,112,85)] to-[rgb(96,112,85)] p-2 text-[rgb(201,157,99)]" />
           <span className="hidden sm:inline">
             <span>L'Échappée</span>
@@ -124,7 +138,9 @@ export function EbHeader() {
           />
 
           {/* Texte */}
-          <span className="relative z-10 transition-colors duration-300 group-hover:text-[#34412f]">Réserver</span>
+          <span className="relative z-10 transition-colors duration-300 group-hover:text-[#34412f]">
+            Réserver
+          </span>
         </a>
       </div>
     </header>

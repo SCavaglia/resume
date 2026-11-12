@@ -1,6 +1,10 @@
 import { Menu, Scale } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -40,7 +44,10 @@ export function ScHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="font-cormorant text-xl uppercase">Synergie Conseil</div>
@@ -64,7 +71,10 @@ export function ScHeader() {
         </div>
 
         {/* Logo */}
-        <a href="/resume/demos/synergie-conseil#accueil" className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase">
+        <a
+          href="/resume/demos/synergie-conseil#accueil"
+          className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase"
+        >
           <Scale className="size-12 rounded-md bg-linear-to-r from-cyan-900 to-sky-900 p-2 text-[#c6a77e]" />
           <span>
             <span className="hidden sm:inline">Synergie</span>

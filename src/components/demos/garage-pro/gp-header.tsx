@@ -1,6 +1,10 @@
 import { CarFront, Menu } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -40,7 +44,10 @@ export function GpHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="flex items-center gap-2 font-oswald text-xl font-bold uppercase">
@@ -52,7 +59,11 @@ export function GpHeader() {
               <nav className="flex h-full flex-1 flex-col p-4">
                 <div className="flex flex-col space-y-4">
                   {navigation.map((item) => (
-                    <a key={item.title} href={item.href} className="flex items-center space-x-2 text-sm uppercase tracking-wide">
+                    <a
+                      key={item.title}
+                      href={item.href}
+                      className="flex items-center space-x-2 text-sm uppercase tracking-wide"
+                    >
                       {item.title}
                     </a>
                   ))}
@@ -63,12 +74,14 @@ export function GpHeader() {
         </div>
 
         {/* Logo */}
-        <a href="/resume/demos/garage-pro#accueil" className="flex shrink-0 items-center gap-2 font-oswald text-3xl font-bold uppercase">
+        <a
+          href="/resume/demos/garage-pro#accueil"
+          className="flex shrink-0 items-center gap-2 font-oswald text-3xl font-bold uppercase"
+        >
           <CarFront className="size-12 rounded-md bg-[#e63946] p-2 text-white" />
           <span className="hidden sm:inline">
-
-          <span>Garage</span>
-          <span className="bg-[#e63946] bg-clip-text text-transparent">Pro</span>
+            <span>Garage</span>
+            <span className="bg-[#e63946] bg-clip-text text-transparent">Pro</span>
           </span>
         </a>
 

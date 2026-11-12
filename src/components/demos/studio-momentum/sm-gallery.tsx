@@ -1,5 +1,14 @@
 import { useCallback, useEffect, useState } from "react";
-import { ArrowLeft, ArrowUpRight, Camera, ChevronLeft, ChevronRight, Flower2, MapPin, X } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowUpRight,
+  Camera,
+  ChevronLeft,
+  ChevronRight,
+  Flower2,
+  MapPin,
+  X,
+} from "lucide-react";
 
 type Category = "Mariages" | "Entreprise & Galas" | "Soirées Privées" | "Mode & Éditoriaux";
 
@@ -16,7 +25,13 @@ type Project = {
   presentation: string;
 };
 
-const categories = ["Tous nos projets", "Mariages", "Entreprise & Galas", "Soirées Privées", "Mode & Éditoriaux"] as const;
+const categories = [
+  "Tous nos projets",
+  "Mariages",
+  "Entreprise & Galas",
+  "Soirées Privées",
+  "Mode & Éditoriaux",
+] as const;
 
 const projects: Project[] = [
   {
@@ -38,7 +53,7 @@ const projects: Project[] = [
     subtitle: "L'Oréal Luxe - Moment Studio",
     location: "Palais de Tokyo — Paris",
     category: "Entreprise & Galas",
-   image: "/resume/studio-momentum/portfolio_loreal.webp",
+    image: "/resume/studio-momentum/portfolio_loreal.webp",
     type: "Événement de Marque",
     client: "L'Oréal Luxe",
     deliverables: "Direction artistique, Photo, Vidéo & Scénographie",
@@ -51,7 +66,7 @@ const projects: Project[] = [
     subtitle: "Vogue Editorial - Moment Studio",
     location: "Serres d'Auteuil — Paris",
     category: "Mode & Éditoriaux",
-   image: "/resume/studio-momentum/portfolio_vogue.webp",
+    image: "/resume/studio-momentum/portfolio_vogue.webp",
     type: "Production Éditoriale",
     client: "Vogue",
     deliverables: "Photographie, Direction artistique & Stylisme",
@@ -64,7 +79,7 @@ const projects: Project[] = [
     subtitle: "Gala Chanel - Moment Studio",
     location: "Grand Palais — Paris",
     category: "Entreprise & Galas",
-   image: "/resume/studio-momentum/portfolio_chanel.webp",
+    image: "/resume/studio-momentum/portfolio_chanel.webp",
     type: "Gala Prestige",
     client: "Chanel",
     deliverables: "Photo, Film, Décoration & Coordination",
@@ -90,7 +105,7 @@ const projects: Project[] = [
     subtitle: "Collection Capsule - Moment Studio",
     location: "Jacquemus Campaign",
     category: "Mode & Éditoriaux",
-  image: "/resume/studio-momentum/portfolio_jacquemus.webp",
+    image: "/resume/studio-momentum/portfolio_jacquemus.webp",
     type: "Campagne de Mode",
     client: "Jacquemus",
     deliverables: "Photographie, Vidéo & Direction artistique",
@@ -100,13 +115,18 @@ const projects: Project[] = [
 ];
 
 export function SmGallery() {
-  const [activeCategory, setActiveCategory] = useState<(typeof categories)[number]>("Tous nos projets");
+  const [activeCategory, setActiveCategory] =
+    useState<(typeof categories)[number]>("Tous nos projets");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const filteredProjects =
-    activeCategory === "Tous nos projets" ? projects : projects.filter((project) => project.category === activeCategory);
+    activeCategory === "Tous nos projets"
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
 
-  const selectedIndex = selectedProject ? filteredProjects.findIndex((project) => project.id === selectedProject.id) : -1;
+  const selectedIndex = selectedProject
+    ? filteredProjects.findIndex((project) => project.id === selectedProject.id)
+    : -1;
 
   const closeLightbox = useCallback(() => {
     setSelectedProject(null);
@@ -152,7 +172,10 @@ export function SmGallery() {
 
   return (
     <>
-      <section id="portfolio" className="scroll-mt-6 relative overflow-hidden bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]">
+      <section
+        id="portfolio"
+        className="scroll-mt-6 relative overflow-hidden bg-[#faf8f2] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#171613]"
+      >
         {/* Décoration */}
         <div className="pointer-events-none absolute top-40 -left-40 h-96 w-96 rounded-full bg-[#c49a45]/10 blur-[120px] dark:bg-[#c49a45]/10" />
         <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-[#e5c982]/20 blur-[120px] dark:bg-[#a98235]/10" />
@@ -237,7 +260,9 @@ export function SmGallery() {
                   {/* Informations */}
                   <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6 sm:p-7">
                     <div>
-                      <h3 className="font-cormorant text-3xl font-semibold text-white sm:text-4xl">{project.title}</h3>
+                      <h3 className="font-cormorant text-3xl font-semibold text-white sm:text-4xl">
+                        {project.title}
+                      </h3>
                       <p className="mt-2 flex items-center gap-1.5 text-xs text-white/80 sm:text-sm">
                         <MapPin className="h-3.5 w-3.5 text-[#e6c779]" />
                         {project.location}
@@ -254,7 +279,9 @@ export function SmGallery() {
           </div>
 
           {filteredProjects.length === 0 && (
-            <p className="py-16 text-center text-[#716653] dark:text-[#bcb09a]">Aucun projet dans cette catégorie.</p>
+            <p className="py-16 text-center text-[#716653] dark:text-[#bcb09a]">
+              Aucun projet dans cette catégorie.
+            </p>
           )}
 
           {/* Bas de galerie */}
@@ -300,8 +327,12 @@ export function SmGallery() {
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-black/10" />
 
               <div className="absolute right-6 bottom-6 left-6 text-white sm:bottom-9 sm:left-9">
-                <p className="text-xs font-semibold tracking-[0.25em] text-[#e6c779] uppercase">Moment Studio · Portfolio</p>
-                <h3 className="mt-3 font-cormorant text-4xl font-semibold sm:text-5xl lg:text-6xl">{selectedProject.title}</h3>
+                <p className="text-xs font-semibold tracking-[0.25em] text-[#e6c779] uppercase">
+                  Moment Studio · Portfolio
+                </p>
+                <h3 className="mt-3 font-cormorant text-4xl font-semibold sm:text-5xl lg:text-6xl">
+                  {selectedProject.title}
+                </h3>
                 <p className="mt-3 flex items-center gap-2 text-sm text-white/80">
                   <MapPin className="h-4 w-4 text-[#e6c779]" />
                   {selectedProject.location}
@@ -353,8 +384,12 @@ export function SmGallery() {
                 {/* Détails */}
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <p className="text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">Client</p>
-                    <p className="mt-2 text-sm font-medium text-[#393329] dark:text-[#eee5d5]">{selectedProject.client}</p>
+                    <p className="text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">
+                      Client
+                    </p>
+                    <p className="mt-2 text-sm font-medium text-[#393329] dark:text-[#eee5d5]">
+                      {selectedProject.client}
+                    </p>
                   </div>
 
                   <div>
@@ -373,13 +408,19 @@ export function SmGallery() {
                   <p className="text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">
                     Livrables & Prestations
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-[#51473d] dark:text-[#d5cbbb]">{selectedProject.deliverables}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-[#51473d] dark:text-[#d5cbbb]">
+                    {selectedProject.deliverables}
+                  </p>
                 </div>
 
                 {/* Présentation */}
                 <div className="mt-7">
-                  <p className="text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">Présentation</p>
-                  <p className="mt-3 text-sm leading-7 text-[#6e675b] dark:text-[#c0b8a8]">{selectedProject.presentation}</p>
+                  <p className="text-[10px] font-semibold tracking-[0.18em] text-[#9a8253] uppercase dark:text-[#bba36e]">
+                    Présentation
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-[#6e675b] dark:text-[#c0b8a8]">
+                    {selectedProject.presentation}
+                  </p>
                 </div>
 
                 {/* CTA */}

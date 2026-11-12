@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { AlertTriangle, CheckCircle2, ChevronRight, HeartPulse, Info, Phone, ShieldAlert, Stethoscope } from "lucide-react";
+import {
+  AlertTriangle,
+  CheckCircle2,
+  ChevronRight,
+  HeartPulse,
+  Info,
+  Phone,
+  ShieldAlert,
+  Stethoscope,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type UrgencyLevel = "emergency" | "soon" | "stable";
@@ -75,7 +84,8 @@ const recommendations = {
       title: "text-orange-800 dark:text-orange-300",
       text: "text-orange-800/80 dark:text-orange-200/80",
       phone: "text-orange-800 dark:text-orange-300",
-      button: "bg-orange-700 text-white hover:bg-orange-800 dark:bg-orange-700 dark:hover:bg-orange-600",
+      button:
+        "bg-orange-700 text-white hover:bg-orange-800 dark:bg-orange-700 dark:hover:bg-orange-600",
     },
   },
   stable: {
@@ -93,7 +103,8 @@ const recommendations = {
       title: "text-green-800 dark:text-green-300",
       text: "text-green-800/80 dark:text-green-200/80",
       phone: "text-green-800 dark:text-green-300",
-      button: "bg-green-700 text-white hover:bg-green-800 dark:bg-green-700 dark:hover:bg-green-600",
+      button:
+        "bg-green-700 text-white hover:bg-green-800 dark:bg-green-700 dark:hover:bg-green-600",
     },
   },
 };
@@ -106,7 +117,10 @@ export function PcUrgencyChecker() {
   const ResultIcon = result?.icon;
 
   return (
-    <section id="urgences" className="scroll-mt-6 relative overflow-hidden bg-[#faf8f5] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]">
+    <section
+      id="urgences"
+      className="scroll-mt-6 relative overflow-hidden bg-[#faf8f5] px-4 py-20 sm:px-6 lg:px-8 lg:py-28 dark:bg-[#211e1a]"
+    >
       {/* Décoration */}
       <div className="pointer-events-none absolute top-20 -left-40 size-96 rounded-full bg-[#c5a98b]/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 bottom-0 size-96 rounded-full bg-[#a5a58d]/10 blur-3xl" />
@@ -130,8 +144,8 @@ export function PcUrgencyChecker() {
           </div>
 
           <p className="mt-6 text-base leading-8 text-[#756b60] sm:text-lg dark:text-[#bdb2a5]">
-            Votre animal présente des symptômes inhabituels ? Utilisez notre questionnaire d'auto-évaluation pour obtenir une première
-            indication sur le degré d'urgence.
+            Votre animal présente des symptômes inhabituels ? Utilisez notre questionnaire
+            d'auto-évaluation pour obtenir une première indication sur le degré d'urgence.
           </p>
         </div>
 
@@ -143,7 +157,9 @@ export function PcUrgencyChecker() {
                 <Stethoscope className="size-5" />
               </div>
               <div>
-                <p className="text-xs font-semibold tracking-widest text-[#a88b6b] uppercase">Auto-évaluation</p>
+                <p className="text-xs font-semibold tracking-widest text-[#a88b6b] uppercase">
+                  Auto-évaluation
+                </p>
                 <h3 className="font-cormorant text-2xl font-semibold text-[#443a30] dark:text-[#f0e6da]">
                   Quel est l'état de votre compagnon ?
                 </h3>
@@ -173,15 +189,23 @@ export function PcUrgencyChecker() {
                 >
                   <span
                     className={`flex size-8 shrink-0 items-center justify-center rounded-lg text-xs font-semibold transition-colors ${
-                      active ? "bg-[#92785b] text-white" : "bg-[#eee8e0] text-[#92785b] dark:bg-[#41372d] dark:text-[#d0b99c]"
+                      active
+                        ? "bg-[#92785b] text-white"
+                        : "bg-[#eee8e0] text-[#92785b] dark:bg-[#41372d] dark:text-[#d0b99c]"
                     }`}
                   >
-                    {active ? <CheckCircle2 className="size-4" /> : String(index + 1).padStart(2, "0")}
+                    {active ? (
+                      <CheckCircle2 className="size-4" />
+                    ) : (
+                      String(index + 1).padStart(2, "0")
+                    )}
                   </span>
 
                   <span
                     className={`flex-1 text-sm leading-6 font-medium sm:text-base ${
-                      active ? "text-[#725a40] dark:text-[#f0dfc9]" : "text-[#554b40] dark:text-[#e2d8cc]"
+                      active
+                        ? "text-[#725a40] dark:text-[#f0dfc9]"
+                        : "text-[#554b40] dark:text-[#e2d8cc]"
                     }`}
                   >
                     {symptom.label}
@@ -189,7 +213,9 @@ export function PcUrgencyChecker() {
 
                   <ChevronRight
                     className={`size-5 shrink-0 transition-transform ${
-                      active ? "translate-x-1 text-[#92785b]" : "text-[#b5a797] group-hover:translate-x-1"
+                      active
+                        ? "translate-x-1 text-[#92785b]"
+                        : "text-[#b5a797] group-hover:translate-x-1"
                     }`}
                   />
                 </button>
@@ -205,18 +231,30 @@ export function PcUrgencyChecker() {
                 className={`animate-in rounded-2xl border p-6 duration-300 fade-in slide-in-from-bottom-3 sm:p-7 ${result.style.container}`}
               >
                 <div className="flex items-start gap-4">
-                  <div className={`flex size-12 shrink-0 items-center justify-center rounded-xl ${result.style.icon}`}>
+                  <div
+                    className={`flex size-12 shrink-0 items-center justify-center rounded-xl ${result.style.icon}`}
+                  >
                     <ResultIcon className="size-6" />
                   </div>
 
                   <div className="min-w-0 flex-1">
-                    <p className={`text-xs font-bold tracking-widest ${result.style.title}`}>{result.subtitle}</p>
-                    <h4 className={`mt-1 font-cormorant text-2xl font-bold sm:text-3xl ${result.style.title}`}>{result.title}</h4>
-                    <p className={`mt-4 text-sm leading-7 ${result.style.text}`}>{result.description}</p>
+                    <p className={`text-xs font-bold tracking-widest ${result.style.title}`}>
+                      {result.subtitle}
+                    </p>
+                    <h4
+                      className={`mt-1 font-cormorant text-2xl font-bold sm:text-3xl ${result.style.title}`}
+                    >
+                      {result.title}
+                    </h4>
+                    <p className={`mt-4 text-sm leading-7 ${result.style.text}`}>
+                      {result.description}
+                    </p>
 
                     {result.phone && (
                       <div className="mt-5 rounded-xl border border-current/10 bg-white/50 p-4 dark:bg-black/10">
-                        <p className={`mb-2 text-xs font-medium ${result.style.text}`}>{result.phoneLabel}</p>
+                        <p className={`mb-2 text-xs font-medium ${result.style.text}`}>
+                          {result.phoneLabel}
+                        </p>
                         <a
                           href={`tel:${result.phone.replaceAll(" ", "")}`}
                           className={`flex items-center gap-2 text-xl font-bold tracking-wide transition-opacity hover:opacity-70 ${result.style.phone}`}
@@ -228,7 +266,13 @@ export function PcUrgencyChecker() {
                     )}
 
                     <Button
-                      render={<a href={result.phone ? `tel:${result.phone.replaceAll(" ", "")}` : "#contact"} />}
+                      render={
+                        <a
+                          href={
+                            result.phone ? `tel:${result.phone.replaceAll(" ", "")}` : "#contact"
+                          }
+                        />
+                      }
                       className={`mt-5 h-11 w-full sm:w-auto ${result.style.button}`}
                     >
                       {result.action}
@@ -253,10 +297,13 @@ export function PcUrgencyChecker() {
         <div className="mt-6 flex items-start gap-3 rounded-xl border border-[#e8dfd3] bg-[#f3eee7] p-4 dark:border-[#494035] dark:bg-[#2c2721]">
           <Info className="mt-0.5 size-5 shrink-0 text-[#92785b] dark:text-[#d0b99c]" />
           <p className="text-xs leading-6 text-[#796e61] dark:text-[#bdb2a5]">
-            <strong className="font-semibold text-[#554b40] dark:text-[#e2d8cc]">Information importante :</strong> cet outil est indicatif
-            et ne remplace ni un diagnostic ni un avis vétérinaire. En cas de doute, d'aggravation ou de symptôme inquiétant, contactez
-            immédiatement un vétérinaire. Les difficultés respiratoires, pertes de conscience et hémorragies importantes nécessitent une
-            prise en charge d'urgence.
+            <strong className="font-semibold text-[#554b40] dark:text-[#e2d8cc]">
+              Information importante :
+            </strong>{" "}
+            cet outil est indicatif et ne remplace ni un diagnostic ni un avis vétérinaire. En cas
+            de doute, d'aggravation ou de symptôme inquiétant, contactez immédiatement un
+            vétérinaire. Les difficultés respiratoires, pertes de conscience et hémorragies
+            importantes nécessitent une prise en charge d'urgence.
           </p>
         </div>
       </div>

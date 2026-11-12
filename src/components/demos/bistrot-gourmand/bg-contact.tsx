@@ -5,7 +5,9 @@ export function BgContact() {
     <section id="infos" className="pt-46">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-center font-playfair text-5xl tracking-wide [font-variant-caps:small-caps] sm:text-6xl">Retrouvez-nous</h2>
+          <h2 className="text-center font-playfair text-5xl tracking-wide [font-variant-caps:small-caps] sm:text-6xl">
+            Retrouvez-nous
+          </h2>
 
           <div className="mt-2 text-xl text-yellow-500">✦</div>
         </div>
@@ -16,7 +18,9 @@ export function BgContact() {
               className="size-14 rounded-full border bg-yellow-500/5 p-4 transition-all duration-600 group-hover:border-yellow-700"
               aria-hidden="true"
             />
-            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">Adresse</h3>
+            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">
+              Adresse
+            </h3>
             <p>
               28 Rue de la Table
               <br />
@@ -29,7 +33,9 @@ export function BgContact() {
               className="size-14 rounded-full border bg-yellow-500/5 p-4 transition-all duration-600 group-hover:border-yellow-700"
               aria-hidden="true"
             />
-            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">Horaires</h3>
+            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">
+              Horaires
+            </h3>
             <p>
               Mar - Sam : 12h-14h · 19h-22h
               <br />
@@ -42,7 +48,9 @@ export function BgContact() {
               className="size-14 rounded-full border bg-yellow-500/5 p-4 transition-all duration-600 group-hover:border-yellow-700"
               aria-hidden="true"
             />
-            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">Téléphone</h3>
+            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">
+              Téléphone
+            </h3>
             <p>00 00 00 00 00</p>
           </div>
 
@@ -51,8 +59,13 @@ export function BgContact() {
               className="size-14 rounded-full border bg-yellow-500/5 p-4 transition-all duration-600 group-hover:border-yellow-700"
               aria-hidden="true"
             />
-            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">À Emporter</h3>
-            <p>Ajoutez des plats au panier à l'aide des boutons (+) pour commander en Click & Collect.</p>
+            <h3 className="mt-8 font-playfair text-2xl font-semibold [font-variant-caps:small-caps]">
+              À Emporter
+            </h3>
+            <p>
+              Ajoutez des plats au panier à l'aide des boutons (+) pour commander en Click &
+              Collect.
+            </p>
           </div>
         </div>
       </div>

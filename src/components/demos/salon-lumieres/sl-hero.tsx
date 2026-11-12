@@ -4,7 +4,11 @@ export function SlHero() {
   return (
     <section id="accueil" className="relative isolate min-h-screen overflow-hidden bg-neutral-950">
       {/* Background */}
-      <div className={cn("pointer-events-none absolute inset-0 bg-[url('/resume/salon-lumieres/hero_bg.webp')] bg-cover bg-center blur-[1px] opacity-50")} />
+      <div
+        className={cn(
+          "pointer-events-none absolute inset-0 bg-[url('/resume/salon-lumieres/hero_bg.webp')] bg-cover bg-center blur-[1px] opacity-50",
+        )}
+      />
 
       {/* Overlay */}
       <div className="pointer-events-none absolute inset-0 bg-[#C5A059]/5" />
@@ -31,7 +35,8 @@ export function SlHero() {
 
           {/* Description */}
           <p className="mt-8 max-w-2xl text-lg leading-8 tracking-wide text-neutral-200">
-            Une parenthèse suspendue où chaque soin devient un rituel d'exception. Alliance d'expertise scientifique et de détente absolue.
+            Une parenthèse suspendue où chaque soin devient un rituel d'exception. Alliance
+            d'expertise scientifique et de détente absolue.
           </p>
 
           {/* Actions */}

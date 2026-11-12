@@ -22,13 +22,16 @@ export function EbHero() {
           <h1 className="max-w-xl font-serif text-5xl leading-[1.12] tracking-tight sm:text-6xl xl:text-7xl">
             L'art de vivre
             <br />
-            en <span className="font-normal text-[rgb(74,87,64)] italic dark:text-[#a2b095]">Haute Provence</span>
+            en{" "}
+            <span className="font-normal text-[rgb(74,87,64)] italic dark:text-[#a2b095]">
+              Haute Provence
+            </span>
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-8 text-[rgb(110,116,104)] sm:text-lg dark:text-[#b5b7aa]">
-            Nichée au cœur des paysages préservés du Luberon, au pied du célèbre village suspendu de Gordes, notre bastide en pierre sèche
-            du XVIIIème siècle vous ouvre ses portes pour une parenthèse hors du temps. Calme absolu, piscine chauffée et art de vivre
-            provençal.
+            Nichée au cœur des paysages préservés du Luberon, au pied du célèbre village suspendu de
+            Gordes, notre bastide en pierre sèche du XVIIIème siècle vous ouvre ses portes pour une
+            parenthèse hors du temps. Calme absolu, piscine chauffée et art de vivre provençal.
           </p>
 
           <div className="mt-9 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
@@ -74,8 +77,12 @@ export function EbHero() {
             <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
 
             <div className="absolute right-6 bottom-6 left-6 border border-white/40 bg-[rgb(250,248,245)]/95 p-5 backdrop-blur-sm sm:right-8 sm:bottom-8 sm:left-8 sm:p-6 dark:border-white/15 dark:bg-[#292c24]/95">
-              <p className="text-xs tracking-[0.2em] text-[rgb(201,157,99)] uppercase">Le Domaine des Sources</p>
-              <p className="mt-2 font-serif text-xl sm:text-2xl dark:text-[#f0ece3]">Bastide Provençale de Prestige à Gordes</p>
+              <p className="text-xs tracking-[0.2em] text-[rgb(201,157,99)] uppercase">
+                Le Domaine des Sources
+              </p>
+              <p className="mt-2 font-serif text-xl sm:text-2xl dark:text-[#f0ece3]">
+                Bastide Provençale de Prestige à Gordes
+              </p>
             </div>
           </div>
 

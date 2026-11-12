@@ -1,6 +1,10 @@
 import { Menu, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -43,16 +47,25 @@ export function SlHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
-                <span className="font-playfair text-2xl tracking-wider uppercase">Salon Lumières</span>
+                <span className="font-playfair text-2xl tracking-wider uppercase">
+                  Salon Lumières
+                </span>
               </SheetHeader>
 
               <nav className="flex h-full flex-1 flex-col p-4">
                 <div className="flex flex-col space-y-4">
                   {navigation.map((item) => (
-                    <a key={item.title} href={item.href} className="flex items-center space-x-2 text-sm uppercase tracking-wide">
+                    <a
+                      key={item.title}
+                      href={item.href}
+                      className="flex items-center space-x-2 text-sm uppercase tracking-wide"
+                    >
                       {item.title}
                     </a>
                   ))}
@@ -63,13 +76,18 @@ export function SlHeader() {
         </div>
 
         {/* Logo */}
-        <a href="/resume/demos/salon-lumieres#accueil" className="relative flex shrink-0 items-center">
+        <a
+          href="/resume/demos/salon-lumieres#accueil"
+          className="relative flex shrink-0 items-center"
+        >
           <span className="sm:hidden">
             <Sun className="-rotate-27 size-12 text-yellow-500 opacity-70 drop-shadow-[0_0_8px_#d6b66f]" />
           </span>
           <span className="hidden sm:inline">
             <Sun className="-rotate-27 absolute left-44.5 -top-5.5 size-12 text-yellow-500 opacity-70 drop-shadow-[0_0_8px_#d6b66f]" />
-            <span className="relative z-10 bg-background font-playfair text-2xl tracking-wider leading-none uppercase">Salon Lumières</span>
+            <span className="relative z-10 bg-background font-playfair text-2xl tracking-wider leading-none uppercase">
+              Salon Lumières
+            </span>
           </span>
         </a>
 

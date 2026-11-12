@@ -3,18 +3,18 @@ import { Header } from "../landmarks/header";
 import { Topbar } from "../landmarks/topbar";
 
 type Props = {
-    children: React.ReactNode;
+  children: React.ReactNode;
 };
 
 export function AppLayout({ children }: Props) {
-    return (
-        <>
-            <Topbar />
-            <Header />
+  return (
+    <>
+      <Topbar />
+      <Header />
 
-            <main>{children}</main>
+      <main>{children}</main>
 
-            <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 }

@@ -21,12 +21,14 @@ export function PcHero() {
           </div>
 
           <h1 className="max-w-xl font-cormorant text-5xl leading-[1.08] font-semibold tracking-tight text-[#443b34] sm:text-6xl lg:text-7xl dark:text-[#f2e9df]">
-            Prenez soin de vos <span className="text-[#9c7657] dark:text-[#c6a17e]">compagnons</span>
+            Prenez soin de vos{" "}
+            <span className="text-[#9c7657] dark:text-[#c6a17e]">compagnons</span>
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-8 text-[#716459] sm:text-lg dark:text-[#c2b4a5]">
-            Cabinet vétérinaire moderne, pension forestière tout confort, ostéopathie et éducation positive. Une équipe d'experts passionnés
-            pour le bonheur et la vitalité de vos animaux de compagnie.
+            Cabinet vétérinaire moderne, pension forestière tout confort, ostéopathie et éducation
+            positive. Une équipe d'experts passionnés pour le bonheur et la vitalité de vos animaux
+            de compagnie.
           </p>
 
           {/* Boutons */}
@@ -55,8 +57,12 @@ export function PcHero() {
             </div>
 
             <div>
-              <p className="text-sm font-semibold text-[#57483b] dark:text-[#e9ddcf]">Une approche globale du bien-être</p>
-              <p className="mt-0.5 text-xs text-[#87786b] dark:text-[#b7a593]">Soins, accompagnement et sérénité</p>
+              <p className="text-sm font-semibold text-[#57483b] dark:text-[#e9ddcf]">
+                Une approche globale du bien-être
+              </p>
+              <p className="mt-0.5 text-xs text-[#87786b] dark:text-[#b7a593]">
+                Soins, accompagnement et sérénité
+              </p>
             </div>
           </div>
         </div>
@@ -107,7 +113,9 @@ export function PcHero() {
             </div>
 
             <div>
-              <p className="text-sm font-semibold text-[#57483b] dark:text-[#f0e5d8]">Le bien-être avant tout</p>
+              <p className="text-sm font-semibold text-[#57483b] dark:text-[#f0e5d8]">
+                Le bien-être avant tout
+              </p>
               <p className="text-xs text-[#87786b] dark:text-[#b9a895]">Pour tous vos compagnons</p>
             </div>
           </div>

@@ -1,5 +1,9 @@
 import { Menu } from "lucide-react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const mainNavItems = [
@@ -24,7 +28,10 @@ export function Header() {
               <SheetTrigger>
                 <Menu className="mr-4 h-7 w-7" />
               </SheetTrigger>
-              <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+              <SheetContent
+                side="left"
+                className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+              >
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <SheetHeader className="flex justify-start text-left">
                   <Menu className="h-6 w-6 fill-current text-black dark:text-white" />
@@ -33,7 +40,11 @@ export function Header() {
                   <div className="flex h-full flex-col justify-between text-sm">
                     <div className="flex flex-col space-y-4">
                       {mainNavItems.map((item) => (
-                        <a key={item.title} href={item.href} className="flex items-center space-x-2 font-medium">
+                        <a
+                          key={item.title}
+                          href={item.href}
+                          className="flex items-center space-x-2 font-medium"
+                        >
                           <span>{item.title}</span>
                         </a>
                       ))}
@@ -44,7 +55,9 @@ export function Header() {
             </Sheet>
           </div>
 
-          <div className="absolute left-12 top-4 select-none font-semibold text-muted-foreground">Sébastien Cavaglia</div>
+          <div className="absolute left-12 top-4 select-none font-semibold text-muted-foreground">
+            Sébastien Cavaglia
+          </div>
 
           {/* Desktop Navigation */}
           <div className="mx-auto hidden h-full items-center space-x-6 lg:flex">

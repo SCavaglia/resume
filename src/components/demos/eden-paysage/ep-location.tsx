@@ -30,7 +30,10 @@ export function EpLocation() {
 
   const normalizedQuery = normalize(query);
 
-  const exactMatch = communes.find((commune) => normalize(commune.name) === normalizedQuery || commune.postalCode === normalizedQuery);
+  const exactMatch = communes.find(
+    (commune) =>
+      normalize(commune.name) === normalizedQuery || commune.postalCode === normalizedQuery,
+  );
 
   function handleSearch(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -43,13 +46,18 @@ export function EpLocation() {
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
           {/* Gauche : informations et recherche */}
           <div className="min-w-0 flex-1">
-            <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-primary uppercase">Région de [Ville]</p>
+            <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-primary uppercase">
+              Région de [Ville]
+            </p>
 
-            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">Notre zone de chalandise</h2>
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+              Notre zone de chalandise
+            </h2>
 
             <p className="mt-6 text-base leading-8 text-muted-foreground">
-              Situés à [Ville], nos compagnons paysagistes et techniciens d'aménagement se déplacent dans toute l'agglomération pour étudier
-              vos projets de rénovation de jardin, pose de pergolas bioclimatiques et création de pièces d'eau de standing.
+              Situés à [Ville], nos compagnons paysagistes et techniciens d'aménagement se déplacent
+              dans toute l'agglomération pour étudier vos projets de rénovation de jardin, pose de
+              pergolas bioclimatiques et création de pièces d'eau de standing.
             </p>
 
             <div className="mt-8">
@@ -57,7 +65,10 @@ export function EpLocation() {
 
               <form onSubmit={handleSearch} className="mt-4 flex flex-col gap-3 sm:flex-row">
                 <div className="relative min-w-0 flex-1">
-                  <MapPin className="absolute top-1/2 left-4 size-5 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
+                  <MapPin
+                    className="absolute top-1/2 left-4 size-5 -translate-y-1/2 text-muted-foreground"
+                    aria-hidden="true"
+                  />
                   <input
                     type="text"
                     value={query}
@@ -85,7 +96,9 @@ export function EpLocation() {
                 <div
                   role="status"
                   className={`mt-4 flex items-start gap-3 rounded-xl border p-4 ${
-                    exactMatch ? "border-green-600/20 bg-green-600/5" : "border-destructive/20 bg-destructive/5"
+                    exactMatch
+                      ? "border-green-600/20 bg-green-600/5"
+                      : "border-destructive/20 bg-destructive/5"
                   }`}
                 >
                   {exactMatch ? (
@@ -95,7 +108,11 @@ export function EpLocation() {
                   )}
 
                   <div>
-                    <p className="font-semibold">{exactMatch ? `${exactMatch.name} : zone desservie !` : "Commune non référencée"}</p>
+                    <p className="font-semibold">
+                      {exactMatch
+                        ? `${exactMatch.name} : zone desservie !`
+                        : "Commune non référencée"}
+                    </p>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                       {exactMatch
                         ? "Nous intervenons dans cette commune. Contactez-nous pour étudier votre projet."
@@ -105,7 +122,9 @@ export function EpLocation() {
                 </div>
               )}
 
-              <p className="mt-3 text-xs text-muted-foreground">Saisissez une commune ou un code postal de la métropole.</p>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Saisissez une commune ou un code postal de la métropole.
+              </p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -131,13 +150,15 @@ export function EpLocation() {
               <iframe
                 title="Localisation d'Eden Paysage sur Google Maps"
                 src={`https://maps.google.com/maps?q=${encodeURIComponent(address)}&output=embed`}
-                  className="absolute inset-0 size-full border-0"
+                className="absolute inset-0 size-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
-              />            
+              />
             </div>
-            <p className="mt-3 text-xs text-muted-foreground">Carte illustrative — zone d'intervention indicative.</p>
+            <p className="mt-3 text-xs text-muted-foreground">
+              Carte illustrative — zone d'intervention indicative.
+            </p>
           </div>
         </div>
       </div>

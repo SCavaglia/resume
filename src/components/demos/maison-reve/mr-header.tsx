@@ -1,6 +1,10 @@
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -39,7 +43,10 @@ export function MrHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="font-cormorant text-xl uppercase">
@@ -65,7 +72,10 @@ export function MrHeader() {
         </div>
 
         {/* Logo */}
-        <a href="/resume/demos/maison-reve#accueil" className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase">
+        <a
+          href="/resume/demos/maison-reve#accueil"
+          className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase"
+        >
           <span className="hidden sm:inline">Maison</span>
           <span className="text-[rgb(196,164,112)]">✦</span>
           <span className="hidden sm:inline">Rêve</span>

@@ -1,6 +1,10 @@
 import { Menu, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -40,7 +44,10 @@ export function SmHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="font-cormorant text-xl uppercase">Studio Momentum</div>
@@ -64,10 +71,20 @@ export function SmHeader() {
         </div>
 
         {/* Logo */}
-        <a href="/resume/demos/studio-momentum#accueil" className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase">
+        <a
+          href="/resume/demos/studio-momentum#accueil"
+          className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase"
+        >
           <svg width="0" height="0">
             <defs>
-              <linearGradient id="gold-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="gold-gradient"
+                x1="0"
+                y1="0"
+                x2="24"
+                y2="24"
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop offset="0%" stopColor="#967021" />
                 <stop offset="100%" stopColor="#d6b76d" />
               </linearGradient>
@@ -75,9 +92,10 @@ export function SmHeader() {
           </svg>
           <Sparkles style={{ stroke: "url(#gold-gradient)" }} />
           <span className="hidden sm:inline">
-
-          <span>Studio</span>
-          <span className="pl-2 bg-linear-to-r from-[#967021] via-[#d6b76d] to-[#967021] bg-clip-text text-transparent">Momentum</span>
+            <span>Studio</span>
+            <span className="pl-2 bg-linear-to-r from-[#967021] via-[#d6b76d] to-[#967021] bg-clip-text text-transparent">
+              Momentum
+            </span>
           </span>
         </a>
 

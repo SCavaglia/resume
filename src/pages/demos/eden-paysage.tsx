@@ -31,7 +31,10 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/resume/demos/eden-paysage#accueil" className="w-fit relative flex shrink-0 items-center gap-2 text-3xl font-bold">
+    <a
+      href="/resume/demos/eden-paysage#accueil"
+      className="w-fit relative flex shrink-0 items-center gap-2 text-3xl font-bold"
+    >
       <Trees className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />
       <span>EDEN</span>
       <Leaf className="absolute -top-2 left-1/2 size-6 -translate-x-1/2 text-lime-500" />
@@ -47,7 +50,8 @@ const footerProps = {
   containerClassName: "mx-auto max-w-7xl  ",
   gridClassName: "grid gap-10 lg:grid-cols-4",
   brandClassName: "lg:col-span-2 lg:-translate-y-8",
-  descriptionClassName: "mt-3 max-w-md text-balance text-sm leading-loose text-background dark:text-foreground",
+  descriptionClassName:
+    "mt-3 max-w-md text-balance text-sm leading-loose text-background dark:text-foreground",
   socialLinks: (
     <>
       <FacebookIcon className="size-6" aria-hidden="true" />

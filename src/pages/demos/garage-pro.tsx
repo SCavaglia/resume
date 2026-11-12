@@ -29,7 +29,10 @@ const footerProps = {
     { title: "Cookies", href: "#" },
   ],
   logo: (
-    <a href="/resume/demos/garage-pro#accueil" className="mb-8 flex items-center gap-2 font-oswald text-3xl font-bold uppercase">
+    <a
+      href="/resume/demos/garage-pro#accueil"
+      className="mb-8 flex items-center gap-2 font-oswald text-3xl font-bold uppercase"
+    >
       <CarFront className="size-12 rounded-md bg-[#e63946] p-2 text-black" />
       <span className="text-white">Garage</span>
       <span className="bg-[#e63946] bg-clip-text text-transparent">Pro</span>
@@ -42,7 +45,8 @@ const footerProps = {
   containerClassName: "mx-auto max-w-7xl  ",
   gridClassName: "grid gap-10 lg:grid-cols-4",
   brandClassName: "lg:col-span-2 lg:-translate-y-8",
-  descriptionClassName: "mt-3 max-w-md text-balance text-sm leading-loose text-background dark:text-foreground",
+  descriptionClassName:
+    "mt-3 max-w-md text-balance text-sm leading-loose text-background dark:text-foreground",
   socialLinks: (
     <>
       <FacebookIcon className="size-6" aria-hidden="true" />
@@ -54,7 +58,8 @@ const footerProps = {
   linksClassName: "mt-4 space-y-3",
   linkClassName:
     "relative inline-block text-sm text-background transition-all duration-300 hover:-translate-y-1 hover:text-white dark:text-foreground dark:hover:text-white after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100",
-  bottomClassName: "mt-12 pt-6 flex flex-col gap-4 border-t text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
+  bottomClassName:
+    "mt-12 pt-6 flex flex-col gap-4 border-t text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between",
 };
 export default function GaragePro() {
   return (

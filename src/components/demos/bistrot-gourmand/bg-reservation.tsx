@@ -3,12 +3,17 @@ import { CalendarDays, Check, Clock, Users } from "lucide-react";
 
 const timeSlots = ["12:00", "12:30", "13:00", "13:30", "19:00", "19:30", "20:00", "20:30", "21:00"];
 
-const atmospheres = ["Peu importe", "Salle calme", "Près de la fenêtre", "Ambiance animée", "Terrasse"];
+const atmospheres = [
+  "Peu importe",
+  "Salle calme",
+  "Près de la fenêtre",
+  "Ambiance animée",
+  "Terrasse",
+];
 
 const steps = ["Créneau", "Détails", "Confirmation"];
 
-  const today = new Date().toLocaleDateString("en-CA");
-
+const today = new Date().toLocaleDateString("en-CA");
 
 export function BgReservation() {
   const [step, setStep] = useState(1);
@@ -61,8 +66,9 @@ export function BgReservation() {
           <div className="pt-2 text-xl text-yellow-500">✦</div>
 
           <p className="pt-4 text-lg font-light text-white/80">
-            Pour garantir la qualité de notre accueil, nous limitons le nombre de tables par service. L'assistant ci-contre vous permet de
-            configurer vos souhaits de placement en direct.
+            Pour garantir la qualité de notre accueil, nous limitons le nombre de tables par
+            service. L'assistant ci-contre vous permet de configurer vos souhaits de placement en
+            direct.
           </p>
         </div>
 
@@ -89,7 +95,9 @@ export function BgReservation() {
 
                   <span
                     className={`text-xs whitespace-nowrap sm:text-sm ${
-                      isCurrent ? "font-semibold text-background dark:text-foreground" : "text-muted-foreground"
+                      isCurrent
+                        ? "font-semibold text-background dark:text-foreground"
+                        : "text-muted-foreground"
                     }`}
                   >
                     {label}
@@ -112,7 +120,9 @@ export function BgReservation() {
             <form onSubmit={handleSlotSubmit} className="space-y-8">
               <div>
                 <h3 className="font-playfair text-3xl text-white/90">Choisissez votre créneau</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Quand souhaitez-vous venir au Bistrot Gourmand ?</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Quand souhaitez-vous venir au Bistrot Gourmand ?
+                </p>
               </div>
 
               <div>
@@ -197,7 +207,9 @@ export function BgReservation() {
             <form onSubmit={handleDetailsSubmit} className="space-y-8">
               <div>
                 <h3 className="font-playfair text-3xl text-white/90">Vos coordonnées</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Pour préparer votre venue, indiquez-nous vos informations.</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Pour préparer votre venue, indiquez-nous vos informations.
+                </p>
               </div>
 
               <div className="grid gap-6 sm:grid-cols-2">
@@ -308,8 +320,12 @@ export function BgReservation() {
                   <Check className="size-8" />
                 </div>
 
-                <h3 className="font-playfair text-2xl text-white/90 sm:text-3xl">Votre demande est prête !</h3>
-                <p className="mt-3 text-sm text-muted-foreground">Voici le récapitulatif de votre demande de réservation.</p>
+                <h3 className="font-playfair text-2xl text-white/90 sm:text-3xl">
+                  Votre demande est prête !
+                </h3>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  Voici le récapitulatif de votre demande de réservation.
+                </p>
               </div>
 
               <div className="space-y-4 rounded-xl bg-white/5 p-5 text-white/90 sm:p-6">
@@ -319,7 +335,9 @@ export function BgReservation() {
                   <div>
                     <p className="text-sm text-muted-foreground">Nombre de personnes</p>
                     <p className="mt-1 font-medium">
-                      {guests === "6+" ? "6 personnes ou plus" : `${guests} personne${guests === "1" ? "" : "s"}`}
+                      {guests === "6+"
+                        ? "6 personnes ou plus"
+                        : `${guests} personne${guests === "1" ? "" : "s"}`}
                     </p>
                   </div>
 

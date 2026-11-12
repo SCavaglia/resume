@@ -1,6 +1,10 @@
 import { Menu } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -19,8 +23,14 @@ type Props = {
   navigationItemClassName?: string;
 };
 
-export function DemosHeader({ transparentText = false, logo, navigation, action, navigationClassName, navigationItemClassName }: Props) {
-
+export function DemosHeader({
+  transparentText = false,
+  logo,
+  navigation,
+  action,
+  navigationClassName,
+  navigationItemClassName,
+}: Props) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -38,7 +48,10 @@ export function DemosHeader({ transparentText = false, logo, navigation, action,
         "fixed top-10 right-0 left-0 z-50 border-b transition-all duration-300",
         isScrolled
           ? "border-sidebar-border/80 bg-background/90 text-foreground shadow-sm backdrop-blur-md"
-          : cn("border-transparent bg-transparent shadow-none backdrop-blur-none", transparentText ? "text-white" : "text-foreground"),
+          : cn(
+              "border-transparent bg-transparent shadow-none backdrop-blur-none",
+              transparentText ? "text-white" : "text-foreground",
+            ),
       )}
     >
       <div className="mx-auto flex h-20 items-center px-4 md:max-w-7xl">
@@ -48,7 +61,10 @@ export function DemosHeader({ transparentText = false, logo, navigation, action,
             <SheetTrigger>
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetTitle className="sr-only">Navigation menu</SheetTitle>
               <SheetHeader className="flex justify-start text-left">
                 <div> app logo icon</div>
@@ -56,7 +72,11 @@ export function DemosHeader({ transparentText = false, logo, navigation, action,
               <nav className="flex h-full flex-1 flex-col p-4">
                 <div className="flex flex-col space-y-4">
                   {navigation.map((item) => (
-                    <a key={item.title} href={item.href} className="flex items-center space-x-2 font-medium">
+                    <a
+                      key={item.title}
+                      href={item.href}
+                      className="flex items-center space-x-2 font-medium"
+                    >
                       {item.icon && <item.icon className="h-5 w-5" />}
 
                       <span>{item.title}</span>

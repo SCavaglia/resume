@@ -19,7 +19,9 @@ export function DemosTopbar({ children }: PropsWithChildren) {
       <div
         className={cn(
           "fixed top-0 right-0 left-0 z-50 flex h-10 items-center justify-between border-b px-4 transition-colors duration-300",
-          isScrolled ? "border-border bg-background/90 backdrop-blur-md" : "border-transparent bg-background/30 backdrop-blur-sm",
+          isScrolled
+            ? "border-border bg-background/90 backdrop-blur-md"
+            : "border-transparent bg-background/30 backdrop-blur-sm",
         )}
       >
         <Link

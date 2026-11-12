@@ -41,7 +41,11 @@ export function CardExpandable({ title, category, image, imageAlt = "", infos, c
         <div className="flex h-[17rem] gap-6 px-3 pb-3">
           {/* Image */}
           <div className="w-3/5 h-full shrink-0 overflow-y-auto overflow-x-hidden rounded-lg">
-            <img src={image} alt={imageAlt} className="w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img
+              src={image}
+              alt={imageAlt}
+              className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
           </div>
 
           {/* Informations */}

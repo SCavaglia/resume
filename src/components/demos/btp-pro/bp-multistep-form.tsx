@@ -1,5 +1,16 @@
 import { useState } from "react";
-import { BrickWall, Check, ChevronLeft, ChevronRight, ClipboardCheck, Droplet, Fence, PaintRoller, SunSnow, Zap } from "lucide-react";
+import {
+  BrickWall,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  ClipboardCheck,
+  Droplet,
+  Fence,
+  PaintRoller,
+  SunSnow,
+  Zap,
+} from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -84,7 +95,8 @@ export function BpMultistepForm() {
             <h2 className="text-2xl font-semibold tracking-tight">Simulation terminée !</h2>
 
             <p className="text-muted-foreground">
-              Votre simulation est terminée. Aucune demande n'a été envoyée : ceci est uniquement une maquette interactive.
+              Votre simulation est terminée. Aucune demande n'a été envoyée : ceci est uniquement
+              une maquette interactive.
             </p>
           </div>
 
@@ -100,7 +112,9 @@ export function BpMultistepForm() {
             </p>
           </div>
 
-          <p className="text-sm text-muted-foreground">Merci {name.trim() || "pour votre visite"} !</p>
+          <p className="text-sm text-muted-foreground">
+            Merci {name.trim() || "pour votre visite"} !
+          </p>
         </div>
 
         <Button onClick={handleRestart} className="rounded-lg">
@@ -139,7 +153,14 @@ export function BpMultistepForm() {
                   <span className="text-center">{label}</span>
                 </button>
 
-                {index < steps.length - 1 && <div className={cn("mx-2 mt-4 h-px flex-1", isDone ? "bg-green-500/30" : "bg-border")} />}
+                {index < steps.length - 1 && (
+                  <div
+                    className={cn(
+                      "mx-2 mt-4 h-px flex-1",
+                      isDone ? "bg-green-500/30" : "bg-border",
+                    )}
+                  />
+                )}
               </li>
             );
           })}
@@ -149,7 +170,9 @@ export function BpMultistepForm() {
       {/* Étape 1 */}
       {currentStep === 0 && (
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold tracking-tight">Choisissez votre type de travaux :</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Choisissez votre type de travaux :
+          </h2>
 
           <div className="grid gap-3 sm:grid-cols-3">
             {trades.map((item) => {
@@ -168,7 +191,9 @@ export function BpMultistepForm() {
                       : "border-border hover:border-primary/50 hover:bg-muted/50",
                   )}
                 >
-                  <Icon className={cn("size-6", isSelected ? "text-primary" : "text-muted-foreground")} />
+                  <Icon
+                    className={cn("size-6", isSelected ? "text-primary" : "text-muted-foreground")}
+                  />
                   <span className="text-sm font-medium">{item.label}</span>
                 </button>
               );
@@ -210,7 +235,9 @@ export function BpMultistepForm() {
       {/* Étape 3 */}
       {currentStep === 2 && (
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold tracking-tight">Sélectionnez la gamme de finitions :</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Sélectionnez la gamme de finitions :
+          </h2>
 
           <div className="flex flex-col gap-4">
             {finishes.map((item) => {
@@ -238,7 +265,9 @@ export function BpMultistepForm() {
                     <span className="mt-1 block text-muted-foreground">{item.description}</span>
 
                     <span className="mt-1 block text-sm text-muted-foreground">
-                      {item.multiplier === 1 ? "Tarif de base" : `+${Math.round((item.multiplier - 1) * 100)} % sur le tarif de base`}
+                      {item.multiplier === 1
+                        ? "Tarif de base"
+                        : `+${Math.round((item.multiplier - 1) * 100)} % sur le tarif de base`}
                     </span>
                   </span>
 
@@ -253,19 +282,32 @@ export function BpMultistepForm() {
       {/* Étape 4 */}
       {currentStep === 3 && (
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold tracking-tight">Coordonnées pour l'envoi du chiffrage détaillé :</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Coordonnées pour l'envoi du chiffrage détaillé :
+          </h2>
 
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">
               <Label htmlFor="name">Nom</Label>
 
-              <Input id="name" placeholder="Votre nom" value={name} onChange={(e) => setName(e.target.value)} />
+              <Input
+                id="name"
+                placeholder="Votre nom"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
 
             <div className="space-y-2">
               <Label htmlFor="email">Adresse e-mail</Label>
 
-              <Input id="email" type="email" placeholder="vous@exemple.fr" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <Input
+                id="email"
+                type="email"
+                placeholder="vous@exemple.fr"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
           </div>
         </div>
@@ -290,14 +332,20 @@ export function BpMultistepForm() {
           </p>
 
           <p className="text-center text-xs text-muted-foreground">
-            TVA 10 % incluse (rénovation de plus de 2 ans). Estimation indicative à confirmer selon le projet.
+            TVA 10 % incluse (rénovation de plus de 2 ans). Estimation indicative à confirmer selon
+            le projet.
           </p>
         </div>
       </div>
 
       {/* Navigation */}
       <div className="flex justify-between gap-3 border-t pt-5">
-        <Button variant="outline" className="rounded-lg" disabled={isFirstStep} onClick={() => setCurrentStep((s) => s - 1)}>
+        <Button
+          variant="outline"
+          className="rounded-lg"
+          disabled={isFirstStep}
+          onClick={() => setCurrentStep((s) => s - 1)}
+        >
           <ChevronLeft />
           Retour
         </Button>

@@ -1,5 +1,16 @@
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Check, CheckCircle2, Clock, ClipboardList, Gauge, ShieldCheck, Sparkles, Wrench } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  CheckCircle2,
+  Clock,
+  ClipboardList,
+  Gauge,
+  ShieldCheck,
+  Sparkles,
+  Wrench,
+} from "lucide-react";
 
 const vehicleTypes = [
   { id: "citadine", label: "Citadine", description: "Clio, 208, Twingo..." },
@@ -73,7 +84,15 @@ const services = [
   },
 ];
 
-const timeSlots = ["08:00 - 09:00", "09:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "14:00 - 15:00", "15:00 - 16:00", "16:00 - 17:00"];
+const timeSlots = [
+  "08:00 - 09:00",
+  "09:00 - 10:00",
+  "10:00 - 11:00",
+  "11:00 - 12:00",
+  "14:00 - 15:00",
+  "15:00 - 16:00",
+  "16:00 - 17:00",
+];
 
 type FormData = {
   name: string;
@@ -186,8 +205,9 @@ export function GpSimulator({ className }: GpSimulatorProps) {
           </h2>
 
           <p className="mt-5 text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
-            Choisissez votre catégorie de véhicule et l'opération d'entretien souhaitée pour estimer le coût en temps réel. Bloquez ensuite
-            votre rendez-vous dans le calendrier de l'atelier.
+            Choisissez votre catégorie de véhicule et l'opération d'entretien souhaitée pour estimer
+            le coût en temps réel. Bloquez ensuite votre rendez-vous dans le calendrier de
+            l'atelier.
           </p>
         </div>
 
@@ -202,7 +222,8 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                 <div>
                   <h3 className="font-bold text-[#17191e] dark:text-white">Tarifs transparents</h3>
                   <p className="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-                    Pas de mauvaise surprise. Les prix incluent les pièces d'origine constructeur et la main d'œuvre.
+                    Pas de mauvaise surprise. Les prix incluent les pièces d'origine constructeur et
+                    la main d'œuvre.
                   </p>
                 </div>
               </div>
@@ -212,7 +233,9 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                   <ShieldCheck size={23} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#17191e] dark:text-white">Garantie Constructeur Préservée</h3>
+                  <h3 className="font-bold text-[#17191e] dark:text-white">
+                    Garantie Constructeur Préservée
+                  </h3>
                   <p className="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
                     Nous respectons scrupuleusement la fiche d'entretien de votre voiture.
                   </p>
@@ -224,7 +247,9 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                   <Gauge size={23} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#17191e] dark:text-white">Prise en charge véhicule</h3>
+                  <h3 className="font-bold text-[#17191e] dark:text-white">
+                    Prise en charge véhicule
+                  </h3>
                   <p className="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
                     Voiture de courtoisie gratuite mise à disposition pendant toute l'intervention.
                   </p>
@@ -233,7 +258,9 @@ export function GpSimulator({ className }: GpSimulatorProps) {
             </div>
 
             <div className="rounded-2xl border border-[#e63946]/20 bg-[#e63946]/5 p-6">
-              <p className="text-xs font-bold tracking-wider text-[#e63946] uppercase">Besoin d'aide ?</p>
+              <p className="text-xs font-bold tracking-wider text-[#e63946] uppercase">
+                Besoin d'aide ?
+              </p>
               <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
                 Notre secrétariat est à votre disposition pour vos rendez-vous.
               </p>
@@ -279,7 +306,9 @@ export function GpSimulator({ className }: GpSimulatorProps) {
 
                     {index < 2 && (
                       <div className="mx-3 mb-6 h-0.5 flex-1 overflow-hidden rounded-full bg-neutral-200 dark:bg-white/10">
-                        <div className={`h-full bg-[#e63946] transition-all duration-500 ${step > item.number ? "w-full" : "w-0"}`} />
+                        <div
+                          className={`h-full bg-[#e63946] transition-all duration-500 ${step > item.number ? "w-full" : "w-0"}`}
+                        />
                       </div>
                     )}
                   </div>
@@ -293,8 +322,12 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                 {step === 1 && (
                   <div className="animate-in duration-300 fade-in slide-in-from-right-3">
                     <div className="mb-7">
-                      <span className="text-xs font-bold tracking-wider text-[#e63946] uppercase">Étape 01</span>
-                      <h3 className="mt-2 text-2xl font-bold text-[#17191e] dark:text-white">Gabarit de votre véhicule</h3>
+                      <span className="text-xs font-bold tracking-wider text-[#e63946] uppercase">
+                        Étape 01
+                      </span>
+                      <h3 className="mt-2 text-2xl font-bold text-[#17191e] dark:text-white">
+                        Gabarit de votre véhicule
+                      </h3>
                       <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
                         Sélectionnez la catégorie correspondant à votre voiture.
                       </p>
@@ -323,7 +356,9 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                           </div>
                           <div className="flex-1">
                             <p className="font-bold text-[#17191e] dark:text-white">{item.label}</p>
-                            <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">{item.description}</p>
+                            <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                              {item.description}
+                            </p>
                           </div>
                           <div
                             className={`flex size-5 items-center justify-center rounded-full border-2 ${
@@ -344,8 +379,12 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                 {step === 2 && (
                   <div className="animate-in duration-300 fade-in slide-in-from-right-3">
                     <div className="mb-7">
-                      <span className="text-xs font-bold tracking-wider text-[#e63946] uppercase">Étape 02</span>
-                      <h3 className="mt-2 text-2xl font-bold text-[#17191e] dark:text-white">Sélectionnez l'intervention</h3>
+                      <span className="text-xs font-bold tracking-wider text-[#e63946] uppercase">
+                        Étape 02
+                      </span>
+                      <h3 className="mt-2 text-2xl font-bold text-[#17191e] dark:text-white">
+                        Sélectionnez l'intervention
+                      </h3>
                       <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
                         Choisissez la prestation à réaliser sur votre véhicule.
                       </p>
@@ -373,11 +412,15 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                             <Wrench size={19} />
                           </div>
                           <div className="min-w-0 flex-1">
-                            <p className="text-sm font-bold text-[#17191e] dark:text-white">{item.title}</p>
-                            <p className="mt-1 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">{item.description}</p>
+                            <p className="text-sm font-bold text-[#17191e] dark:text-white">
+                              {item.title}
+                            </p>
+                            <p className="mt-1 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+                              {item.description}
+                            </p>
                             <p className="mt-2 text-xs font-semibold text-[#e63946]">
-                              {item.prices[vehicle as keyof typeof item.prices][0]} – {item.prices[vehicle as keyof typeof item.prices][1]}{" "}
-                              €
+                              {item.prices[vehicle as keyof typeof item.prices][0]} –{" "}
+                              {item.prices[vehicle as keyof typeof item.prices][1]} €
                             </p>
                           </div>
                           <div
@@ -399,8 +442,12 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                 {step === 3 && (
                   <div className="animate-in duration-300 fade-in slide-in-from-right-3">
                     <div className="mb-7">
-                      <span className="text-xs font-bold tracking-wider text-[#e63946] uppercase">Étape 03</span>
-                      <h3 className="mt-2 text-2xl font-bold text-[#17191e] dark:text-white">Choisissez votre créneau</h3>
+                      <span className="text-xs font-bold tracking-wider text-[#e63946] uppercase">
+                        Étape 03
+                      </span>
+                      <h3 className="mt-2 text-2xl font-bold text-[#17191e] dark:text-white">
+                        Choisissez votre créneau
+                      </h3>
                       <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
                         Renseignez vos coordonnées pour préparer votre demande de rendez-vous.
                       </p>
@@ -528,17 +575,23 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                 <div className="mt-8 rounded-xl border border-[#e63946]/20 bg-[#e63946]/5 p-5">
                   <div className="mb-4 flex items-center gap-2">
                     <Sparkles size={18} className="text-[#e63946]" />
-                    <p className="text-sm font-bold text-[#17191e] dark:text-white">Estimation tarifaire immédiate</p>
+                    <p className="text-sm font-bold text-[#17191e] dark:text-white">
+                      Estimation tarifaire immédiate
+                    </p>
                   </div>
 
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between gap-3">
                       <span className="text-neutral-500 dark:text-neutral-400">Gabarit</span>
-                      <span className="font-semibold text-[#17191e] dark:text-white">{selectedVehicle.label}</span>
+                      <span className="font-semibold text-[#17191e] dark:text-white">
+                        {selectedVehicle.label}
+                      </span>
                     </div>
                     <div className="flex justify-between gap-3">
                       <span className="text-neutral-500 dark:text-neutral-400">Opération</span>
-                      <span className="text-right font-semibold text-[#17191e] dark:text-white">{selectedService.title}</span>
+                      <span className="text-right font-semibold text-[#17191e] dark:text-white">
+                        {selectedService.title}
+                      </span>
                     </div>
                   </div>
 
@@ -546,8 +599,12 @@ export function GpSimulator({ className }: GpSimulatorProps) {
 
                   <div className="flex items-end justify-between gap-3">
                     <div>
-                      <p className="text-xs text-neutral-500 dark:text-neutral-400">Estimation TTC</p>
-                      <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">Pièces et main d'œuvre comprises</p>
+                      <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                        Estimation TTC
+                      </p>
+                      <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                        Pièces et main d'œuvre comprises
+                      </p>
                     </div>
                     <p className="text-2xl font-black tracking-tight text-[#e63946]">
                       {price[0]} – {price[1]} €
@@ -596,15 +653,20 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                   Demande préparée
                 </span>
 
-                <h3 className="mt-3 text-2xl font-bold text-[#17191e] dark:text-white">Votre demande de rendez-vous</h3>
+                <h3 className="mt-3 text-2xl font-bold text-[#17191e] dark:text-white">
+                  Votre demande de rendez-vous
+                </h3>
 
                 <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
-                  Voici le récapitulatif de votre simulation. Cette maquette ne transmet pas réellement de réservation à l'atelier.
+                  Voici le récapitulatif de votre simulation. Cette maquette ne transmet pas
+                  réellement de réservation à l'atelier.
                 </p>
 
                 <div className="mt-8 rounded-2xl border border-neutral-200 bg-neutral-50 p-5 text-left dark:border-white/10 dark:bg-[#111318]">
                   <div className="mb-5 flex items-center justify-between">
-                    <span className="text-xs font-bold tracking-wider text-neutral-500 uppercase">Récapitulatif</span>
+                    <span className="text-xs font-bold tracking-wider text-neutral-500 uppercase">
+                      Récapitulatif
+                    </span>
                     <span className="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-600 dark:text-emerald-400">
                       Simulation
                     </span>
@@ -623,15 +685,22 @@ export function GpSimulator({ className }: GpSimulatorProps) {
                       ...(form.registration ? [["Immatriculation", form.registration]] : []),
                       ...(form.notes ? [["Remarques", form.notes]] : []),
                     ].map(([label, value]) => (
-                      <div key={label} className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4">
+                      <div
+                        key={label}
+                        className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4"
+                      >
                         <span className="text-neutral-500 dark:text-neutral-400">{label}</span>
-                        <span className="font-semibold text-[#17191e] sm:text-right dark:text-white">{value}</span>
+                        <span className="font-semibold text-[#17191e] sm:text-right dark:text-white">
+                          {value}
+                        </span>
                       </div>
                     ))}
                   </div>
 
                   <div className="mt-5 flex items-center justify-between border-t border-neutral-200 pt-5 dark:border-white/10">
-                    <span className="font-bold text-[#17191e] dark:text-white">Estimation tarifaire</span>
+                    <span className="font-bold text-[#17191e] dark:text-white">
+                      Estimation tarifaire
+                    </span>
                     <span className="text-xl font-black text-[#e63946]">
                       {price[0]} – {price[1]} €
                     </span>

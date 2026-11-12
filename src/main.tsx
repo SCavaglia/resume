@@ -10,7 +10,7 @@ import { ScrollToTop } from "./components/navigation/scroll-to-top.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter basename="/resume">
-     <ScrollToTop />
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </StrictMode>,

@@ -1,6 +1,10 @@
 import { Menu, Sparkle } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -40,7 +44,10 @@ export function AtcHeader() {
               <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
-            <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
+            <SheetContent
+              side="left"
+              className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar"
+            >
               <SheetHeader className="flex justify-start text-left">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="flex items-center gap-2 font-playfair text-xl font-thin tracking-wide">
@@ -53,7 +60,11 @@ export function AtcHeader() {
               <nav className="flex h-full flex-1 flex-col p-4">
                 <div className="flex flex-col space-y-4">
                   {navigation.map((item) => (
-                    <a key={item.title} href={item.href} className="flex items-center space-x-2 text-sm tracking-wide">
+                    <a
+                      key={item.title}
+                      href={item.href}
+                      className="flex items-center space-x-2 text-sm tracking-wide"
+                    >
                       {item.title}
                     </a>
                   ))}
@@ -119,7 +130,9 @@ export function AtcHeader() {
           />
 
           {/* Texte */}
-          <span className="relative z-10 transition-colors duration-300 group-hover:text-[rgb(48,41,31)]">Me contacter</span>
+          <span className="relative z-10 transition-colors duration-300 group-hover:text-[rgb(48,41,31)]">
+            Me contacter
+          </span>
         </a>
       </div>
     </header>

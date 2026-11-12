@@ -8,7 +8,9 @@ export function BpLocation() {
       <div className="mx-auto max-w-7xl px-4">
         {/* Titre principal */}
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold uppercase tracking-tight md:text-4xl">Nous intervenons près de chez vous</h2>
+          <h2 className="text-3xl font-bold uppercase tracking-tight md:text-4xl">
+            Nous intervenons près de chez vous
+          </h2>
 
           <div className="mx-auto mt-3 h-1 w-20 bg-primary" />
         </div>
@@ -21,11 +23,14 @@ export function BpLocation() {
                 Proximité [Ville]
               </p>
 
-              <h3 className="mt-4 text-2xl font-semibold tracking-tight text-balance uppercase">Où travaillons-nous ?</h3>
+              <h3 className="mt-4 text-2xl font-semibold tracking-tight text-balance uppercase">
+                Où travaillons-nous ?
+              </h3>
 
               <p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground">
-                Basée à [Ville], l'entreprise BTP PRO intervient au quotidien dans un périmètre de 25 kilomètres couvrant la ville de
-                [Ville] et l'ensemble des 25 communes de l'agglomération (Tinqueux, Cormontreuil, Bezannes, Bétheny,
+                Basée à [Ville], l'entreprise BTP PRO intervient au quotidien dans un périmètre de
+                25 kilomètres couvrant la ville de [Ville] et l'ensemble des 25 communes de
+                l'agglomération (Tinqueux, Cormontreuil, Bezannes, Bétheny,
                 Saint-Brice-Courcelles...).
               </p>
             </div>

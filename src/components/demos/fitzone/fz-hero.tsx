@@ -22,12 +22,15 @@ export function FzHero() {
 
           <h1 className="-rotate-1 mt-6 text-center font-oswald text-[clamp(4rem,7vw,5.8rem)] leading-18 font-bold tracking-wide text-white uppercase lg:text-left lg:leading-23">
             Dépasse
-            <span className="rotate-2 block bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">Tes limites</span>
+            <span className="rotate-2 block bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
+              Tes limites
+            </span>
           </h1>
 
           <p className="mt-4 pr-0 text-center font-cabin text-lg leading-8 tracking-wide text-neutral-200 lg:pr-20 lg:text-left">
-            Plongez dans l'expérience FitZone [Ville] 2 : CrossFit intensif, Boxe, Yoga Vinyasa, Pilates & HIIT. Plus de 50 cours par
-            semaine encadrés par des coachs d'exception pour forger votre physique et booster votre mental.
+            Plongez dans l'expérience FitZone [Ville] 2 : CrossFit intensif, Boxe, Yoga Vinyasa,
+            Pilates & HIIT. Plus de 50 cours par semaine encadrés par des coachs d'exception pour
+            forger votre physique et booster votre mental.
           </p>
 
           <div className="mt-6 flex items-center justify-center gap-4 font-oswald lg:justify-start">

@@ -37,7 +37,7 @@ export function AtcHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center justify-center">
-              <Menu className="h-5 w-5" />
+              <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -68,9 +68,9 @@ export function AtcHeader() {
           href="/resume/demos/atelier-creation#accueil"
           className="flex shrink-0 items-center gap-2 font-playfair text-3xl font-thin tracking-wide"
         >
-          L'Atelier
+          <span className="hidden sm:inline">L'Atelier</span>
           <Sparkle className="text-[#A27B45]" />
-          Création
+          <span className="hidden sm:inline">Création</span>
         </a>
 
         {/* Navigation desktop */}

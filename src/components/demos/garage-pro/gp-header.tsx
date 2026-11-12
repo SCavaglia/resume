@@ -37,7 +37,7 @@ export function GpHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center justify-center">
-              <Menu className="h-5 w-5" />
+              <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -65,8 +65,11 @@ export function GpHeader() {
         {/* Logo */}
         <a href="/resume/demos/garage-pro#accueil" className="flex shrink-0 items-center gap-2 font-oswald text-3xl font-bold uppercase">
           <CarFront className="size-12 rounded-md bg-[#e63946] p-2 text-white" />
+          <span className="hidden sm:inline">
+
           <span>Garage</span>
           <span className="bg-[#e63946] bg-clip-text text-transparent">Pro</span>
+          </span>
         </a>
 
         {/* Navigation desktop */}

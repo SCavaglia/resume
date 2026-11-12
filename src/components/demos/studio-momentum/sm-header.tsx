@@ -37,7 +37,7 @@ export function SmHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center justify-center">
-              <Menu className="h-5 w-5" />
+              <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -74,8 +74,11 @@ export function SmHeader() {
             </defs>
           </svg>
           <Sparkles style={{ stroke: "url(#gold-gradient)" }} />
+          <span className="hidden sm:inline">
+
           <span>Studio</span>
-          <span className="bg-linear-to-r from-[#967021] via-[#d6b76d] to-[#967021] bg-clip-text text-transparent">Momentum</span>
+          <span className="pl-2 bg-linear-to-r from-[#967021] via-[#d6b76d] to-[#967021] bg-clip-text text-transparent">Momentum</span>
+          </span>
         </a>
 
         {/* Navigation desktop */}

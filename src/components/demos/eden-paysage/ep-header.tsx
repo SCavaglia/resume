@@ -37,14 +37,14 @@ export function EpHeader() {
                 <div className="lg:hidden">
                     <Sheet>
                         <SheetTrigger className="flex items-center justify-center">
-                            <Menu className="h-5 w-5" />
+                            <Menu className="mr-4 h-7 w-7" />
                         </SheetTrigger>
 
                         <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
                             <SheetHeader className="flex justify-start text-left">
                                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                                 <div className="flex items-center gap-2 text-xl font-bold">
-                                    <TreePine className="size-9 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />
+                                    <Trees className="size-9 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />
                                     EDEN <span className="bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 bg-clip-text text-transparent">PAYSAGE</span>
                                 </div>
                             </SheetHeader>
@@ -72,10 +72,13 @@ export function EpHeader() {
                     className="relative flex shrink-0 items-center gap-2 text-3xl font-bold"
                 >
                     <Trees className="size-12 rounded-md bg-linear-to-r from-lime-500 to-emerald-500 p-2 text-white" />
+                    <span className="hidden sm:inline">
+
                     <span>EDEN</span>
                     <Leaf className="absolute -top-2 left-1/2 size-6 -translate-x-1/2 text-lime-500" />
                     <span className="pl-2 translate-y-0.5 bg-linear-to-r from-lime-500 via-green-500 to-emerald-600 bg-clip-text text-transparent">
                         PAYSAGE
+                    </span>
                     </span>
                 </a>
 

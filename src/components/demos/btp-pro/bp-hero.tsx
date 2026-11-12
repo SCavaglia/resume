@@ -61,7 +61,7 @@ export function BpHero() {
 
                     {/* Statistiques */}
                     <div className="mt-12 p-8 self-start rounded-2xl border-muted-foreground/30 bg-white/1 pl-6 shadow-xl backdrop-blur-md lg:mt-12">
-                        <div className="flex flex-row gap-6 lg:flex-col">
+                        <div className="flex flex-row flex-wrap gap-6 lg:flex-col">
                             <div className="border-l-4 border-primary-without-black pr-12 pl-4 text-left text-primary-without-black">
                                 <p className="text-2xl font-bold tracking-tight sm:text-3xl">15+</p>
                                 <p className="mt-1 leading-5 tracking-wide text-secondary dark:text-secondary-foreground">

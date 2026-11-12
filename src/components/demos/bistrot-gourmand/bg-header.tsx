@@ -46,7 +46,7 @@ export function BgHeader() {
                 <div className="lg:hidden">
                     <Sheet>
                         <SheetTrigger className="flex items-center justify-center">
-                            <Menu className="size-6" />
+                            <Menu className="mr-4 h-7 w-7" />
                         </SheetTrigger>
 
                         <SheetContent
@@ -100,7 +100,7 @@ export function BgHeader() {
                 >
                     <Utensils className="mr-4 size-8 shrink-0" />
 
-                    <span className="font-playfair text-2xl tracking-wider [font-variant-caps:small-caps]">
+                    <span className="hidden font-playfair text-2xl tracking-wider [font-variant-caps:small-caps] sm:inline">
                         Le{" "}
                         <span className="inline-block translate-y-0.5 text-[34px] text-[#8a1e1e]">
                             Bistrot

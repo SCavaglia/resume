@@ -37,7 +37,7 @@ export function NsHeader() {
                 <div className="lg:hidden">
                     <Sheet>
                         <SheetTrigger className="flex items-center justify-center">
-                            <Menu className="h-5 w-5" />
+                            <Menu className="mr-4 h-7 w-7" />
                         </SheetTrigger>
 
                         <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -69,7 +69,7 @@ export function NsHeader() {
                 {/* Logo */}
                 <a href="/resume/demos/nova-sante#accueil" className="flex shrink-0 items-center gap-2">
                     <Heart className="size-12 rounded-2xl border bg-linear-to-r from-sky-500 to-teal-500 p-2" />
-                    <span className="font-figtree text-2xl font-extrabold tracking-wide">
+                    <span className="hidden font-figtree text-2xl font-extrabold tracking-wide sm:inline">
                         Nova
                         <span className="bg-linear-to-r from-sky-500 to-teal-500 bg-clip-text pl-2 text-transparent">
                             Santé
@@ -98,7 +98,7 @@ export function NsHeader() {
                 {/* Action */}
                 <a
                     href="#reservation"
-                    className="ml-auto inline-block rounded-full bg-[rgb(251,146,60)] px-8 py-6 text-lg font-semibold text-white transition-all hover:bg-[rgb(154,117,50)] lg:ml-0"
+                    className="ml-auto inline-block rounded-full bg-[rgb(251,146,60)] px-6 py-3 font-semibold text-white transition-all hover:bg-[rgb(154,117,50)] lg:ml-0"
                 >
                     Prendre RDV
                 </a>

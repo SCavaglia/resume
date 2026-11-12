@@ -48,7 +48,7 @@ export function FzHeader() {
                 <div className="lg:hidden">
                     <Sheet>
                         <SheetTrigger className="flex items-center justify-center">
-                            <Menu className="size-5" />
+                             <Menu className="mr-4 h-7 w-7" />
                         </SheetTrigger>
 
                         <SheetContent
@@ -102,9 +102,12 @@ export function FzHeader() {
                     className="group flex shrink-0 items-end text-3xl font-black uppercase"
                 >
                     <Dumbbell className="mr-4 size-8 rounded-md transition-all duration-200 group-hover:-translate-y-1" />
+                    <span className="hidden sm:inline">
+
                     <span className="-translate-y-0.5">FIT</span>
                     <span className="bg-linear-to-br from-red-500 to-orange-500 bg-clip-text text-transparent">
                         ZONE
+                    </span>
                     </span>
                 </a>
 

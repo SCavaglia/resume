@@ -37,7 +37,7 @@ export function ScHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center justify-center">
-              <Menu className="h-5 w-5" />
+              <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -66,9 +66,13 @@ export function ScHeader() {
         {/* Logo */}
         <a href="/resume/demos/synergie-conseil#accueil" className="flex shrink-0 items-center gap-2 font-cormorant text-3xl uppercase">
           <Scale className="size-12 rounded-md bg-linear-to-r from-cyan-900 to-sky-900 p-2 text-[#c6a77e]" />
-          <span>Synergie</span>
+          <span>
+            <span className="hidden sm:inline">Synergie</span>
+            <span className="sm:hidden">S</span>
+          </span>
           <span className="bg-linear-to-r from-[#806342] via-[#a88960] to-[#806342] bg-clip-text text-transparent dark:from-[#c6a77e] dark:via-[#d8c19b] dark:to-[#c6a77e]">
-            Conseil
+            <span className="hidden sm:inline">Conseil</span>
+            <span className="sm:hidden">C</span>
           </span>
         </a>
 

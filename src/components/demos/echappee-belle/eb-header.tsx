@@ -38,7 +38,7 @@ export function EbHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center justify-center">
-              <Menu className="h-5 w-5" />
+              <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -47,7 +47,7 @@ export function EbHeader() {
                 <div className="flex items-center gap-2 font-cormorant text-xl font-thin">
                   <MountainSnow className="size-9 rounded-md bg-linear-to-tr from-[rgb(96,112,85)] to-[rgb(96,112,85)] p-2 text-[rgb(201,157,99)]" />
                   <span>L'Échappée</span>
-                  <span className="bg-linear-to-t from-[rgb(96,112,85)] via-yellow-500 to-yellow-200 bg-clip-text text-transparent">
+                  <span className="bg-linear-to-t from-[#46563f] via-[#8e805d] to-[#c5a477] bg-clip-text text-transparent dark:from-[#607055] dark:via-[#b5a477] dark:to-[#e8d5a9]">
                     Belle
                   </span>
                 </div>
@@ -69,9 +69,11 @@ export function EbHeader() {
         {/* Logo */}
         <a href="/resume/demos/echappee-belle#accueil" className="flex shrink-0 items-center gap-2 font-cormorant text-3xl font-thin">
           <MountainSnow className="size-12 rounded-md bg-linear-to-tr from-[rgb(96,112,85)] to-[rgb(96,112,85)] p-2 text-[rgb(201,157,99)]" />
-          <span>L'Échappée</span>
-          <span className="bg-linear-to-t from-[#46563f] via-[#8e805d] to-[#c5a477] bg-clip-text text-transparent dark:from-[#607055] dark:via-[#b5a477] dark:to-[#e8d5a9]">
-            Belle
+          <span className="hidden sm:inline">
+            <span>L'Échappée</span>
+            <span className="pl-1 bg-linear-to-t from-[#46563f] via-[#8e805d] to-[#c5a477] bg-clip-text text-transparent dark:from-[#607055] dark:via-[#b5a477] dark:to-[#e8d5a9]">
+              Belle
+            </span>
           </span>
         </a>
 

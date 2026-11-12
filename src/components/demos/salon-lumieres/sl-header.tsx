@@ -40,7 +40,7 @@ export function SlHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center justify-center">
-              <Menu className="h-5 w-5" />
+              <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -64,9 +64,13 @@ export function SlHeader() {
 
         {/* Logo */}
         <a href="/resume/demos/salon-lumieres#accueil" className="relative flex shrink-0 items-center">
-          <Sun className="-rotate-27 absolute left-44.5 -top-5.5 size-12 text-yellow-500 opacity-70 drop-shadow-[0_0_8px_#d6b66f]" />
-
-          <span className="relative z-10 bg-background font-playfair text-2xl tracking-wider leading-none uppercase">Salon Lumières</span>
+          <span className="sm:hidden">
+            <Sun className="-rotate-27 size-12 text-yellow-500 opacity-70 drop-shadow-[0_0_8px_#d6b66f]" />
+          </span>
+          <span className="hidden sm:inline">
+            <Sun className="-rotate-27 absolute left-44.5 -top-5.5 size-12 text-yellow-500 opacity-70 drop-shadow-[0_0_8px_#d6b66f]" />
+            <span className="relative z-10 bg-background font-playfair text-2xl tracking-wider leading-none uppercase">Salon Lumières</span>
+          </span>
         </a>
 
         {/* Navigation desktop */}
@@ -91,16 +95,17 @@ export function SlHeader() {
         <a
           href="#reservation"
           className="
-        group relative ml-auto -mr-2 overflow-hidden rounded-sm
+        group relative ml-auto mr-12 overflow-hidden rounded-sm
         border border-[#d6b98c]/70
-        px-6 py-4 font-medium tracking-wide uppercase
+        px-4 py-2 text-sm font-medium tracking-wide uppercase
         text-[#70583e]
         shadow-md shadow-[#b99b70]/15
         transition-all duration-300
+        sm:px-6 sm:py-4
         hover:shadow-lg hover:shadow-[#b99b70]/25
         dark:border-[#c5a77e]/50
         dark:text-[#fff8ed]
-        lg:ml-0
+        sm:ml-auto sm:mr-0 lg:ml-0
     "
         >
           {/* Dégradé normal */}

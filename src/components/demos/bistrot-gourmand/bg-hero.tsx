@@ -47,14 +47,14 @@ export function BgHero() {
         <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
           <a
             href="#reservation"
-            className="rounded-xs bg-red-900/90 px-10 py-8 text-center text-lg font-semibold tracking-widest text-white uppercase transition-all duration-300 hover:-translate-y-1 hover:bg-red-950"
+            className="rounded-xs bg-red-900/90 px-6 py-4 text-center text-lg font-semibold tracking-widest text-white uppercase transition-all duration-300 sm:px-10 sm:py-8 hover:-translate-y-1 hover:bg-red-950"
           >
             Réserver une table
           </a>
 
           <a
             href="#carte"
-            className="rounded-xs border-2 bg-transparent px-10 py-8 text-center text-lg font-semibold tracking-widest text-white uppercase transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500 hover:backdrop-blur-md"
+            className="rounded-xs border-2 px-6 py-4 text-center text-lg font-semibold tracking-widest text-white uppercase bg-black/35 transition-all duration-300 sm:px-10 sm:py-8 hover:-translate-y-1 hover:border-yellow-500 hover:bg-transparent hover:text-yellow-500 hover:backdrop-blur-md"
           >
             Découvrir la carte
           </a>

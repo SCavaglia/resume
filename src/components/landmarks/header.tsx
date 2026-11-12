@@ -22,7 +22,7 @@ export function Header() {
           <div className="lg:hidden">
             <Sheet>
               <SheetTrigger>
-                <Menu className="h-5 w-5" />
+                <Menu className="mr-4 h-7 w-7" />
               </SheetTrigger>
               <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
                 <SheetTitle className="sr-only">Navigation menu</SheetTitle>

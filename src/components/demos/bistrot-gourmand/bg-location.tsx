@@ -6,10 +6,10 @@ export function BgLocation() {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
   return (
-    <section id="acces" className="mx-auto max-w-7xl px-8 pt-46 pb-36">
+    <section id="acces" className="mx-auto max-w-7xl px-6 pt-46 pb-36 sm:px-8">
       <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-center lg:gap-12">
         {/* Partie 1 : Informations pratiques */}
-        <div className="flex flex-col gap-8 pl-16">
+        <div className="flex flex-col gap-8 sm:pl-16">
           <div className="max-w-2xl">
             <p>Accès</p>
 
@@ -103,7 +103,7 @@ export function BgLocation() {
         </div>
 
         {/* Partie 2 : Google Maps */}
-        <div className="mx-32 h-96 overflow-hidden rounded border bg-muted shadow-sm lg:mr-24 lg:ml-0 lg:h-116 lg:w-96">
+        <div className="h-96 overflow-hidden rounded border bg-muted shadow-sm sm:mx-26 lg:mr-24 lg:ml-0 lg:h-116 lg:w-116">
           <iframe
             title="Localisation du Bistrot Gourmand sur Google Maps"
             src={`https://maps.google.com/maps?q=${encodeURIComponent(address)}&output=embed`}

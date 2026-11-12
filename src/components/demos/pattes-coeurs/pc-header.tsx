@@ -38,7 +38,7 @@ export function PcHeader() {
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center justify-center">
-              <Menu className="h-5 w-5" />
+              <Menu className="mr-4 h-7 w-7" />
             </SheetTrigger>
 
             <SheetContent side="left" className="flex h-full w-64 flex-col items-stretch justify-between bg-sidebar">
@@ -77,9 +77,11 @@ export function PcHeader() {
             </svg>
             <PawPrint className="absolute inset-0 m-auto size-8 text-white" />
           </div>
-          <span>La Patte Au</span>
-          <span className="bg-linear-to-r from-orange-900 via-amber-900 to-yellow-900 bg-clip-text text-transparent dark:from-orange-100 dark:via-amber-100 dark:to-yellow-100">
-            Cœur
+          <span className="hidden sm:inline">
+            <span>La Patte Au</span>
+            <span className="pl-2 bg-linear-to-r from-orange-900 via-amber-900 to-yellow-900 bg-clip-text text-transparent dark:from-orange-100 dark:via-amber-100 dark:to-yellow-100">
+              Cœur
+            </span>
           </span>
         </a>
 

@@ -31,7 +31,7 @@ const footerProps = {
   ],
   id: "footer",
   logo: (
-    <a href="/resume/demos/btp-pro#accueil" className="flex items-center gap-2 text-3xl font-bold text-white uppercase">
+    <a href="/resume/demos/btp-pro#accueil" className="w-fit flex items-center gap-2 text-3xl font-bold text-white uppercase">
       <House className="size-10" />
       <span>BTP</span>
       <span className="text-primary-without-black">PRO</span>

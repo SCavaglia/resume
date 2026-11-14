@@ -160,14 +160,14 @@ export function Demos() {
   return (
     <section id="demos" className="scroll-mt-6 mx-auto max-w-7xl px-8 pb-46">
       <header className="mb-16">
-        <Heading className="text-3xl font-semibold tracking-tight sm:text-2xl">
+        <Heading className="text-xl font-semibold tracking-tight sm:text-2xl">
           Quelques démos de sites vitrines :
         </Heading>
       </header>
 
-      <div className="w-4/5 grid grid-cols-1 justify-items-start gap-x-4 gap-y-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+      <div className="cards-grid grid justify-items-start gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {demos.map((demo) => (
-          <Link key={demo.name} to={demo.to} className="block">
+          <Link key={demo.name} to={demo.to} className="relative block transition-all duration-300">
             <CardExpandable
               title={demo.name}
               category={demo.category}

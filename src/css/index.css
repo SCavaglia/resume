@@ -209,6 +209,68 @@
     opacity: 1;
     transform: translate(0);
   }
+
+  /* Grille de cartes étirables */
+  .cards-grid:has(> *:hover) > *:not(:hover) {
+    opacity: 0.3;
+    z-index: 0;
+  }
+  /* Mobile : 1 colonne */
+  .cards-grid > * .card-panel {
+    left: 0;
+  }
+  /* 2 colonnes */
+  @media (min-width: 640px) {
+    .cards-grid > *:nth-child(2n) .card-panel {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  /* 3 colonnes */
+  @media (min-width: 768px) {
+    .cards-grid > *:nth-child(n) .card-panel {
+      left: 0;
+      right: auto;
+      transform: none;
+    }
+
+    /* Carte centrale */
+    .cards-grid > *:nth-child(3n + 2) .card-panel {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
+
+    /* Carte droite */
+    .cards-grid > *:nth-child(3n) .card-panel {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  /* 4 colonnes */
+  @media (min-width: 1024px) {
+    .cards-grid > *:nth-child(n) .card-panel {
+      left: 0;
+      right: auto;
+      transform: none;
+    }
+
+    /* Carte centrale : 2e et 3e */
+    .cards-grid > *:nth-child(4n + 2) .card-panel,
+    .cards-grid > *:nth-child(4n + 3) .card-panel {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
+
+    /* Carte droite */
+    .cards-grid > *:nth-child(4n) .card-panel {
+      left: auto;
+      right: 0;
+    }
+  }
 }
 
 @layer utilities {

@@ -12,7 +12,7 @@ type Props = {
 
 export function CardExpandable({ title, category, image, imageAlt = "", infos, className }: Props) {
   return (
-    <article className="group relative z-0 h-14 w-64 transition-all duration-500 hover:z-20 hover:-translate-y-3">
+    <article className="group relative z-0 h-14 w-64 transition-transform duration-500 hover:z-20 hover:-translate-y-3">
       {/* Catégorie */}
       <span
         className={cn(
@@ -25,9 +25,9 @@ export function CardExpandable({ title, category, image, imageAlt = "", infos, c
 
       <div
         className={cn(
-          "absolute left-0 top-0 z-10 h-13 w-64 overflow-hidden",
+          "card-panel absolute top-0 z-10 h-13 w-64 overflow-hidden",
           "rounded-xl border bg-card shadow-sm backdrop-blur-md",
-          "transition-all duration-500 ease-in-out",
+          "transition-[width,height,box-shadow,border-color,background-color] duration-500 ease-in-out",
           "group-hover:h-[22rem] group-hover:w-[450px] group-hover:shadow-xl  group-hover:border-2 group-hover:bg-card/50 dark:group-hover:bg-card/85",
           className,
         )}
